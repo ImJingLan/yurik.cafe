@@ -1,8 +1,8 @@
 menu:
-  # 文章:
-  #   隧道: /archives/ || anzhiyu-icon-box-archive
-  #   分类: /categories/ || anzhiyu-icon-shapes
-  #   标签: /tags/ || anzhiyu-icon-tags
+  文章:
+    隧道: /archives/ || anzhiyu-icon-box-archive
+    分类: /categories/ || anzhiyu-icon-shapes
+    标签: /tags/ || anzhiyu-icon-tags
 
   # 友链:
   #   友人帐: /link/ || anzhiyu-icon-link
@@ -15,10 +15,10 @@ menu:
   #   相册集: /album/ || anzhiyu-icon-images
   #   小空调: /air-conditioner/ || anzhiyu-icon-fan
 
-  # 关于:
-  #   关于本人: /about/ || anzhiyu-icon-paper-plane
-  #   闲言碎语: /essay/ || anzhiyu-icon-lightbulb
-  #   随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
+  关于:
+    关于本人: /about/ || anzhiyu-icon-paper-plane
+    #   闲言碎语: /essay/ || anzhiyu-icon-lightbulb
+    随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
 
 # nav相关配置
 nav:
@@ -30,12 +30,17 @@ nav:
       item:
         - name: 博客
           link: https://blog.yurik.cafe/
-          icon: /img/favicon.png
+          icon: https://npm.elemecdn.com/yurik-static@1.0.3/favicon/favicon-32x32.png
+
+        - name: YurWiki
+          link: https://wiki.yurik.cafe/
+          icon: https://wiki.yurik.cafe/assets/images/favicon.png
+
     - title: 项目
       item:
-        - name: 安知鱼图床
-          link: https://image.anzhiy.cn/
-          icon: https://image.anzhiy.cn/favicon.ico
+        - name: Lite Cafe社区
+          link: https://lite.cafe/
+          icon: https://lite.cafe/assets/favicon-9h2rs7mj.png
 
 # Code Blocks (代码相关)
 # --------------------------------------
@@ -52,8 +57,8 @@ code_word_wrap: false
 copy:
   enable: true
   copyright:
-    enable: false
-    limit_count: 50
+    enable: true
+    limit_count: 20
 
 # social settings (社交图标设置)
 # formal:
@@ -110,11 +115,11 @@ katex:
 # --------------------------------------
 
 # Favicon（网站图标）
-favicon: /img/favicon.png
+favicon: https://npm.elemecdn.com/yurik-static@1.0.3/favicon/favicon-32x32.png
 
 # Avatar (头像)
 avatar:
-  img: https://img02.anzhiy.cn/adminuploads/1/2022/09/15/63232b7d91d22.jpg
+  img: https://cravatar.cn/avatar/ffc39c64bceca32555fa4d957ec03c3d
   effect: false
 
 # Disable all banner image
@@ -157,7 +162,12 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (当没有设置cover时，默认的封面显示)
   default_cover:
-    - /img/default_cover.jpg
+    - https://npm.elemecdn.com/yurik-static@1.0.4/background/1.webp
+    - https://npm.elemecdn.com/yurik-static@1.0.4/background/2.webp
+    - https://npm.elemecdn.com/yurik-static@1.0.4/background/3.webp
+    - https://npm.elemecdn.com/yurik-static@1.0.4/background/4.webp
+    - https://npm.elemecdn.com/yurik-static@1.0.4/background/5.webp
+    - https://npm.elemecdn.com/yurik-static@1.0.4/background/6.webp
 
 # Replace Broken Images (替换无法显示的图片)
 error_img:
@@ -225,7 +235,7 @@ post_copyright:
 
 # Sponsor/reward
 reward:
-  enable: true
+  enable: false
   QR_code:
     - img: https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png
       link:
@@ -658,7 +668,7 @@ aside:
   card_author:
     enable: true
     type: 2 # 1为使用头像card 2为不使用头像card
-    description: <div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这有关于<b style="color:#fff">产品、设计、开发</b>相关的问题和看法，还有<b style="color:#fff">文章翻译</b>和<b style="color:#fff">分享</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">相信你可以在这里找到对你有用的<b style="color:#fff">知识</b>和<b style="color:#fff">教程</b>。</div>
+    description: <div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">这有关于<b style="color:#fff">设计、开发、生活</b>相关的问题和看法，还有<b style="color:#fff">文章翻译</b>和<b style="color:#fff">分享</b>。</div><div style="line-height:1.38;margin:0.6rem 0;text-align:justify;color:rgba(255, 255, 255, 0.8);">希望你可以在这里找到对你有用的<b style="color:#fff">知识</b>和<b style="color:#fff">教程</b>。</div>
     button:
       enable: true
       icon: anzhiyu-icon-arrow-circle-right
@@ -669,8 +679,8 @@ aside:
     content: 欢迎来看我的博客鸭~
   card_weixin:
     enable: true
-    face: https://s1.ax1x.com/2023/05/06/p9UD2Ed.png
-    backFace: https://s1.ax1x.com/2023/05/06/p9UDcHH.png
+    face: https://npm.elemecdn.com/yurik-static@1.0.2/2023/5/wechat-frontground.png
+    backFace: https://npm.elemecdn.com/yurik-static@1.0.2/2023/5/wechat-background.png
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -856,10 +866,10 @@ pwa:
   enable: false
   manifest: /manifest.json
   theme_color: var(--anzhiyu-main)
-  apple_touch_icon: /img/siteicon/128.png
-  favicon_32_32: /img/siteicon/32.png
-  favicon_16_16: /img/siteicon/16.png
-  mask_icon: /img/siteicon/128.png
+  apple_touch_icon: https://npm.elemecdn.com/yurik-static@1.0.3/favicon/apple-touch-icon.png
+  favicon_32_32: https://npm.elemecdn.com/yurik-static@1.0.3/favicon/favicon-32x32.png
+  favicon_16_16: https://npm.elemecdn.com/yurik-static@1.0.3/favicon/favicon-32x32.png
+  mask_icon: https://npm.elemecdn.com/yurik-static@1.0.3/favicon/android-chrome-192x192.png
 
 # Open graph meta tags
 # https://developers.facebook.com/docs/sharing/webmasters/
@@ -918,7 +928,7 @@ home_top:
   banner:
     tips: 全新社区
     title: Lite Cafe
-    image: https://s1.ax1x.com/2023/05/06/p9UDhCt.png
+    image: https://npm.elemecdn.com/yurik-static@1.0.2/2023/5/index.webp
     link: https://lite.cafe
 
 # 朋友圈配置
