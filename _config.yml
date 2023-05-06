@@ -127,3 +127,7 @@ marked:
     nofollow: false
   disableNunjucks: false
   descriptionLists: true
+
+aplayer:
+  meting: true
+  asset_inject: false
