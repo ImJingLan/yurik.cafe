@@ -4,6 +4,8 @@ date: 2023-08-29 22:01:14
 layout: about
 ---
 
+> 我的邮箱 [i#yurik.cafe](mailto:i@yurik.cafe)
+
 ## 欢迎
 
 你好,我是景蓝，这是我的个人博客
