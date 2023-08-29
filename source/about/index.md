@@ -43,14 +43,6 @@ layout: about
 
 -   目前就读于：`柳州高级中学 高新校区`
 
-## 我的一些社交地址
-
--   [Github](https://github.com/imjinglan)
-
--   [VRChat](https://vrchat.com/home/user/usr_d25739c8-f1ea-4b8f-b5d5-369dc2df1b2f)
-
--   [Twitter](https://twitter.com/ImJingLan)
-
 ## 喜欢看的虚拟主播们的主页地址（没有 D!!.jpg）
 
 [巴琦 Baki](https://space.bilibili.com/1588646945)（爹！~~我真的好想你啊~~）
