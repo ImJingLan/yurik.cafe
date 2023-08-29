@@ -1,9 +1,10 @@
 ---
 title: 【转载】又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API
-cover: 715850d76b7db.png
+cover: /2022/minecraft-yggdrasil-api-third-party-implementation/715850d76b7db.png
 date: 2022-02-11
 tags:
-categories:
+categories: 技术
+copyright: BY
 ---
 
 **原文链接**：PRIN BLOG - [又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API](https://printempw.github.io/minecraft-yggdrasil-api-third-party-implementation/)
@@ -26,12 +27,12 @@ categories:
 
 其实这样的解决方案也没什么不好，而且现在 Authme 等登录插件在众多的服务器中都还是主流。但是，如果你的服务器已经发展到比较大型了，或许你就比较希望有这样一个东西：
 
-- 可以直接在启动器中进行登录鉴权操作，点击「开始游戏」就可以直接进入服务器，不用在游戏里再一遍遍输入 `/login` 等指令；
-- 有一个网页版的用户管理，可以直接对玩家进行操作（e.g. 封禁、修改积分）；
-- 玩家们可以直接在一个直观的网页上注册账号，并且可以直接用这个账号 & 密码登录游戏；
-- 希望这个账号系统还能对接论坛、皮肤站等乱七八糟的东西，玩家注册了一个账号之后，可以在任何地方使用；
-- 希望服务器有一个自己的网页、自定义启动器、用户管理系统、卫星地图之类的东西来装逼；
-- etc.
+-   可以直接在启动器中进行登录鉴权操作，点击「开始游戏」就可以直接进入服务器，不用在游戏里再一遍遍输入 `/login` 等指令；
+-   有一个网页版的用户管理，可以直接对玩家进行操作（e.g. 封禁、修改积分）；
+-   玩家们可以直接在一个直观的网页上注册账号，并且可以直接用这个账号 & 密码登录游戏；
+-   希望这个账号系统还能对接论坛、皮肤站等乱七八糟的东西，玩家注册了一个账号之后，可以在任何地方使用；
+-   希望服务器有一个自己的网页、自定义启动器、用户管理系统、卫星地图之类的东西来装逼；
+-   etc.
 
 并不是所有腐竹都满足于 Authme + Discuz 这样的组合的（而且这类游戏内登录系统也有不少安全漏洞），毕竟在这个 Minecraft 多人联机服务器发展接近饱和的时候，如果想要你的服务器能够吸引新玩家，那么除了服务器本身建设之外的地方也是要好好考虑的。
 
@@ -85,9 +86,9 @@ authlib-injector 官方也提供了一个 Java 编写的后端 [yggdrasil-mock](
 
 以上步骤完成后你将得到什么？
 
-- 一个完善的账号系统（配合数据对接插件还能与 Discuz 等论坛账号互通），包括友好的注册、登录网页界面以及强大的管理员面板，在管理后台中封禁用户后，该用户也将无法登录游戏；
-- 一个皮肤管理系统，自带皮肤库功能，在皮肤站中应用的皮肤，玩家无需安装任何皮肤 Mod，进入游戏即可看到自己设置的皮肤（支持双层皮肤、支持 Alex 模型，由于游戏本身限制不支持高清皮肤）；
-- 单账户多角色功能，玩家可以像登录正版那样用「邮箱」和「密码」登录游戏，而且如果你在皮肤站中添加了多个角色的话，还可以在启动页面选择要用哪个角色进入游戏（Yggdrasil API 实现了这个功能，但是 Mojang 的正版登录服务器并未实现该功能），HMCL 等启动器都实现了本功能；
+-   一个完善的账号系统（配合数据对接插件还能与 Discuz 等论坛账号互通），包括友好的注册、登录网页界面以及强大的管理员面板，在管理后台中封禁用户后，该用户也将无法登录游戏；
+-   一个皮肤管理系统，自带皮肤库功能，在皮肤站中应用的皮肤，玩家无需安装任何皮肤 Mod，进入游戏即可看到自己设置的皮肤（支持双层皮肤、支持 Alex 模型，由于游戏本身限制不支持高清皮肤）；
+-   单账户多角色功能，玩家可以像登录正版那样用「邮箱」和「密码」登录游戏，而且如果你在皮肤站中添加了多个角色的话，还可以在启动页面选择要用哪个角色进入游戏（Yggdrasil API 实现了这个功能，但是 Mojang 的正版登录服务器并未实现该功能），HMCL 等启动器都实现了本功能；
 
 这还不够多吗？
 
@@ -326,13 +327,13 @@ GET  /api/profiles/minecraft/{uuid}
 
 ### 参考链接
 
-- http://wiki.vg/Authentication
-- http://wiki.vg/Protocol_Encryption#Authentication
-- http://wiki.vg/Mojang_API
-- https://github.com/to2mbn/authlib-injector/
-- https://zh.wikipedia.org/wiki/通用唯一识别码
-- [php-rsa - 加密解密和签名](http://xbgtalk.biz/2015/11/03/php-rsa-encode-decode-sign/)
-- [blessing-skin-plugins/yggdrasil-api](https://printempw.github.io/minecraft-yggdrasil-api-third-party-implementation/blessing-skin-plugins/yggdrasil-api)
+-   http://wiki.vg/Authentication
+-   http://wiki.vg/Protocol_Encryption#Authentication
+-   http://wiki.vg/Mojang_API
+-   https://github.com/to2mbn/authlib-injector/
+-   https://zh.wikipedia.org/wiki/通用唯一识别码
+-   [php-rsa - 加密解密和签名](http://xbgtalk.biz/2015/11/03/php-rsa-encode-decode-sign/)
+-   [blessing-skin-plugins/yggdrasil-api](https://printempw.github.io/minecraft-yggdrasil-api-third-party-implementation/blessing-skin-plugins/yggdrasil-api)
 
 ### 文章更新日志
 
@@ -340,6 +341,6 @@ GET  /api/profiles/minecraft/{uuid}
 
 **2018-02-22：**
 
-- 基于最新的 authlib-injector 修改文章
-- 将具体部署步骤移动至 [yggdrasil-api](https://github.com/prinsss/yggdrasil-api) 页面
-- 同时也更新了 MCBBS 上的 [相关帖子](http://www.mcbbs.net/thread-718219-1-1.html)
+-   基于最新的 authlib-injector 修改文章
+-   将具体部署步骤移动至 [yggdrasil-api](https://github.com/prinsss/yggdrasil-api) 页面
+-   同时也更新了 MCBBS 上的 [相关帖子](http://www.mcbbs.net/thread-718219-1-1.html)

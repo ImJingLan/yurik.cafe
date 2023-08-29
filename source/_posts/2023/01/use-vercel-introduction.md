@@ -3,7 +3,7 @@ title: 使用Vercel托管静态网页
 date: 2023-01-23
 tags:
 
-cover: "banner.png"
+cover: "/2023/use-vercel-introduction/banner.png"
 
 categories: 技术
 ---

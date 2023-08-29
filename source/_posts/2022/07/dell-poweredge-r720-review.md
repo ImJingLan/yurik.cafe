@@ -1,6 +1,6 @@
 ---
 title: "戴尔 PowerEdge R720 上手 : 年轻人的第一台家庭服务器"
-cover: photo-3.webp
+cover: /2022/dell-poweredge-r720-review/photo-3.webp
 date: 2022-07-30
 tags:
 categories: 开箱
