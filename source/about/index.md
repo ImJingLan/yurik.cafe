@@ -25,9 +25,9 @@ layout: about
 
 -   大概碰过:`PHP`,`HTML`,`JavaScript`,`C`,`C++`,`C#`,`python`, `易语言`都很菜就是了（~~退役~~ ~~现役~~ 退役 OIer）
 
--   常用软件：Premiere Pro，Photoshop ， Fl Studio ，Studio One 5
+-   常用软件：Premiere Pro，Photoshop ， Fl Studio ，Studio One 5 ， After Effect
 
--   `EN_us`、`zh-CN`
+-   `EN-us`、`zh-CN`
 
 -   目前使用的设备：
 
@@ -37,9 +37,9 @@ layout: about
 
     手表：OPPO Watch 2 46mm
 
-    耳机：Lollipops Pro、水月雨夸克带麦版...
+    耳机：Redmi Buds 4 Pro、水月雨夸克带麦版...
 
-    鼠标：罗技 G502 HERO
+    鼠标：罗技 Pro X Superlight
 
 -   目前就读于：`柳州高级中学 高新校区`
 
