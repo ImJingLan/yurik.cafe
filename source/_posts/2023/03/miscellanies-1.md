@@ -4,6 +4,7 @@ date: 2023-03-04
 tags:
 
 categories: 杂谈
+index_img: /2023/miscellanies-1/cover.webp
 ---
 
 记于 17 岁生日前 3 天

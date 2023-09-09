@@ -1,9 +1,11 @@
 ---
-title: This_Week_TODO_1
+title: 每周TODO [23.9.4-23.9.10]
 copyright: BY-NC-SA
 date: 2023-09-08 14:03:53
 tags:
-categories: 杂谈
+categories: 每周TODO
+
+index_img: /2023/Week-TODO-1/cover.webp
 ---
 
 TODO:

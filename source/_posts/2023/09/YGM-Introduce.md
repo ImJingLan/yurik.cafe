@@ -4,9 +4,11 @@ copyright: BY-NC-SA
 date: 2023-09-09 13:22:49
 tags:
 categories: Yurik's Game Rating
+
+index_img: /2023/YGM-Introduce/Cover.webp
 ---
 
-![](Cover.jpg)
+![](Cover.webp)
 
 # 什么是 YGR
 

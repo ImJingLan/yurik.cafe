@@ -1,6 +1,6 @@
 ---
 title: "在Linux上搭建MC服务器（一）"
-cover: /2022/minecraft-server-on-linux-1/done.png
+index_img: /2022/minecraft-server-on-linux-1/done.png
 date: 2022-12-14
 tags:
 categories: 技术

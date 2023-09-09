@@ -5,7 +5,7 @@ tags:
 
 categories: 技术
 
-cover: "/2023/raspberry-pi-os-install/banner.jpg"
+index_img: "/2023/raspberry-pi-os-install/banner.jpg"
 ---
 
 ## 前言
