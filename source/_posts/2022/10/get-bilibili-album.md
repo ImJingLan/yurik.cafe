@@ -1,6 +1,6 @@
 ---
 title: 获取B站视频封面
-index_img: /2022/get-bilibili-album/banner.png
+cover: /2022/get-bilibili-album/banner.png
 tags:
 categories: 技术
 

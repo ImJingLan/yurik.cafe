@@ -14,6 +14,12 @@ language: zh-CN  # 指定语言，会影响主题显示的语言，按需修改
 
 timezone: ""
 
+# 图片懒加载
+lazyload:
+  enable: false
+  onlypost: false
+  loadingImg: /images/loading.gif #如果不填写图片则使用默认的图片
+
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://yurik.cafe

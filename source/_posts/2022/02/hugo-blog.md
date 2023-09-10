@@ -1,6 +1,6 @@
 ---
 title: 使用Hugo搭建个人博客
-index_img: /2022/hugo-blog/banner.png
+cover: /2022/hugo-blog/banner.png
 date: 2022-02-13
 tags:
 categories: 技术

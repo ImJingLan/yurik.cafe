@@ -5,7 +5,7 @@ date: 2023-09-08 14:03:53
 tags:
 categories: 每周TODO
 
-index_img: /2023/Week-TODO-1/cover.webp
+cover: /2023/Week-TODO-1/cover.webp
 ---
 
 TODO:
@@ -17,3 +17,5 @@ TODO:
 -   清清友链
 
 -   可能还有别的吧...
+
+总结：都没做，下周再说吧

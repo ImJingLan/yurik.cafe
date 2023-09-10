@@ -4,7 +4,7 @@ date: 2022-12-13
 image:
 categories: 开箱
 
-index_img: /2022/ipod-classic-review/banner.png
+cover: /2022/ipod-classic-review/banner.png
 ---
 
 > 这篇文章是一篇补档，由于博客系统的更换，原文已丢失

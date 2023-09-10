@@ -1,6 +1,6 @@
 ---
 title: 【转载】又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API
-index_img: /2022/minecraft-yggdrasil-api-third-party-implementation/715850d76b7db.png
+cover: /2022/minecraft-yggdrasil-api-third-party-implementation/715850d76b7db.png
 date: 2022-02-11
 tags:
 categories: 技术

@@ -2,10 +2,10 @@
 title: 【YGR】Yurik’s Game Rating 简介
 copyright: BY-NC-SA
 date: 2023-09-09 13:22:49
-tags:
+tags: [游戏,测评,YGR]
 categories: Yurik's Game Rating
 
-index_img: /2023/YGM-Introduce/Cover.webp
+cover: /2023/YGM-Introduce/Cover.webp
 ---
 
 ![](Cover.webp)
@@ -26,6 +26,4 @@ index_img: /2023/YGM-Introduce/Cover.webp
 
 # 怎么访问 **Yurik's Game Rating** ?
 
-你可以访问 [**ygr.yurik.cafe**](https://ygr.yurik.cafe) 来获取关于**Yurik's Game Rating**的有关内容
-
-同时我们也将同步一些自认为写得不错的评测到本博客的 [**分类-Yurik's Game Rating**](/categories/Yurik-s-Game-Rating/) 中
+你可以访问 [**分类-Yurik's Game Rating**](/categories/Yurik-s-Game-Rating/) 来获取关于**Yurik's Game Rating**的有关内容

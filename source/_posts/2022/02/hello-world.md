@@ -3,7 +3,7 @@ title: 你好，好久不见
 date: 2022-02-10
 tags:
 
-index_img: /2022/hello-world/cover.webp
+cover: /2022/hello-world/cover.webp
 ---
 
 ## 重新认识一下吧
