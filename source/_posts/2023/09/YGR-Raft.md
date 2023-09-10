@@ -3,7 +3,7 @@ title: 【YGR】Raft木筏 - 你也想在海上捡垃圾吗
 copyright: BY-NC-SA
 date: 2023-09-10 12:33:46
 tags: [游戏,测评,YGR]
-categories: Yurik-s-Game-Rating
+categories: Yurik's Game Rating
 cover: /2023/YGR-Raft/cover.webp
 ---
 
