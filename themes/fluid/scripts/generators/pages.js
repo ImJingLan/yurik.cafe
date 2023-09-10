@@ -40,7 +40,7 @@ hexo.extend.generator.register('_categories', function(locals) {
   }
 });
 
-// generate links page
+/* generate links page
 hexo.extend.generator.register('_links', function(locals) {
   if (this.theme.config.links.enable !== false) {
     return {
@@ -49,7 +49,7 @@ hexo.extend.generator.register('_links', function(locals) {
       layout: 'links'
     };
   }
-});
+});*/
 
 // generate index page
 hexo.extend.generator.register('index', require('./index-generator'));

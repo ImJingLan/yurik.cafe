@@ -1,6 +1,7 @@
 #---------------------------
-# Hexo Theme Fluid
-# Author: Fluid-dev
+# Hexo Theme Fluid Mod By Yurik
+# Author: Yurik
+# Raw_Author: Fluid-dev
 # Github: https://github.com/fluid-dev/hexo-theme-fluid
 #
 # 配置指南: https://hexo.fluid-dev.com/docs/guide/
@@ -15,6 +16,10 @@
 # 全局
 # Global
 #---------------------------
+
+# 头像
+
+avatar: https://unpkg.com/yurik-static@1.0.6/favicon/v2/icon@1024px.jpg
 
 # 用于浏览器标签的图标
 # Icon for browser tab
@@ -537,7 +542,25 @@ post:
 
   # 文章在首页的默认封面图，当没有指定 index_img 时会使用该图片，若两者都为空则不显示任何图片
   # Path of the default post cover when `index_img` is not set. If both are empty, no image will be displayed
-  default_index_img:
+  default_index_img: 
+    - /img/covers/1.jpg
+    - /img/covers/2.jpg
+    - /img/covers/3.jpg
+    - /img/covers/4.jpg
+    - /img/covers/5.jpg
+    - /img/covers/6.jpg
+    - /img/covers/7.jpg
+    - /img/covers/8.jpg
+    - /img/covers/9.jpg
+    - /img/covers/10.jpg
+    - /img/covers/11.jpg
+    - /img/covers/12.jpg
+    - /img/covers/13.jpg
+    - /img/covers/14.jpg
+    - /img/covers/15.jpg
+
+  
+    
 
   # 文章标题下方的元信息
   # Meta information below title
@@ -957,14 +980,6 @@ about:
   avatar: https://unpkg.com/yurik-static@1.0.6/favicon/v2/icon@1024px.jpg
   name: "景蓝Yurik"
   intro: "鲸落于海，星沉于洼"
-  # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
-  # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
-  icons:
-    - { class: "iconfont icon-mail", link: "mailto:i@lite.cafe", tip: "Mail" }
-    - { class: "iconfont icon-github-fill", link: "https://github.com/imjinglan", tip: "GitHub" }
-    - { class: "iconfont icon-douban-fill", link: "https://douban.com/people/197028615/", tip: "豆瓣" }
-    - { class: "iconfont icon-twitter-fill", link: "https://twitter.com/ImJingLan", tip: "X" }
-    - { class: "iconfont icon-rss", link: "/feed.xml", tip: "RSS Feed" }
 
 
 #---------------------------
@@ -1003,37 +1018,10 @@ links:
   banner_img: /img/default.png
   banner_img_height: 60
   banner_mask_alpha: 0.3
-  # 友链的成员项
-  # Member item of page
-  items:
-    - {
-      title: "Norphin's Blog",
-      intro: "叫兽的博客",
-      link: "https://norph1n.top/",
-      avatar: "https://s1.ax1x.com/2023/05/06/p9aIazF.jpg"
-    }
-    - {
-      title: "Azure Zeng's Blog",
-      intro: "Azure Zeng 的小窝",
-      link: "https://blog.azurezeng.com/",
-      avatar: "https://azurezeng.com/friendly-link-image.png"
-    }
-    - {
-      title: "Nero978 的日记",
-      intro: "Brave yourself, brave the world.",
-      link: "https://nero978.top",
-      avatar: "https://nero978.top/wp-content/uploads/2023/07/logo.jpg"
-    }
 
   # 当成员头像加载失败时，替换为指定图片
   # When the member avatar fails to load, replace the specified image
   onerror_avatar: /img/avatar.png
-
-  # 友链下方自定义区域，支持 HTML，可插入例如申请友链的文字
-  # Custom content at the bottom of the links
-  custom:
-    enable: true
-    content: '<hr><p>您的站点应满足以下要求:</p><ul><li>愿为开放的网络做出贡献（如乐于分享知识经验等）；</li><li>没有违法以及影响体验的内容（如侵入式广告等）；</li><li>正常更新维护中（国内无法正常访问会被移除）；</li><li>启用Https。</li><li>请不要使用免费域名；</li></ul><hr><p>在Github提交 <a href="https://github.com/ImJingLan/FriendLink/issues/new/choose">Issues</a> 或 <a href="https://wj.qq.com/s2/13028516/7438/">腾讯问卷</a> 申请加入我的友链，按如下格式提供信息：</p><ul><li>博客名：景蓝的小屋</li><li>简介：鲸落于海，星沉于洼</li><li>链接：<a href="https://yurik.cafe"target="_blank">//yurik.cafe</li><li>图片：<a href="//unpkg.com/yurik-static@1.0.6/favicon/v2/icon@1024px.jpg"target="_blank">//unpkg.com/yurik-static@1.0.6/favicon/v2/icon@1024px.jpg</li><li>更多图标可以访问 <a href="https://unpkg.com/browse/yurik-static@1.0.6/favicon/v2/"target="_blank">NPM Package:yurik-static</a></li></ul>'
 
   # 评论插件
   # Comment plugin

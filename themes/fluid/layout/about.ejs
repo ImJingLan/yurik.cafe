@@ -2,17 +2,18 @@
 page.layout = "about"
 page.title = theme.about.title || __('about.title')
 page.subtitle = theme.about.subtitle || __('about.subtitle')
-page.banner_img = page.banner_img || theme.about.banner_img
+page.banner_img = page.cover || theme.about.banner_img
 page.banner_img_height = page.banner_img_height || theme.about.banner_img_height
 page.banner_mask_alpha = page.banner_mask_alpha || theme.about.banner_mask_alpha
+
 %>
 
 <div class="text-center">
   <div class="about-info">
-    <div class="about-name"><%- theme.about.name %></div>
-    <div class="about-intro"><%- theme.about.introduce || theme.about.intro %></div>
+    <div class="about-name"><%= config.author %></div>
+    <div class="about-intro"><%- config.subtitle %></div>
     <div class="about-icons">
-      <% for(const each of theme.about.icons || []) { %>
+      <% for(const each of page.icons || []) { %>
         <% if (!each.class) continue; %>
         <% var cls = each.class %>
         <% var isQr = each.qrcode %>
