@@ -87,7 +87,7 @@ Bison 仓鼠: [主页](https://space.bilibili.com/136107) [直播间](http://liv
 
 ## 关于博客
 
-`Powered By Hexo`，`Theme Anzhiyu`。
+`Powered By Hexo`，`Theme Fluid Mod By Yurik`。
 
 本博客所有文章在 **未特殊声明** 的前提下均采用
 

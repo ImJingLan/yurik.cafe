@@ -111,6 +111,15 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 
+plugins:
+  hexo-generator-feed
+
+feed:
+  type:
+    - rss2
+  path:
+    - feed
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:

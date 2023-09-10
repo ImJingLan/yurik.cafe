@@ -964,6 +964,7 @@ about:
     - { class: "iconfont icon-github-fill", link: "https://github.com/imjinglan", tip: "GitHub" }
     - { class: "iconfont icon-douban-fill", link: "https://douban.com/people/197028615/", tip: "豆瓣" }
     - { class: "iconfont icon-twitter-fill", link: "https://twitter.com/ImJingLan", tip: "X" }
+    - { class: "iconfont icon-rss", link: "/feed.xml", tip: "RSS Feed" }
 
 
 #---------------------------
