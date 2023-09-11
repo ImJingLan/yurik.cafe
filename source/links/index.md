@@ -2,25 +2,7 @@
 title: links
 date: 2023-09-10 16:01:03
 layout: links
-items:
-  - {
-    title: "Norphin's Blog",
-    intro: "叫兽的博客",
-    link: "https://norph1n.top/",
-    avatar: "https://s1.ax1x.com/2023/05/06/p9aIazF.jpg"
-    }
-  - {
-      title: "Azure Zeng's Blog",
-      intro: "Azure Zeng 的小窝",
-      link: "https://blog.azurezeng.com/",
-      avatar: "https://azurezeng.com/friendly-link-image.png"
-    }
-  - {
-    title: "Nero978 的日记",
-    intro: "Brave yourself, brave the world.",
-    link: "https://nero978.top",
-    avatar: "https://nero978.top/wp-content/uploads/2023/07/logo.jpg"
-    }
+
 ---
 
 ---

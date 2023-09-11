@@ -2,13 +2,6 @@
 title: about
 date: 2023-08-29 22:01:14
 layout: about
-
-icons:
-  - { class: "iconfont icon-mail", link: "mailto:i@lite.cafe", tip: "Mail" }
-  - { class: "iconfont icon-github-fill", link: "https://github.com/imjinglan", tip: "GitHub" }
-  - { class: "iconfont icon-douban-fill", link: "https://douban.com/people/197028615/", tip: "豆瓣" }
-  - { class: "iconfont icon-twitter-fill", link: "https://twitter.com/ImJingLan", tip: "X" }
-  - { class: "iconfont icon-rss", link: "/feed.xml", tip: "RSS Feed" }
 ---
 
 > 我的邮箱 [i#yurik.cafe](mailto:i@yurik.cafe)
