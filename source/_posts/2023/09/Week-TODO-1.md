@@ -10,12 +10,8 @@ cover: /2023/Week-TODO-1/cover.webp
 
 TODO:
 
--   iPad Pro 上手
+-   [x] Raft 游戏报告
 
--   Raft 游戏报告
+-   [x] 清清友链
 
--   清清友链
-
--   可能还有别的吧...
-
-总结：都没做，下周再说吧
+-   [x] 可能还有别的吧...
