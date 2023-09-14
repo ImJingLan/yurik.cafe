@@ -48,7 +48,7 @@ categories: 开箱
 
 ![交换机](switch.webp)
 
-一开始，iDrac 的默认地址一直无法连接(https)
+一开始，iDRAC 7 的默认地址一直无法连接(https)
 
 重置之后 Edge 浏览器便提示
 
@@ -59,6 +59,8 @@ categories: 开箱
 无论是 Chrome Firefox 还是 Edge 即使进入 Windows 设置支持 SSL 3.0 后仍于事无补
 
 最后解决方案是使用 Edge 的 IE 模式访问（没想到 IE 还是蛮有用的）
+
+**2023.09.14 增添:** 将 iDRAC 7 的版本升级到最新版本即可解决该问题啦
 
 ## 点亮
 
