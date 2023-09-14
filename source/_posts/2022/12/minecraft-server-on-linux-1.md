@@ -14,7 +14,7 @@ categories: 技术
 
 写一篇文章记录一下
 
-## 安装运行环境
+# 安装运行环境
 
 Minecraft Java 版的服务器运行环境非常单纯，只需要一个 Java 就行
 
@@ -22,7 +22,7 @@ Minecraft Java 版的服务器运行环境非常单纯，只需要一个 Java �
 
 安装过程参考的这篇文章《[Linux 安装 Java 17 - ChaosMoor](https://www.cnblogs.com/chaosmoor/p/15897693.html)》
 
-## 下载服务端
+# 下载服务端
 
 Minecraft 服务端有很多种，例如原版香草端(Vanilla)、Paper、Bukkit 等
 
@@ -40,7 +40,7 @@ Download(下载) -> Server(服务端)下载服务端
 
 > <span style="color:red !important"><b>注意，不开玩笑！</b></span>：千万不要误点括号后的(.json)文件，或错选 Obfuscation maps(混淆映射表)中的 Server(服务器)选项
 
-## 运行服务器
+# 运行服务器
 
 进入终端
 
@@ -86,19 +86,19 @@ Download(下载) -> Server(服务端)下载服务端
 
 > <span style="color:green !important"><b>记住这点更好</b></span>：当你将 eula 改为**true**后，即代表你同意了《[MINECRAFT 最终用户许可协议](https://account.mojang.com/documents/minecraft_eula)》, 因此你最好详细阅读一下
 
-## 服务器配置
+# 服务器配置
 
 无论是什么客户端，**server.properties**是必须的配置文件，当然，在第一次运行服务端时会自动生成，文件内容 + 必要注释 请查看[这个网址](https://wiki.yurik.cafe/Game/Minecraft/Server/server.properties/)
 
 可以对应自己实际情况修改，也可以下载[我的配置文件](server.properties)（基本默认）
 
-## 成功
+# 成功
 
 ![Done](done.png)
 
 ▲ 游戏内的显示效果
 
-## 管理服务器
+# 管理服务器
 
 你可以使用命令行来管理服务器，常用的命令有：
 

@@ -19,7 +19,7 @@ copyright: BY
 
 ~~感觉我明明好久没玩 MC 了，要玩也都是玩正版服务器，但是却一直在搞这些盗版服用的东西，我真是舍己为人造福大众普惠众生啊（不~~
 
-## 服务器内置登录插件
+# 服务器内置登录插件
 
 相信维护过 Minecraft 服务器（当然，我这边说的是运行在离线模式下的服务器）的腐竹们或多或少都听说过 Authme、CrazyLogin 等登录插件的鼎鼎大名吧。由于这些服务器运作在离线模式（`online-mode=false`，即俗称的盗版模式）下，缺少 Mojang 官方账户认证系统的支持，所以必须使用这类插件来进行玩家认证（否则随便谁都可以冒名顶替别人了，换一个登录角色名就行）。
 
@@ -36,7 +36,7 @@ copyright: BY
 
 并不是所有腐竹都满足于 Authme + Discuz 这样的组合的（而且这类游戏内登录系统也有不少安全漏洞），毕竟在这个 Minecraft 多人联机服务器发展接近饱和的时候，如果想要你的服务器能够吸引新玩家，那么除了服务器本身建设之外的地方也是要好好考虑的。
 
-## 外置登录系统
+# 外置登录系统
 
 正是这样的需求催生了不少 Minecraft 的「外置登录插件」、「网页登录」等等软件（而且人气都挺高的），我随手在 MCBBS 上一搜就有很多类似的产品，用啥语言写的都有：_MadAuth、WebLogin、BeeLogin、WebRegister、冰棂登陆系统……_
 
@@ -50,7 +50,7 @@ _▲ 随手画的示意流程图，这里推荐一下 [ProcessOn](https://www.pr
 
 似乎也挺好的，不是吗？那我今天要说的「自行实现 Yggdrasil API」方法，和这些现成的方式有什么不一样呢？
 
-## 自行实现 Yggdrasil API
+# 自行实现 Yggdrasil API
 
 继续看下去之前，首先你要知道 Mojang 正版的 Minecraft 是怎样登录的。Mojang 专门定义了一个用于鉴权的 API，Mojang 旗下的游戏（Minecraft、Scrolls 等）都是用的这一套 API 来正版验证的 —— 这一套 API 的名字就叫做 Yggdrasil（即北欧神话里的世界树，~~这名字可真几把炫酷~~）。
 
@@ -58,7 +58,7 @@ _▲ 随手画的示意流程图，这里推荐一下 [ProcessOn](https://www.pr
 
 那么问题来了，盗版用户要怎样才能把 Mojang 为正版开发的 Yggdrasil API 系统拿来用呢？
 
-### 基本原理
+## 基本原理
 
 这里必须感谢 [to2mbn/authlib-injector](https://github.com/to2mbn/authlib-injector/) 这个项目，正是因为这个项目，我接下来描述的方法才成为可能。是的，方法很简单，Minecraft 虽然把 Mojang 官方的 Yggdrasil API 地址（`https://authserver.mojang.com`）给写死在源码里了，但是既然 Minecraft 是基于 JVM 的应用程序，我们就可以通过字节码替换的方法将官方的 API 地址替换成我们自己实现的 API 地址。
 
@@ -68,7 +68,7 @@ _▲ 随手画的示意流程图，这里推荐一下 [ProcessOn](https://www.pr
 
 不过既然要把官方 API 地址替换成我们自己的，我们就得自己实现一个和官方 API 其他地方都一样的 API，也就是，**仿造出一个第三方 Yggdrasil API 出来**。
 
-### 解决方案
+## 解决方案
 
 可以说这个系统中，就是「开发完整实现了 Yggdrasil API 的后端」这一步最难了。为啥捏？这个服务端不止要实现用户的认证、皮肤获取，你还得实现用户的注册、登录、角色管理、皮肤上传、皮肤库等等七七八八的功能吧？你还得给这些功能套上一个好看的界面吧，不然你让你的玩家怎么使用？你还得来个后台管理页面吧，不然管理员怎么进行用户管理、封禁等操作？
 
@@ -78,7 +78,7 @@ authlib-injector 官方也提供了一个 Java 编写的后端 [yggdrasil-mock](
 
 ![API](2b4204b718b92.png)
 
-### 如何使用
+## 如何使用
 
 讲了那么多，那么到底该怎么使用呢？
 
@@ -94,7 +94,7 @@ authlib-injector 官方也提供了一个 Java 编写的后端 [yggdrasil-mock](
 
 而且你还可以自己修改 HMCL 等开源启动器的源码，在启动时自动注入 `-javaagent` 参数，更加方便，还能得到一个服务器专用启动器，逼格更高了（笑）
 
-### 实现效果
+## 实现效果
 
 皮肤站的用户管理系统、皮肤系统、后台界面之类的我就不截图了，有兴趣可以去 MCBBS 的 [发布帖](http://www.mcbbs.net/forum.php?mod=viewthread&tid=552877) 上感受一下。
 
@@ -110,7 +110,7 @@ _▲ 使用皮肤站的邮箱与密码登录后，配合 HMCL 实现多角色选
 
 ▲ 游戏内的显示效果
 
-## Yggdrasil API 踩坑记录
+# Yggdrasil API 踩坑记录
 
 下面记录一些自己实现 Yggdrasil API 时踩到的坑，毕竟 wiki.vg 里并不会提到这些在自己实现 API 时需要注意的东西（提到的大部分都是使用 API 时应该要注意的），所以我也只能摸着石头过河，踩了不少坑，这里记录一下，希望能帮到后来人。
 
@@ -120,7 +120,7 @@ _▲ 使用皮肤站的邮箱与密码登录后，配合 HMCL 实现多角色选
 >
 > 最近 @yushijinhun 写了一篇 [Yggdrasil 服务端技术规范](https://github.com/to2mbn/authlib-injector/wiki/Yggdrasil服务端技术规范)，大部分 API 相关的内容其中都有提及，大家去看那个就好了。
 
-### 登录与鉴权
+## 登录与鉴权
 
 用过正版 Minecraft 的登录系统的同学应该都知道，一般只有在初次登录游戏或者太久没有开过游戏的情况下，启动器才会要求你输入账号密码，其他情况下都是可以直接点击登录并启动游戏的。
 
@@ -132,7 +132,7 @@ _▲ 使用皮肤站的邮箱与密码登录后，配合 HMCL 实现多角色选
 --accessToken cc1e7c7d-00ab-4f37-bbe1-983e18f1755d
 ```
 
-#### 获取 AccessToken
+### 获取 AccessToken
 
 用正确的 `username` 和 `password` 请求 `/authenticate` API 即可拿到 AccessToken，该令牌的有效期由服务端来决定（一般用 Redis 实现）。如果你请求 API 的时候没有带上 `clientToken`，那服务端就会帮你生成一个，你要记得把这个返回值记下来，因为 clientToken 和 accessToken 是对应关系，有些 API 是要求同时提供 AccessToken 和签发该令牌的 clientToken 的。
 
@@ -142,17 +142,17 @@ _▲ 使用皮肤站的邮箱与密码登录后，配合 HMCL 实现多角色选
 
 总之，如果想要自己实现 Yggdrasil API，是要注意一下这个神秘的 `username` 字段的。
 
-#### 刷新 AccessToken
+### 刷新 AccessToken
 
 在登录成功拿到 `accessToken` 后，启动器应该把这个令牌存起来，然后在每次玩家登录游戏之前请求一次 `/refresh` API，提供 accessToken 和签发该令牌时用的 clientToken（这也是我为什么上面叫你要把这个存起来的原因），就可以拿到新签发的 accessToken 了（刷新令牌有效期）。只要令牌有效期没过，启动器就不会再次请求 `/authenticate` API。
 
 所以，虽然文档上没说，但是其实 `/refresh` 返回的结果应该是要和 `/authenticate` 的返回结果大致相同的，包括 accessToken、clientToken、availableProfiles、selectedProfile、user 等字段（具体下面再说）。
 
-### API 中的 Token
+## API 中的 Token
 
 Yggdrasil API 的定义中主要有两个 Token，`clientToken` 与 `accessToken`，两者为对应关系。一般来说，启动器不会频繁变动 ClientToken（通常情况下，是永远不会变的），而 AccessToken 应该在每次登录游戏时通过 `/refresh` 重新签发一个。
 
-#### Token 的生命周期
+### Token 的生命周期
 
 需要注意的是，AccessToken 是有生命周期的，大致如下：
 
@@ -165,12 +165,12 @@ AccessToken 刚签发时处于「有效」状态，经过一段时间后（服�
 
 但是如果处于「暂时失效」状态的 AccessToken 再放置一段时间后就会完全失效（一般的实现就是从 Redis 令牌桶中删掉该令牌），处于「无效」状态的 AccessToken 是无法进行任何操作的，只能让用户重新输入密码并请求 `/authenticate` API 以获取一个新的 AccessToken。
 
-#### Token 的格式
+### Token 的格式
 
 Yggdrasil API 中的 `clientToken`、`accessToken`、`id` 等字段的格式都是一大串 16 进制数字和 `-` 连字符组成的字符串，让人看起来很懵。其实这样的字符串格式就是 **通用唯一识别码**（[Universally Unique Identifier](https://zh.wikipedia.org/wiki/通用唯一识别码)）标准，也就是我们经常听到的 UUID 了。标准形式的 UUID 包含 32 位 16 进制数字，并且由连字符分割成形式为 8-4-4-4-12 的字符串，就像这样：
 
 ```
-# 至于如何生成 UUID，各个语言一般都有对应的库，搜一下就有了
+ 至于如何生成 UUID，各个语言一般都有对应的库，搜一下就有了
 550e8400-e29b-41d4-a716-446655440000
 ```
 
@@ -202,7 +202,7 @@ Yggdrasil API 中的 `clientToken`、`accessToken`、`id` 等字段的格式都�
 
 至于后端存储时用怎样的格式就随意了，不过在 API 返回结果中是一定要按照上面的格式来的。
 
-### 多角色选择功能
+## 多角色选择功能
 
 虽然 Mojang 官方迄今为止仍未支持同一个**账号**（Mojang 账号，用邮箱登录的那个）下添加多个**角色**（角色名，就是游戏里显示的那个），但是 Yggdrasil API 本身是可以实现这个**「单账号多角色」**功能的，并且官方启动器、HMCL 等著名的第三方启动器都支持**登录后选择角色进入游戏**（具体效果参见上方截图）。
 
@@ -229,13 +229,13 @@ Yggdrasil API 中的 `clientToken`、`accessToken`、`id` 等字段的格式都�
 
 至于 `user` 字段是只有在请求时带上了 `requestUser` 属性时才会回复的，其中包括被选中角色的 UUID、语言偏好、Twitch 的 AccessToken 等等，一般来说，自己实现 Yggdrasil API 时可以忽略这玩意（而且这个属性对单账户多角色的支持并不好）。
 
-### 加载皮肤与披风
+## 加载皮肤与披风
 
 这里稍微提一下 Minecraft 使用 Yggdrasil API 时加载皮肤的原理。
 
 首先你要知道，Minecraft 游戏启动时从启动器那边（i.e. 从命令行）拿到的 API 相关属性只有「AccessToken」、「选中角色的 UUID」以及「选中角色的角色名」这三样东西。获取 Profile 以及加载皮肤是 Minecraft 游戏该做的工作，具体流程如下。
 
-#### 获取完整 Profile
+### 获取完整 Profile
 
 首先 Minecraft 会请求 API `/profiles/minecraft/{uuid}` 获取角色的完整 Profile，差不多长这样：
 
@@ -255,7 +255,7 @@ Yggdrasil API 中的 `clientToken`、`accessToken`、`id` 等字段的格式都�
 
 好吧好吧，看到这么多字符先别懵，`value` 和 `signature` 字段的内容都是 BASE64 编码过的，解码后 `value` 字段就是个普通的 JSON 而已。至于 JSON 里是什么内容，就自己去看 wiki 吧。
 
-#### 数字签名
+### 数字签名
 
 需要注意的是上述 Profile 中的 `signature` 字段。顾名思义，这个字段就是 `value` 字段的数字签名。虽然官方 API 只有在指定 `unsigned=false` 时才会返回带签名的 Profile，但是目前（截至本文发布）authlib-injector 在服务端未返回数字签名时会出现[神秘的错误](https://github.com/printempw/blessing-skin-server/issues/81)，所以还是默认返回 `signature` 字段来得好。
 
@@ -286,13 +286,13 @@ return base64_encode($sign);
 
 其他语言大同小异，我就不多赘述了。
 
-#### 加载材质
+### 加载材质
 
 拿到角色 Profile，并且验证了数字签名后（签名不对的话不会加载的），Minecraft 游戏就会根据 Profile 中指定的皮肤、披风图片 URL 加载材质。需要注意的是，Minecraft 自带的 authlib 是只会加载 Mojang 官方域名下的材质的（白名单之外的材质地址是不会被加载的），这也是为什么需要 CustomSkinLoader 等皮肤 Mod 的原因。不过 [authlib-injector](https://github.com/to2mbn/authlib-injector/blob/master/configure.sh) 自带了对 authlib 的 hack，在配置文件（或者远程配置加载）中直接指定材质加载白名单即可。
 
 如果一切正常，游戏内就会显示你的自定义皮肤了。
 
-### 加入服务器
+## 加入服务器
 
 在 Minecraft 中加入一个服务器时，客户端会向 `/join` API 发出一个请求，请求体中包含了 AccessToken、当前角色的 UUID 以及服务器的唯一标识符 `serverId`（这玩意如何生成不用我们操心，Minecraft 游戏里会搞好的，你只管存这个就行了）。
 
@@ -302,30 +302,30 @@ return base64_encode($sign);
 
 这也就是为什么客户端和服务端同样需要使用 authlib-injector hack 的原因，因为我们要确保两者请求的都是同一个 API，这样才能起到一个维护登录状态的功能。
 
-### 经常用到的 API
+## 经常用到的 API
 
 虽然 Yggdrasil 规范中定义了很多 API，但是其实日常游戏中用到的没几个，这里列举一些频繁使用的 API，也方便诸君知道哪里该认真开发哪里可以小小偷懒一下：
 
 ```
-# 初次登录时，用账号密码拿到 AccessToken
+ 初次登录时，用账号密码拿到 AccessToken
 POST /authserver/authenticate
-# 之后的登录都是直接用这个 API 签发新的令牌
+ 之后的登录都是直接用这个 API 签发新的令牌
 POST /authserver/refresh
-# 加入服务器
+ 加入服务器
 POST /sessionserver/session/minecraft/join
-# 验证是否加入了服务器
+ 验证是否加入了服务器
 GET  /sessionserver/session/minecraft/hasJoined
-# 获取玩家完整 Profile
+ 获取玩家完整 Profile
 GET  /api/profiles/minecraft/{uuid}
 ```
 
 其他 API 感觉都是几万年用不到一次的，很神秘。
 
-## 后记
+# 后记
 
 上周折腾了好几天这玩意，写篇博文记录一下，既能理清自己的思路，还有可能帮到后来人~~（花时间研究了东西，却没人知道，多亏啊）~~，何乐而不为呢 :P
 
-### 参考链接
+## 参考链接
 
 -   http://wiki.vg/Authentication
 -   http://wiki.vg/Protocol_Encryption#Authentication
@@ -335,7 +335,7 @@ GET  /api/profiles/minecraft/{uuid}
 -   [php-rsa - 加密解密和签名](http://xbgtalk.biz/2015/11/03/php-rsa-encode-decode-sign/)
 -   [blessing-skin-plugins/yggdrasil-api](https://printempw.github.io/minecraft-yggdrasil-api-third-party-implementation/blessing-skin-plugins/yggdrasil-api)
 
-### 文章更新日志
+## 文章更新日志
 
 具体的修改可以查看这篇博客在 GitHub 上源码的 [历史提交记录](https://github.com/prinsss/prinsss.github.io/commits/source/source/_posts/minecraft-yggdrasil-api-third-party-implementation.md)。
 

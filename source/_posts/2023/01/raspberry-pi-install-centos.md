@@ -5,10 +5,10 @@ tags:
 
 categories: 技术
 
-cover: "/2023/raspberry-pi-os-install/banner.jpg"
+cover: "/2023/raspberry-pi-install-centos/banner.jpg"
 ---
 
-## 前言
+# 前言
 
 很古早的时候我买了一台 树莓派 4B 4GB 版本（怀念当时 4GB 版本 500 块的日子）
 
@@ -18,7 +18,7 @@ cover: "/2023/raspberry-pi-os-install/banner.jpg"
 
 在查阅了互联网资料后，发现我用的最多的 Centos 也存在 Arm 版本，在使用这个发行版后安装宝塔和 LNMP 环境也变得顺利了，于是打算写一篇博客记录一下安装过程
 
-## 准备工作
+# 准备工作
 
 需要准备：
 
@@ -28,7 +28,7 @@ cover: "/2023/raspberry-pi-os-install/banner.jpg"
 -   系统镜像
 -   Raspberry Pi Imager (可前往 [https://www.raspberrypi.com/software/](//www.raspberrypi.com/software/) 下载)
 
-## 烧录镜像
+# 烧录镜像
 
 其实 CentOS 7 为树莓派提供了专门的系统镜像，在[CentOS - Download](https://www.centos.org/download/)中给 Arm 架构的处理器提供了 [ARM64(aarch64)](//isoredirect.centos.org/altarch/7/isos/aarch64/) 和 [ARM32(armhfp)](//isoredirect.centos.org/altarch/7/isos/armhfp/) ，因为我的树莓派 4B 是 4GB 版本的，所以就选择了 ARM64 的版本
 
@@ -48,7 +48,7 @@ cover: "/2023/raspberry-pi-os-install/banner.jpg"
 >
 > **注意 2**：烧录无需使用 Imager 的高级设置，若设置永久设置请清空后烧录
 
-## 配置系统
+# 配置系统
 
 等待烧录完成后即可取出内存卡插入树莓派内，插上电源与网线即可启动
 
@@ -88,7 +88,7 @@ sudo sed -e 's|^mirrorlist=|#mirrorlist=|g' \
 
 > 修改语言为中文后部分软件**可能存在未知错误**，若错误发生请按照第四步将**LANG**值改为`en_US.UTF-8`
 
-## 安装宝塔面板
+# 安装宝塔面板
 
 参考[宝塔官网-下载](https://www.bt.cn/new/download.html)使用 CentOS 安装脚本安装
 
@@ -101,7 +101,3 @@ sudo sed -e 's|^mirrorlist=|#mirrorlist=|g' \
 稍等一段时间后宝塔面板将安装完成
 
 ![BT-Install-Done](./console.png)
-
-## 配置宝塔面板
-
-待写.....

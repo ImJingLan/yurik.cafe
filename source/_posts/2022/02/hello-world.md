@@ -6,7 +6,7 @@ tags:
 cover: /2022/hello-world/cover.webp
 ---
 
-## 重新认识一下吧
+# 重新认识一下吧
 
 从初一开始捣鼓自己的服务器，从一开始在一台废旧的办公电脑上安装 Windows Server 搭配 Sakura Frp 国外服务器的穿透来使自己的网站能够访问（那时候建站节点还没有收费），后来将系统装成了 CentOS 7，从此就一直泡在 Linux 系统里面了
 

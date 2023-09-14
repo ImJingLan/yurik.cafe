@@ -43,8 +43,12 @@ default_index_img:
 
 我同时也修改了 Fluid 的封面命名规则，这样子只需要设置一次封面属性就可以同时应用到 index_img 和 banner_img 啦
 
-我也将修改后的主题改名为 Farbic 开源在 Github 仓库中 **Rabbit-Clan/hexo-theme-farbic**，欢迎 Star + Fork
+~~我也将修改后的主题改名为 Farbic 开源在 Github 仓库中 **Rabbit-Clan/hexo-theme-farbic**，欢迎 Star + Fork~~
 
-Farbic 主题还重新修改了部分页面的配置方式，使配置方式更加直观
+~~Farbic 主题还重新修改了部分页面的配置方式，使配置方式更加直观~~
 
-只是还没来得及编写文档，可能安装后会出现无法使用的情况
+~~只是还没来得及编写文档，可能安装后会出现无法使用的情况~~
+
+2023.09.14 : 由于技术原因，暂时不单独提供修改的主题，您可以前往本博客仓库自行克隆后提取
+
+**修改后的主题仍遵循 GPL 协议公开！**
