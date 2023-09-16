@@ -427,6 +427,8 @@ footer:
     <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fabric Base On Fluid</span></a>
   '
 
+  running_time: "2022/2/10 00:00:00"
+
   # 展示网站的 PV、UV 统计数
   # Display website PV and UV statistics
   statistics:
