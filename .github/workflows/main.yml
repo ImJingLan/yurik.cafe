@@ -1,0 +1,35 @@
+name: 同步至 Deploy 分支
+
+on:
+    push:
+        branches:
+            - main
+    #手动触发
+    workflow_dispatch:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            # 获取源码
+            - name: 迁出代码
+              uses: actions/checkout@master
+              
+            - name: 设置Node环境
+              uses: actions/setup-node@master
+
+            - name: 安装Hexo Cli 和 其他 环境
+              run: |
+                  npm install hexo-cli -g
+                  npm install
+
+            - name: 渲染博客界面
+              run: |
+                  npm run g
+
+            - name: 部署到 Deploy 分支 # 部署
+              uses: JamesIves/github-pages-deploy-action@v4.3.3
+              with:
+                  branch: deploy # 部署后提交到的分支
+                  folder: public # 打包好的目录名称
+                  
