@@ -16,23 +16,21 @@
   <meta name="author" content="景蓝Yurik">
   <meta name="keywords" content="">
   
-    <meta name="description" content="重新认识一下吧从初一开始捣鼓自己的服务器，从一开始在一台废旧的办公电脑上安装 Windows Server 搭配 Sakura Frp 国外服务器的穿透来使自己的网站能够访问（那时候建站节点还没有收费），后来将系统装成了 CentOS 7，从此就一直泡在 Linux 系统里面了 那时候 Sakura Frp 的节点对于我家的网络还不是特别的稳定，有一次一个月内换了好几个节点。（也有可能是移动网络的">
+    <meta name="description" content="前言最近把博客从 Vercel 迁移到了 Netlify 了，这两家都是 ServerLess 部署平台，属于完全的无痛迁移了。 无论是 Vercel 还是 Netlify，都对于应用的部署时长有限制，但相对与 Vercel 免费的每月 6000 分钟来说，Netlify 的 300 分钟就略显寒酸了。但自从去年国庆我的网站挂在 Vercel 被墙外加最近 Vercel 访问不畅之后我就在研究 N">
 <meta property="og:type" content="article">
-<meta property="og:title" content="你好，好久不见">
-<meta property="og:url" content="https://yurik.cafe/2022/hello-world/index.html">
+<meta property="og:title" content="使用 GitHub Actions 部署 Hexo 以减小 Netlify 部署时长">
+<meta property="og:url" content="https://yurik.cafe/2024/less-deploy-time/index.html">
 <meta property="og:site_name" content="景蓝的小屋">
-<meta property="og:description" content="重新认识一下吧从初一开始捣鼓自己的服务器，从一开始在一台废旧的办公电脑上安装 Windows Server 搭配 Sakura Frp 国外服务器的穿透来使自己的网站能够访问（那时候建站节点还没有收费），后来将系统装成了 CentOS 7，从此就一直泡在 Linux 系统里面了 那时候 Sakura Frp 的节点对于我家的网络还不是特别的稳定，有一次一个月内换了好几个节点。（也有可能是移动网络的">
+<meta property="og:description" content="前言最近把博客从 Vercel 迁移到了 Netlify 了，这两家都是 ServerLess 部署平台，属于完全的无痛迁移了。 无论是 Vercel 还是 Netlify，都对于应用的部署时长有限制，但相对与 Vercel 免费的每月 6000 分钟来说，Netlify 的 300 分钟就略显寒酸了。但自从去年国庆我的网站挂在 Vercel 被墙外加最近 Vercel 访问不畅之后我就在研究 N">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://yurik.cafe/2022/hello-world/cover.webp">
-<meta property="article:published_time" content="2022-02-10T00:00:00.000Z">
-<meta property="article:modified_time" content="2024-01-15T14:40:14.372Z">
+<meta property="article:published_time" content="2024-01-15T17:53:21.000Z">
+<meta property="article:modified_time" content="2024-01-15T14:40:15.176Z">
 <meta property="article:author" content="景蓝Yurik">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://yurik.cafe/2022/hello-world/cover.webp">
   
   
   
-  <title>你好，好久不见 - 景蓝的小屋</title>
+  <title>使用 GitHub Actions 部署 Hexo 以减小 Netlify 部署时长 - 景蓝的小屋</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -209,13 +207,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/2022/hello-world/cover.webp') no-repeat center center; background-size: cover;">
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="你好，好久不见"></span>
+            <span id="subtitle" data-typed-text="使用 GitHub Actions 部署 Hexo 以减小 Netlify 部署时长"></span>
           
         </div>
 
@@ -226,8 +224,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-02-10 00:00" pubdate>
-          2022年2月10日 凌晨
+        <time datetime="2024-01-15 17:53" pubdate>
+          2024年1月15日 下午
         </time>
       </span>
     
@@ -238,7 +236,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          288 字
+          1.1k 字
         
       </span>
     
@@ -249,7 +247,7 @@
         
         
         
-          3 分钟
+          9 分钟
         
       </span>
     
@@ -286,18 +284,22 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">你好，好久不见</h1>
+            <h1 id="seo-header">使用 GitHub Actions 部署 Hexo 以减小 Netlify 部署时长</h1>
             
             
             <div class="markdown-body">
               
-              <h1 id="重新认识一下吧"><a href="#重新认识一下吧" class="headerlink" title="重新认识一下吧"></a>重新认识一下吧</h1><p>从初一开始捣鼓自己的服务器，从一开始在一台废旧的办公电脑上安装 Windows Server 搭配 Sakura Frp 国外服务器的穿透来使自己的网站能够访问（那时候建站节点还没有收费），后来将系统装成了 CentOS 7，从此就一直泡在 Linux 系统里面了</p>
-<p>那时候 Sakura Frp 的节点对于我家的网络还不是特别的稳定，有一次一个月内换了好几个节点。（也有可能是移动网络的问题）</p>
-<p>后来接触了虚拟主机，陆陆续续换了几家主机商，可最终因为没钱而取消续费</p>
-<p>现在的博客的框架是 <del>Hugo</del> Hexo + Vercel，优势就是免费，并且我的文章在本地留有备份</p>
-<p>就这样吧。</p>
-<p>感谢你读到这里。</p>
-<p>你好，好久不见</p>
+              <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近把博客从 Vercel 迁移到了 Netlify 了，这两家都是 ServerLess 部署平台，属于完全的无痛迁移了。</p>
+<p>无论是 Vercel 还是 Netlify，都对于应用的部署时长有限制，但相对与 Vercel 免费的每月 6000 分钟来说，Netlify 的 300 分钟就略显寒酸了。但自从去年国庆我的网站挂在 Vercel 被墙外加最近 Vercel 访问不畅之后我就在研究 Netlify 了。</p>
+<p>因为直接上传 NPM 包到 Netlify 上部署相比上传静态的 HTML 页面更耗时间，而我最近学习了 Github Actions，Github Actions 提供了每月 3000 分钟的部署时长，因此决定使用 Github Actions 来构建静态页面，之后仅同步静态页面到 Netlify 就完成了。</p>
+<h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><p>首先在仓库中新建一个 deploy 分支用于存放构建完成的静态页面。</p>
+<p>别忘了在 <strong>Setting - Actions - General - Workflow permissions</strong> 中将权限设置为 <code>Read and write permissions</code></p>
+<p>在仓库主分支下的<code>.github/workflows/</code>文件夹新建一个 yml 文件，名称随意，如<code>deploy.yml</code></p>
+<p>随后在 yml 文件下写入以下代码</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">name:</span> <span class="hljs-string">部署静态页面到</span> <span class="hljs-string">Deploy</span> <span class="hljs-string">分支</span><br><br><span class="hljs-attr">on:</span><br>    <span class="hljs-attr">push:</span><br>        <span class="hljs-attr">branches:</span><br>            <span class="hljs-bullet">-</span> <span class="hljs-string">main</span><br>    <span class="hljs-comment">#手动触发</span><br>    <span class="hljs-attr">workflow_dispatch:</span><br><br><span class="hljs-attr">jobs:</span><br>    <span class="hljs-attr">build:</span><br>        <span class="hljs-attr">runs-on:</span> <span class="hljs-string">ubuntu-latest</span><br>        <span class="hljs-attr">steps:</span><br>            <span class="hljs-comment"># 获取源码</span><br>            <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">迁出代码</span><br>              <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout@master</span><br><br>            <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">安装node.js环境</span><br>              <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/setup-node@master</span><br><br>            <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">安装Hexo-cli</span> <span class="hljs-string">和</span> <span class="hljs-string">其他</span> <span class="hljs-string">node</span> <span class="hljs-string">环境</span><br>              <span class="hljs-attr">run:</span> <span class="hljs-string">|</span><br><span class="hljs-string">                  npm install hexo-cli -g</span><br><span class="hljs-string">                  npm install</span><br><span class="hljs-string"></span><br>            <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">构建静态页面</span><br>              <span class="hljs-attr">run:</span> <span class="hljs-string">|</span><br><span class="hljs-string">                  npm run g</span><br><span class="hljs-string"></span><br>            <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">你也可以在这里执行更多Linux命令</span><br>              <span class="hljs-attr">run:</span> <span class="hljs-string">|</span><br><span class="hljs-string">                  echo Example</span><br><span class="hljs-string"></span><br>            <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">推送到</span> <span class="hljs-string">deploy</span> <span class="hljs-string">分支</span> <span class="hljs-comment"># 部署</span><br>              <span class="hljs-attr">uses:</span> <span class="hljs-string">JamesIves/github-pages-deploy-action@v4.3.3</span><br>              <span class="hljs-attr">with:</span><br>                  <span class="hljs-attr">branch:</span> <span class="hljs-string">deploy</span> <span class="hljs-comment"># 部署后提交到的分支</span><br>                  <span class="hljs-attr">folder:</span> <span class="hljs-string">public</span> <span class="hljs-comment"># 打包好的目录名称</span><br></code></pre></td></tr></table></figure>
+
+<p>最后 Push 到 Github 就好啦</p>
+<p>别忘了把 Netlify 中的链接仓库重新绑定到 deploy 仓库噢</p>
 
               
             </div>
@@ -315,8 +317,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>你好，好久不见</div>
-      <div>https://yurik.cafe/2022/hello-world/</div>
+      <div>使用 GitHub Actions 部署 Hexo 以减小 Netlify 部署时长</div>
+      <div>https://yurik.cafe/2024/less-deploy-time/</div>
     </div>
     <div class="license-meta">
       
@@ -328,7 +330,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年2月10日</div>
+          <div>2024年1月15日</div>
         </div>
       
       
@@ -372,15 +374,15 @@
                 <article class="post-prev col-6">
                   
                   
-                  <a href="/2022/minecraft-yggdrasil-api-third-party-implementation/" title="【转载】又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API">
-                    <i class="iconfont icon-arrowleft"></i>
-                    <span class="hidden-mobile">【转载】又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API</span>
-                    <span class="visible-mobile">上一篇</span>
-                  </a>
-                  
                 </article>
                 <article class="post-next col-6">
                   
+                  
+                  <a href="/2024/my-way-to-php/" title="【朝花夕拾】我的PHP开发之路">
+                    <span class="hidden-mobile">【朝花夕拾】我的PHP开发之路</span>
+                    <span class="visible-mobile">下一篇</span>
+                    <i class="iconfont icon-arrowright"></i>
+                  </a>
                   
                 </article>
               </div>
