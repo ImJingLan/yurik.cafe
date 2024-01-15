@@ -68,4 +68,4 @@ jobs:
 
 最后 Push 到 Github 就好啦
 
-别忘了把 Netlify 中的链接仓库重新绑定到 deploy 仓库噢
+别忘了把 Netlify 中的链接仓库重新绑定到 deploy 分支噢
