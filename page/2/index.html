@@ -1,0 +1,965 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://unpkg.com/yurik-static@1.0.6/favicon/v2/apple-touch-icon.png">
+  <link rel="icon" href="https://unpkg.com/yurik-static@1.0.6/favicon/v2/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="景蓝Yurik">
+  <meta name="keywords" content="">
+  
+    <meta property="og:type" content="website">
+<meta property="og:title" content="景蓝的小屋">
+<meta property="og:url" content="https://yurik.cafe/page/2/index.html">
+<meta property="og:site_name" content="景蓝的小屋">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="景蓝Yurik">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>景蓝的小屋</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+  
+<link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4230030_f9v8o9aoqjg.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"yurik.cafe","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/feed.xml" title="景蓝的小屋" type="application/rss+xml">
+</head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>景蓝的小屋</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.travellings.cn/go.html" target="_self">
+                <i class="iconfont icon-subway"></i>
+                <span>开往</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="鲸落于海，星沉于洼"></span>
+          
+        </div>
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+<div class="row mx-auto index-card">
+  
+  
+  <div class="col-12 col-md-4 m-auto index-img">
+    <a href="/2023/miscellanies-1/" target="_self">
+      <img src="/img/covers/1.jpg" srcset="/img/loading.gif" lazyload alt="琐记 Vol.1 : 记于 17 岁生日前">
+    </a>
+  </div>
+  
+  <article class="col-12 col-md-8 mx-auto index-info">
+    <h2 class="index-header">
+      
+      <a href="/2023/miscellanies-1/" target="_self">
+        琐记 Vol.1 : 记于 17 岁生日前
+      </a>
+    </h2>
+
+    
+    <a class="index-excerpt " href="/2023/miscellanies-1/" target="_self">
+      <div>
+        记于 17 岁生日前 3 天  这世界有那么个人 活在我飞扬的青春 在泪水里浸湿过的长吻 常让我想啊想出神。 —— 这世界有那么多人  琐记，为了保持行文的统一，我还是称它为杂记吧 有很多东西，在记忆中，用空间发出感到矫情，憋在心里略显可惜，写一篇博客，在这片互联网孤岛中保留痕迹······ 行文混乱，只供一笑尔 笔第一个故事，要从笔开始 我不是一个文具控，甚至在初中（准确来说是初三）前对文具一无
+      </div>
+    </a>
+
+    <div class="index-btm post-metas">
+      
+      <div class="post-meta mr-3">
+        <i class="iconfont icon-date"></i>
+        <time datetime="2023-03-04 00:00" pubdate>
+          2023-03-04
+        </time>
+      </div>
+      
+      
+      <div class="post-meta mr-3 d-flex align-items-center">
+        <i class="iconfont icon-category"></i>
+        
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%9D%82%E8%B0%88/" class="category-chain-item">杂谈</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+      </div>
+      
+      
+    </div>
+  </article>
+</div>
+
+<div class="row mx-auto index-card">
+  
+  
+  <div class="col-12 col-md-4 m-auto index-img">
+    <a href="/2023/use-vercel-introduction/" target="_self">
+      <img src="/2023/use-vercel-introduction/banner.png" srcset="/img/loading.gif" lazyload alt="使用Vercel托管静态网页">
+    </a>
+  </div>
+  
+  <article class="col-12 col-md-8 mx-auto index-info">
+    <h2 class="index-header">
+      
+      <a href="/2023/use-vercel-introduction/" target="_self">
+        使用Vercel托管静态网页
+      </a>
+    </h2>
+
+    
+    <a class="index-excerpt " href="/2023/use-vercel-introduction/" target="_self">
+      <div>
+        前言Vercel 是一个前端页面托管服务网站，用户可以在上面托管部署多个前端框架的项目 当然，Vercel 也可以直接托管 Html 静态站点，并且 Vercel 的访问速度优于 Github Pages  写这篇文章的想法来源于两个，一是之前发布的 Hugo 博客部署有一半烂尾了（懒.jpg）, 还有一点就是 Norphin 的博客在他自己自定义后使用了一张 3.04Mb 左右的背景图片，由于他
+      </div>
+    </a>
+
+    <div class="index-btm post-metas">
+      
+      <div class="post-meta mr-3">
+        <i class="iconfont icon-date"></i>
+        <time datetime="2023-01-23 00:00" pubdate>
+          2023-01-23
+        </time>
+      </div>
+      
+      
+      <div class="post-meta mr-3 d-flex align-items-center">
+        <i class="iconfont icon-category"></i>
+        
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8A%80%E6%9C%AF/" class="category-chain-item">技术</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+      </div>
+      
+      
+    </div>
+  </article>
+</div>
+
+<div class="row mx-auto index-card">
+  
+  
+  <div class="col-12 col-md-4 m-auto index-img">
+    <a href="/2023/raspberry-pi-install-centos/" target="_self">
+      <img src="/2023/raspberry-pi-install-centos/banner.jpg" srcset="/img/loading.gif" lazyload alt="树莓派4B烧录CentOS镜像并安装宝塔面板">
+    </a>
+  </div>
+  
+  <article class="col-12 col-md-8 mx-auto index-info">
+    <h2 class="index-header">
+      
+      <a href="/2023/raspberry-pi-install-centos/" target="_self">
+        树莓派4B烧录CentOS镜像并安装宝塔面板
+      </a>
+    </h2>
+
+    
+    <a class="index-excerpt " href="/2023/raspberry-pi-install-centos/" target="_self">
+      <div>
+        前言很古早的时候我买了一台 树莓派 4B 4GB 版本（怀念当时 4GB 版本 500 块的日子） 由于 Cortex-A72 处理器，树莓派 4B 的性能其实很薄弱，当时我也只是勉强用它跑一跑 QQ 机器人和网站服务器。（宝塔跑 Mariadb 安装 CPU 占用率都能 100%）随后用旧电脑刷服务器后树莓派就闲置了。 最近有朋友想尝试在家里搭建个人网站，我就把树莓派借给了他，但是尝试了很多个
+      </div>
+    </a>
+
+    <div class="index-btm post-metas">
+      
+      <div class="post-meta mr-3">
+        <i class="iconfont icon-date"></i>
+        <time datetime="2023-01-19 00:00" pubdate>
+          2023-01-19
+        </time>
+      </div>
+      
+      
+      <div class="post-meta mr-3 d-flex align-items-center">
+        <i class="iconfont icon-category"></i>
+        
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8A%80%E6%9C%AF/" class="category-chain-item">技术</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+      </div>
+      
+      
+    </div>
+  </article>
+</div>
+
+<div class="row mx-auto index-card">
+  
+  
+  <div class="col-12 col-md-4 m-auto index-img">
+    <a href="/2022/minecraft-server-on-linux-1/" target="_self">
+      <img src="/2022/minecraft-server-on-linux-1/done.png" srcset="/img/loading.gif" lazyload alt="在Linux上搭建MC服务器（一）">
+    </a>
+  </div>
+  
+  <article class="col-12 col-md-8 mx-auto index-info">
+    <h2 class="index-header">
+      
+      <a href="/2022/minecraft-server-on-linux-1/" target="_self">
+        在Linux上搭建MC服务器（一）
+      </a>
+    </h2>
+
+    
+    <a class="index-excerpt " href="/2022/minecraft-server-on-linux-1/" target="_self">
+      <div>
+        接上文 自从有了一台独立服务器后，可以玩的东西就多了 于是决定开一个我的世界 Java 服务器 写一篇文章记录一下 安装运行环境Minecraft Java 版的服务器运行环境非常单纯，只需要一个 Java 就行 由于我想开一个 1.16.5 的服务器，所以 Java 版本选择了 Java 17 安装过程参考的这篇文章《Linux 安装 Java 17 - ChaosMoor》 下载服务端Mine
+      </div>
+    </a>
+
+    <div class="index-btm post-metas">
+      
+      <div class="post-meta mr-3">
+        <i class="iconfont icon-date"></i>
+        <time datetime="2022-12-14 00:00" pubdate>
+          2022-12-14
+        </time>
+      </div>
+      
+      
+      <div class="post-meta mr-3 d-flex align-items-center">
+        <i class="iconfont icon-category"></i>
+        
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8A%80%E6%9C%AF/" class="category-chain-item">技术</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+      </div>
+      
+      
+    </div>
+  </article>
+</div>
+
+<div class="row mx-auto index-card">
+  
+  
+  <div class="col-12 col-md-4 m-auto index-img">
+    <a href="/2022/get-bilibili-album/" target="_self">
+      <img src="/2022/get-bilibili-album/banner.png" srcset="/img/loading.gif" lazyload alt="获取B站视频封面">
+    </a>
+  </div>
+  
+  <article class="col-12 col-md-8 mx-auto index-info">
+    <h2 class="index-header">
+      
+      <a href="/2022/get-bilibili-album/" target="_self">
+        获取B站视频封面
+      </a>
+    </h2>
+
+    
+    <a class="index-excerpt " href="/2022/get-bilibili-album/" target="_self">
+      <div>
+        前言最近重装了电脑，然后电脑上整理的 iTunes 资料库全没了。草 在整理的时候发现有一些歌曲是直接从 B 站上下载下来的，专辑封面也是从 B 站封面扒的，全没了（呜呜呜 虽然在 Bing 上一搜就有很多封面提取的网站    但是秉承着用轮子不如造轮子的理论(其实就是闲着没事)，我决定自己用 Python 写一个提取封面的工具 准备工作既然是造轮子，那当然要先看 B 站的 API 搜了一下，发现
+      </div>
+    </a>
+
+    <div class="index-btm post-metas">
+      
+      <div class="post-meta mr-3">
+        <i class="iconfont icon-date"></i>
+        <time datetime="2022-10-23 00:00" pubdate>
+          2022-10-23
+        </time>
+      </div>
+      
+      
+      <div class="post-meta mr-3 d-flex align-items-center">
+        <i class="iconfont icon-category"></i>
+        
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8A%80%E6%9C%AF/" class="category-chain-item">技术</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+      </div>
+      
+      
+    </div>
+  </article>
+</div>
+
+<div class="row mx-auto index-card">
+  
+  
+  <div class="col-12 col-md-4 m-auto index-img">
+    <a href="/2022/dell-poweredge-r720-review/" target="_self">
+      <img src="/2022/dell-poweredge-r720-review/photo-3.webp" srcset="/img/loading.gif" lazyload alt="戴尔 PowerEdge R720 上手 : 年轻人的第一台家庭服务器">
+    </a>
+  </div>
+  
+  <article class="col-12 col-md-8 mx-auto index-info">
+    <h2 class="index-header">
+      
+      <a href="/2022/dell-poweredge-r720-review/" target="_self">
+        戴尔 PowerEdge R720 上手 : 年轻人的第一台家庭服务器
+      </a>
+    </h2>
+
+    
+    <a class="index-excerpt " href="/2022/dell-poweredge-r720-review/" target="_self">
+      <div>
+        假期咯，是时候折腾一些新玩意啦！ 假期开始的时候在一个同学家玩（下面叫他叫兽），突然有一天他说：「再过几周我想和你研究一下怎么写网页（HTML），顺便学学怎么搭建服务器。」 「服务器嘛，你自己用一台电脑开就好了。」 但我真的想要一台服务器啊 QwQ 回到家我越想越睡不着，越想越睡不着 于是我  开箱U1S1，这玩意是真的沉。顺丰小哥推着一个推车帮我推上来的，辛苦了 Orz  顺丰小哥：你买了什么啊
+      </div>
+    </a>
+
+    <div class="index-btm post-metas">
+      
+      <div class="post-meta mr-3">
+        <i class="iconfont icon-date"></i>
+        <time datetime="2022-07-30 00:00" pubdate>
+          2022-07-30
+        </time>
+      </div>
+      
+      
+      <div class="post-meta mr-3 d-flex align-items-center">
+        <i class="iconfont icon-category"></i>
+        
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%BC%80%E7%AE%B1/" class="category-chain-item">开箱</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+      </div>
+      
+      
+    </div>
+  </article>
+</div>
+
+<div class="row mx-auto index-card">
+  
+  
+  <div class="col-12 col-md-4 m-auto index-img">
+    <a href="/2022/luogu-P1425/" target="_self">
+      <img src="/2022/luogu-P1425/banner.png" srcset="/img/loading.gif" lazyload alt="P1425 - 小鱼的游泳时间">
+    </a>
+  </div>
+  
+  <article class="col-12 col-md-8 mx-auto index-info">
+    <h2 class="index-header">
+      
+      <a href="/2022/luogu-P1425/" target="_self">
+        P1425 - 小鱼的游泳时间
+      </a>
+    </h2>
+
+    
+    <a class="index-excerpt " href="/2022/luogu-P1425/" target="_self">
+      <div>
+        好久没碰过 C++了，也好久没碰竞赛了 今天突然想起来去洛谷注册了个账号（（（ 从入门题库中看到了这道入门题 觉得蛮有意思的，就记一下过程 题目原题：洛谷 - P1425 小鱼的游泳时间 题目描述伦敦奥运会要到了，小鱼在拼命练习游泳准备参加游泳比赛，可怜的小鱼并不知道鱼类是不能参加人类的奥运会的。 这一天，小鱼给自己的游泳时间做了精确的计时（本题中的计时都按 24 小时制计算），它发现自己从 a
+      </div>
+    </a>
+
+    <div class="index-btm post-metas">
+      
+      <div class="post-meta mr-3">
+        <i class="iconfont icon-date"></i>
+        <time datetime="2022-04-01 00:00" pubdate>
+          2022-04-01
+        </time>
+      </div>
+      
+      
+      <div class="post-meta mr-3 d-flex align-items-center">
+        <i class="iconfont icon-category"></i>
+        
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E4%BF%A1%E7%AB%9E/" class="category-chain-item">信竞</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+      </div>
+      
+      
+    </div>
+  </article>
+</div>
+
+<div class="row mx-auto index-card">
+  
+  
+  <div class="col-12 col-md-4 m-auto index-img">
+    <a href="/2022/hugo-blog/" target="_self">
+      <img src="/2022/hugo-blog/banner.png" srcset="/img/loading.gif" lazyload alt="使用Hugo搭建个人博客">
+    </a>
+  </div>
+  
+  <article class="col-12 col-md-8 mx-auto index-info">
+    <h2 class="index-header">
+      
+      <a href="/2022/hugo-blog/" target="_self">
+        使用Hugo搭建个人博客
+      </a>
+    </h2>
+
+    
+    <a class="index-excerpt " href="/2022/hugo-blog/" target="_self">
+      <div>
+        前言我为什么选择 HugoHugo 是一个使用Go语言编写的静态网站生成器。长期续费一个稳定的虚拟主机的费用是昂贵的，因此我放弃了原先的Typecho系统，转而寻找静态博客系统。在尝试了Hexo、Jekyll后，我选择了Hugo，原因首先是它支持 Markdown 语法，这使得我将文章从 Typecho 迁移至 Hugo 变得容易，其次是Stack主题仅适用于 Hugo (搭建博客第一要领：好看)
+      </div>
+    </a>
+
+    <div class="index-btm post-metas">
+      
+      <div class="post-meta mr-3">
+        <i class="iconfont icon-date"></i>
+        <time datetime="2022-02-13 00:00" pubdate>
+          2022-02-13
+        </time>
+      </div>
+      
+      
+      <div class="post-meta mr-3 d-flex align-items-center">
+        <i class="iconfont icon-category"></i>
+        
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8A%80%E6%9C%AF/" class="category-chain-item">技术</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+      </div>
+      
+      
+    </div>
+  </article>
+</div>
+
+<div class="row mx-auto index-card">
+  
+  
+  <div class="col-12 col-md-4 m-auto index-img">
+    <a href="/2022/minecraft-yggdrasil-api-third-party-implementation/" target="_self">
+      <img src="/2022/minecraft-yggdrasil-api-third-party-implementation/715850d76b7db.png" srcset="/img/loading.gif" lazyload alt="【转载】又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API">
+    </a>
+  </div>
+  
+  <article class="col-12 col-md-8 mx-auto index-info">
+    <h2 class="index-header">
+      
+      <a href="/2022/minecraft-yggdrasil-api-third-party-implementation/" target="_self">
+        【转载】又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API
+      </a>
+    </h2>
+
+    
+    <a class="index-excerpt " href="/2022/minecraft-yggdrasil-api-third-party-implementation/" target="_self">
+      <div>
+        原文链接：PRIN BLOG - 又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API  共享协议：本文与原文采用相同的 CC BY 4.0 协议而非本博客默认的共享协议  最近给 Blessing Skin 写了个插件，利用皮肤站本身的账号系统实现了 Yggdrasil API（就是 Mojang 的登录 API），然后配合 authlib-injector 这个
+      </div>
+    </a>
+
+    <div class="index-btm post-metas">
+      
+      <div class="post-meta mr-3">
+        <i class="iconfont icon-date"></i>
+        <time datetime="2022-02-11 00:00" pubdate>
+          2022-02-11
+        </time>
+      </div>
+      
+      
+      <div class="post-meta mr-3 d-flex align-items-center">
+        <i class="iconfont icon-category"></i>
+        
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8A%80%E6%9C%AF/" class="category-chain-item">技术</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+      </div>
+      
+      
+    </div>
+  </article>
+</div>
+
+<div class="row mx-auto index-card">
+  
+  
+  <div class="col-12 col-md-4 m-auto index-img">
+    <a href="/2022/hello-world/" target="_self">
+      <img src="/2022/hello-world/cover.webp" srcset="/img/loading.gif" lazyload alt="你好，好久不见">
+    </a>
+  </div>
+  
+  <article class="col-12 col-md-8 mx-auto index-info">
+    <h2 class="index-header">
+      
+      <a href="/2022/hello-world/" target="_self">
+        你好，好久不见
+      </a>
+    </h2>
+
+    
+    <a class="index-excerpt " href="/2022/hello-world/" target="_self">
+      <div>
+        重新认识一下吧从初一开始捣鼓自己的服务器，从一开始在一台废旧的办公电脑上安装 Windows Server 搭配 Sakura Frp 国外服务器的穿透来使自己的网站能够访问（那时候建站节点还没有收费），后来将系统装成了 CentOS 7，从此就一直泡在 Linux 系统里面了 那时候 Sakura Frp 的节点对于我家的网络还不是特别的稳定，有一次一个月内换了好几个节点。（也有可能是移动网络的
+      </div>
+    </a>
+
+    <div class="index-btm post-metas">
+      
+      <div class="post-meta mr-3">
+        <i class="iconfont icon-date"></i>
+        <time datetime="2022-02-10 00:00" pubdate>
+          2022-02-10
+        </time>
+      </div>
+      
+      
+      
+    </div>
+  </article>
+</div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </span>
+  </nav>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+  <div class="footer-content">
+     Copyright © 2022 - 2023 Yurik all rights reserved. </br> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fabric Base On Fluid</span></a> 
+  </div>
+  
+  
+  
+  
+  
+  <span id="running_times">本站勉强运行: <span id="runDays">0</span>天<span id="runHours">0</span>小时<span id="runMins">0</span>分<span id="runSeconds">0</span>秒
+    <script>
+      function runtime() {
+        X = new Date("2022/2/10 00:00:00");
+        Y = new Date();
+        T = (Y.getTime() - X.getTime());
+        M = 24 * 60 * 60 * 1000;
+        a = T / M;
+        A = Math.floor(a);
+        b = (a - A) * 24;
+        B = Math.floor(b);
+        c = (b - B) * 60;
+        C = Math.floor((b - B) * 60);
+        D = Math.floor((c - C) * 60);
+
+        document.getElementById("runDays").innerHTML = A
+        document.getElementById("runHours").innerHTML = B
+        document.getElementById("runMins").innerHTML = C
+        document.getElementById("runSeconds").innerHTML = D
+      }
+      setInterval(runtime, 1000);
+    </script>
+    
+</div>
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
