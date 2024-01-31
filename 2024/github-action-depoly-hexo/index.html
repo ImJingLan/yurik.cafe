@@ -1,0 +1,138 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    使用 GitHub Actions 部署 Hexo - 景蓝的小屋
+  </title>
+  
+  
+  <!-- stylesheets list from _config.yml -->
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  
+  <link rel="stylesheet" href="/css/global.css" />
+  
+  <link rel="stylesheet" href="/css/newsroom.css" />
+  
+  
+  
+  <link rel="stylesheet" href="/css/post.css" />
+  
+                  
+  <link rel="stylesheet" href="/css/links.css" />
+  
+                         <link rel="apple-touch-icon" sizes="76x76" href="https://unpkg.com/yurik-static@1.0.6/favicon/v2/apple-touch-icon.png"> <link rel="icon" href="https://unpkg.com/yurik-static@1.0.6/favicon/v2/favicon.ico">
+<meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/feed.xml" title="景蓝的小屋" type="application/rss+xml">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top navbar-origin" style="backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px)" id="navbar" data-bs-theme="white">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">
+        景蓝的小屋
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">
+              主页
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/about">
+              关于
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/links">
+              友情链接
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div id="content" class="container section-content py-5 mt-5">
+      <article id="post" class="post">
+  <div id="header">
+    <div class="category" style="color: #6e6e73">
+      <div class="content">
+        <div class="category-eyebrow">
+          <span>博文</span> ·
+          <span>
+            2024 年 01 月 15 日
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagetitle">
+      <div class="content">
+        <h1 class="hero-headline" style="margin-top: 0.75rem !important">
+          使用 GitHub Actions 部署 Hexo
+        </h1>
+      </div>
+    </div>
+  </div>
+  <div class="mt-5">
+    <div class="content"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近把博客从 Vercel 迁移到了 Netlify 了，这两家都是 ServerLess 部署平台，属于完全的无痛迁移了。</p>
+<p>无论是 Vercel 还是 Netlify，都对于应用的部署时长有限制，但相对与 Vercel 免费的每月 6000 分钟来说，Netlify 的 300 分钟就略显寒酸了。但自从去年国庆我的网站挂在 Vercel 被墙外加最近 Vercel 访问不畅之后我就在研究 Netlify 了。</p>
+<p>因为直接上传 NPM 包到 Netlify 上部署相比上传静态的 HTML 页面更耗时间，而我最近学习了 Github Actions，Github Actions 提供了每月 3000 分钟的部署时长，因此决定使用 Github Actions 来构建静态页面，之后仅同步静态页面到 Netlify 就完成了。</p>
+<h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><p>首先在仓库中新建一个 deploy 分支用于存放构建完成的静态页面。</p>
+<p>别忘了在 <strong>Setting - Actions - General - Workflow permissions</strong> 中将权限设置为 <code>Read and write permissions</code></p>
+<p>在仓库主分支下的<code>.github/workflows/</code>文件夹新建一个 yml 文件，名称随意，如<code>deploy.yml</code></p>
+<p>随后在 yml 文件下写入以下代码</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">部署静态页面到</span> <span class="string">Deploy</span> <span class="string">分支</span></span><br><span class="line"></span><br><span class="line"><span class="attr">on:</span></span><br><span class="line">  <span class="attr">push:</span></span><br><span class="line">    <span class="attr">branches:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">main</span></span><br><span class="line">  <span class="comment">#手动触发</span></span><br><span class="line">  <span class="attr">workflow_dispatch:</span></span><br><span class="line"></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">build:</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line">    <span class="attr">steps:</span></span><br><span class="line">      <span class="comment"># 获取源码</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">迁出代码</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/checkout@master</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">安装node.js环境</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/setup-node@master</span></span><br><span class="line"></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">安装Hexo-cli</span> <span class="string">和</span> <span class="string">其他</span> <span class="string">node</span> <span class="string">环境</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">|</span></span><br><span class="line"><span class="string">          npm install hexo-cli -g</span></span><br><span class="line"><span class="string">          npm install</span></span><br><span class="line"><span class="string"></span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">构建静态页面</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">|</span></span><br><span class="line"><span class="string">          npm run g</span></span><br><span class="line"><span class="string"></span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">你也可以在这里执行更多Linux命令</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">|</span></span><br><span class="line"><span class="string">          echo Example</span></span><br><span class="line"><span class="string"></span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">推送到</span> <span class="string">deploy</span> <span class="string">分支</span> <span class="comment"># 部署</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">JamesIves/github-pages-deploy-action@v4.3.3</span></span><br><span class="line">        <span class="attr">with:</span></span><br><span class="line">          <span class="attr">branch:</span> <span class="string">deploy</span> <span class="comment"># 部署后提交到的分支</span></span><br><span class="line">          <span class="attr">folder:</span> <span class="string">public</span> <span class="comment"># 打包好的目录名称</span></span><br></pre></td></tr></table></figure>
+
+<p>最后 Push 到 Github 就好啦</p>
+<p>别忘了把 Netlify 中的链接仓库重新绑定到 deploy 分支噢</p>
+</div>
+  </div>
+</article>
+
+<div id="paginator"></div>
+      <footer class="container pt-3 mt-4 border-top">
+        <div class="text-center pb-5 text-body-secondary">
+          <small>
+            Copyright ©
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            景蓝Yurik all rights reserved. <br />
+            <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+            ♥
+            <span><a href="https://github.com/Newsroom-Dev/hexo-theme-newsroom" target="_blank" rel="nofollow noopener">Newsroom</a>
+              By
+              <a href="https://yurik.cafe" target="_blank" rel="nofollow noopener">Yurik</a></span><br />
+          </small>
+
+          <span id="running_times" >本站勉强运行: <span id="runDays">0</span>天<span id="runHours" >0</span >小时<span id="runMins">0</span>分<span id="runSeconds">0</span >秒 <script> function runtime() { X = new Date("2022/3/07 00:00:00"); Y = new Date(); T = Y.getTime() - X.getTime(); M = 24 * 60 * 60 * 1000; a = T / M; A = Math.floor(a); b = (a - A) * 24; B = Math.floor(b); c = (b - B) * 60; C = Math.floor((b - B) * 60); D = Math.floor((c - C) * 60);
+document.getElementById("runDays").innerHTML = A; document.getElementById("runHours").innerHTML = B; document.getElementById("runMins").innerHTML = C; document.getElementById("runSeconds").innerHTML = D; } setInterval(runtime, 1000); </script> </span>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+   
+  <script src="/js/navbar.js"></script>
+  
+  <script src="/js/bootstrap.bundle.min.js"></script>
+  
+  
+</body>
+
+</html>

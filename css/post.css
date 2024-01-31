@@ -44,7 +44,7 @@
 }
 
 .hero-headline {
-  font-size: 48px;
+  font-size: 48px !important;
   line-height: 1.08349;
   font-weight: 700;
   letter-spacing: -0.003em;
@@ -91,7 +91,7 @@
 }
 
 .content h1 {
-  font-size: calc(1.225rem + 0.9vw) !important;
+  font-size: calc(1.225rem + 0.9vw);
 }
 
 .content h2 {
