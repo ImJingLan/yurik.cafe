@@ -15,9 +15,9 @@ layout: about
 
 - 互联网上常用 ID`ImJingLan` 有时也会写作 `JingLan`
 
-- 英文名`Howie`
+- 英文名`Yurik`
 
--- 当然了，如果这些都被注册了的话就会写作 `Emendio`和`Yurik`...
+-- 当然了，如果这些都被注册了的话就会写作 `Emendio`和`Howie`...
 
 - 一般大家都叫我`景蓝` ，当然你叫我`祐袔`也可以
 
@@ -27,7 +27,7 @@ layout: about
 
 - 大概碰过:`PHP`,`HTML`,`JavaScript`,`C`,`C++`,`C#`,`python`, `易语言`都很菜就是了（~~退役~~ ~~现役~~ 退役 OIer）
 
-- 常用软件：Premiere Pro，Photoshop ， Fl Studio ，Studio One 5 ， After Effect
+- 常用软件：Premiere Pro，Photoshop ， Fl Studio ，Studio One 6 ， After Effect
 
 - `EN-us`、`zh-CN`
 
@@ -39,11 +39,9 @@ layout: about
 
   手表：OPPO Watch 2 46mm
 
-  耳机：Redmi Buds 4 Pro、水月雨夸克带麦版...
+  耳机：Redmi Buds 4 Pro、水月雨「竹」带麦版...
 
   鼠标：罗技 Pro X Superlight
-
-- 目前就读于：`柳州高级中学 高新校区`
 
 ## 喜欢看的虚拟主播们的主页地址（没有 D!!.jpg）
 
@@ -87,7 +85,10 @@ Bison 仓鼠: [主页](https://space.bilibili.com/136107) [直播间](http://liv
 
 ## 关于博客
 
-`Powered By Hexo`，`Theme Fluid Mod By Yurik`。
+`Powered By Hexo`，`Theme Newsroom By Yurik`。
+
+<div class="accordion" id="accordionPanelsStayOpenExample"><div class="accordion-item"><h2 class="accordion-header" style="margin-bottom: 0em !important;
+    margin-top: 0em !important;"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">Newsroom 下载链接</button></h2><div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"><div class="accordion-body"><div class="alert alert-danger" role="alert">警告：<b>Newsroom「新闻中心」</b>仍处于早期开发阶段，<b>文档尚未编写</b>，<b>代码未经过完整测试</b>，无法保证其在生产环境中的安全与稳定！我们不对使用当前版本主题造成的损失负责，请谨慎下载。</div><a href="https://github.com/Newsroom-Dev/hexo-theme-newsroom" target="_blank" type="button" class="btn btn-outline-dark btn-lg w-100" ><i class="bi bi-github"></i> Newsroom-Dev/hexo-theme-newsroom</a></div></div></div></div>
 
 本博客所有文章在 **未特殊声明** 的前提下均采用
 

@@ -1,5 +1,5 @@
 ---
-title: Hexo主题 Newsroom「新闻中心」测试上线
+title: Hexo 主题 Newsroom「新闻中心」现已上线
 copyright: BY-NC-SA
 date: 2024-02-01 00:00:00
 tags:
@@ -11,7 +11,7 @@ cover: /2024/theme-newsroom/banner.webp
 
 如你所见，我给博客换上了一个新主题。
 
-与别的主题不同的是，这个主题是我从 1 开始制作的。为什么是从 1 开始？因为这个主题我参考了 [Apple 公司的 Newsroom 页面](https://www.apple.com.cn/newsroom/)制作，也使用了部分 Apple 的 CSS 样式表（主要是文字相关部分），因此这个主题也被我命名为**Newsroom「新闻中心」**。这篇博文我就记录一下制作**Newsroom「新闻中心」**主题的过程。
+与别的主题不同的是，这个主题是我从 1 开始制作的。为什么是从 1 开始？因为这个主题我参考了 [Apple 公司的 Newsroom 页面](https://www.apple.com.cn/newsroom/)，也使用了部分 Apple 的 CSS 样式表（主要是文字相关部分），因此这个主题也被我命名为**Newsroom「新闻中心」**。这篇博文是制作**Newsroom「新闻中心」**主题的记录。
 
 # 灵感
 
@@ -36,6 +36,7 @@ cover: /2024/theme-newsroom/banner.webp
 
 - 灯箱 Fancybox
 - 完善配置文件
+- 代码高亮
 
 # 特性
 
@@ -61,4 +62,4 @@ cover: /2024/theme-newsroom/banner.webp
   警告：<b>Newsroom「新闻中心」</b>仍处于早期开发阶段，<b>文档尚未编写</b>，<b>代码未经过完整测试</b>，无法保证其在生产环境中的安全与稳定！我们不对使用当前版本主题造成的损失负责，请谨慎下载。
 </div>
 
-<a href="https://github.com/ImJingLan/hexo-theme-newsroom" target="_blank" type="button" class="btn btn-outline-dark btn-lg w-100" ><i class="bi bi-github"></i> ImJingLan/hexo-theme-newsroom</a>
+<a href="https://github.com/Newsroom-Dev/hexo-theme-newsroom" target="_blank" type="button" class="btn btn-outline-dark btn-lg w-100" ><i class="bi bi-github"></i> Newsroom-Dev/hexo-theme-newsroom</a>

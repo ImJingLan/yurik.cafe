@@ -1,5 +1,5 @@
 ---
-title: 使用 GitHub Actions 部署 Hexo 以减小 Netlify 部署时长
+title: 使用 GitHub Actions 部署 Hexo
 copyright: BY-NC-SA
 date: 2024-01-15 17:53:21
 tags:
@@ -29,41 +29,41 @@ cover:
 name: 部署静态页面到 Deploy 分支
 
 on:
-    push:
-        branches:
-            - main
-    #手动触发
-    workflow_dispatch:
+  push:
+    branches:
+      - main
+  #手动触发
+  workflow_dispatch:
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-            # 获取源码
-            - name: 迁出代码
-              uses: actions/checkout@master
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # 获取源码
+      - name: 迁出代码
+        uses: actions/checkout@master
 
-            - name: 安装node.js环境
-              uses: actions/setup-node@master
+      - name: 安装node.js环境
+        uses: actions/setup-node@master
 
-            - name: 安装Hexo-cli 和 其他 node 环境
-              run: |
-                  npm install hexo-cli -g
-                  npm install
+      - name: 安装Hexo-cli 和 其他 node 环境
+        run: |
+          npm install hexo-cli -g
+          npm install
 
-            - name: 构建静态页面
-              run: |
-                  npm run g
+      - name: 构建静态页面
+        run: |
+          npm run g
 
-            - name: 你也可以在这里执行更多Linux命令
-              run: |
-                  echo Example
+      - name: 你也可以在这里执行更多Linux命令
+        run: |
+          echo Example
 
-            - name: 推送到 deploy 分支 # 部署
-              uses: JamesIves/github-pages-deploy-action@v4.3.3
-              with:
-                  branch: deploy # 部署后提交到的分支
-                  folder: public # 打包好的目录名称
+      - name: 推送到 deploy 分支 # 部署
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: deploy # 部署后提交到的分支
+          folder: public # 打包好的目录名称
 ```
 
 最后 Push 到 Github 就好啦

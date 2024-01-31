@@ -1,8 +1,12 @@
 <div id="tag">
-  <h1><%=page.tag%></h1>
-  <% page.posts.each(article => { %>
+  <h1>
+    <%=page.tag%>
+  </h1>
+  <% page.posts.each(article=> { %>
   <div class="tag-item">
-    <a href="<%=url_for(article.path)%>"> <%=article.title%> </a>
+    <a href="<%=url_for(article.path)%>">
+      <%=article.title%>
+    </a>
     <time datetime="<%=date_xml(article.date)%>">
       <%=date(article.date)%>
     </time>

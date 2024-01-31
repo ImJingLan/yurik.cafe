@@ -7,23 +7,14 @@
 </div>
 
 <div class="row links">
-  <% for(const each of site.data.links.items || []) { %> <% if (!each.title ||
-  !each.link) continue %>
+  <% for(const each of site.data.links.items || []) { %>
+  <% if (!each.title || !each.link) continue %>
   <div class="card col-lg-4 col-md-6 col-sm-12">
-    <a
-      href="<%= url_for(each.link) %>"
-      class="card-body hover-with-bg"
-      target="_blank"
-      rel="noopener"
-    >
+    <a href="<%= url_for(each.link) %>" class="card-body hover-with-bg" target="_blank" rel="noopener">
       <div class="card-content">
         <% if (each.avatar || each.image) { %>
         <div class="link-avatar my-auto">
-          <img
-            src="<%= url_for(each.avatar || each.image) %>"
-            alt="<%= each.title %>"
-            onerror="this.onerror=null; this.src=this.srcset='<%= url_for(site.data.links.onerror_avatar) %>'"
-          />
+          <img src="<%= url_for(each.avatar || each.image) %>" alt="<%= each.title %>" onerror="this.onerror=null; this.src=this.srcset='<%= url_for(site.data.links.onerror_avatar) %>'" />
         </div>
         <% } %>
         <div class="link-text">
