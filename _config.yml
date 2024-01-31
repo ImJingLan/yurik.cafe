@@ -9,11 +9,10 @@ description: ""
 keywords:
 author: 景蓝Yurik
 
-theme: fabric
-language: zh-CN  # 指定语言，会影响主题显示的语言，按需修改
+theme: newsroom
+language: zh-CN # 指定语言，会影响主题显示的语言，按需修改
 
 timezone: ""
-
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -41,7 +40,7 @@ titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
-  exclude: ''
+  exclude: ""
 filename_case: 0
 render_drafts: false
 post_asset_folder: true
@@ -51,26 +50,25 @@ highlight:
   enable: true
   line_number: true
   auto_detect: false
-  tab_replace: ''
+  tab_replace: ""
   wrap: true
   hljs: false
 prismjs:
   enable: false
   preprocess: true
   line_number: true
-  tab_replace: ''
-marked:  
-  prependRoot: true  
+  tab_replace: ""
+marked:
+  prependRoot: true
   postAsset: true
-
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
-  per_page: 10
+  path: ""
+  per_page: 11
   order_by: -date
 
 # Category & Tag
@@ -89,7 +87,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+updated_option: "mtime"
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -106,8 +104,7 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 
-plugins:
-  hexo-generator-feed
+plugins: hexo-generator-feed
 
 feed:
   type:
@@ -118,4 +115,4 @@ feed:
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: ""

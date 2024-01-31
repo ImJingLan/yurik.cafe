@@ -1,0 +1,110 @@
+<% var pageTitle = page.title || config.title || ''; if (is_archive()) pageTitle
+= 'Archives'; if (is_tag()) pageTitle = 'Tag: ' + page.tag; if (is_category())
+pageTitle = 'Category: ' + page.category; if (is_month()) pageTitle += ': ' +
+page.month + '/' + page.year; if (is_year()) pageTitle += ': ' + page.year; if
+(config.title != pageTitle){ pageTitle += ' - ' + config.title;} %>
+
+<!DOCTYPE html>
+<html lang="<%=config.language%>">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><%=pageTitle%></title>
+    <%=theme.customHead%> <% if (theme.stylesheets !== undefined &&
+    theme.stylesheets.length > 0) { %>
+    <!-- stylesheets list from _config.yml -->
+    <% theme.stylesheets.forEach(url => { %>
+    <link rel="stylesheet" href="<%=url%>" />
+    <% }); %> <% } %> <%if(!is_home()){%>
+    <link rel="stylesheet" href="/css/post.css" />
+    <%}%> <%if(!is_home()){%>
+    <link rel="stylesheet" href="/css/links.css" />
+    <%}%> <%if(is_home()){ %>
+    <style>
+      body {
+        background-color: #f5f5f7;
+      }
+    </style>
+    <% }%> <%- theme.custom_head%>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary fixed-top navbar-origin"
+      style="backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px)"
+      id="navbar"
+      data-bs-theme="white"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"><%= config.title %></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <% Object.keys(theme.menu).forEach(key => { %>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="<%=theme.menu[key]%>"
+                ><%=key%></a
+              >
+            </li>
+            <% }); %>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div id="content" class="container section-content py-5 mt-5">
+        <%- body %>
+        <footer class="container pt-3 mt-4 border-top">
+          <div class="text-center pb-5 text-body-secondary">
+            <small>
+              Copyright © 2022 -
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Yurik all rights reserved. <br />
+              <a href="https://hexo.io" target="_blank" rel="nofollow noopener"
+                ><span>Hexo</span></a
+              >
+              ♥
+              <span
+                ><a
+                  href="https://yurik.cafe"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  >NewsRoom</a
+                >
+                By
+                <a
+                  href="https://yurik.cafe"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  >Yurik</a
+                ></span
+              ><br />
+            </small>
+
+            <%- theme.custom_footer%>
+          </div>
+        </footer>
+      </div>
+    </main>
+
+    <% if (theme.scripts !== undefined && theme.scripts.length > 0) { %> <%
+    theme.scripts.forEach(url => { %>
+    <script src="<%=url%>"></script>
+    <% }); %> <% } %>
+  </body>
+</html>

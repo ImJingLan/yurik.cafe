@@ -1,0 +1,20 @@
+<%var sectionHead = theme.custom_index_title || "最新消息"%>
+
+<main>
+      <h2 class="section-head"><%=sectionHead%></h2>
+
+      <%-partial('partials/postList')%>
+
+      <div class="d-flex justify-content-center my-5">
+        <% if (page.total > 0){ %>
+            <%- paginator({prev_text: '←',
+            next_text: '→',
+                mid_size: 2,
+                end_size: 1
+              }) %>
+              </span>
+            </nav>
+          <% } %>
+      </div>
+</main>
+

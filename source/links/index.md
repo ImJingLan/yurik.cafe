@@ -1,8 +1,7 @@
 ---
-title: links
+title: 友情链接
 date: 2023-09-10 16:01:03
 layout: links
-
 ---
 
 ---
@@ -15,13 +14,13 @@ layout: links
 
 - 正常更新维护中（国内无法正常访问会被移除）；
 
-- 启用Https。
+- 启用 Https。
 
 - 请不要使用免费域名；
 
 ---
 
-在Github提交 [Issues](https://github.com/ImJingLan/FriendLink/issues/new/choose) 或 [腾讯问卷](https://wj.qq.com/s2/13028516/7438/) 申请加入我的友链：
+在 Github 提交 [Issues](https://github.com/ImJingLan/FriendLink/issues/new/choose) 或 [腾讯问卷](https://wj.qq.com/s2/13028516/7438/) 申请加入我的友链：
 
 ### 我的信息
 

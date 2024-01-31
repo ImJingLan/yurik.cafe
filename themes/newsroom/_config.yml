@@ -1,0 +1,50 @@
+# html lang
+language: zh-cn
+
+# The Index Title
+custom_index_title: 博文列表
+
+custom_footer: ""
+
+custom_head: ""
+
+# main menu navigation
+menu:
+  主页: /
+  关于: /about
+  友情链接: /links
+
+post:
+  banner_img: /img/default.png
+  banner_img_height: 70
+  banner_mask_alpha: 0.3
+
+  # 文章在首页的默认封面图，当没有指定 cover 时会使用该图片，若两者都为空则不显示任何图片
+  # Path of the default post cover when `cover` is not set. If both are empty, no image will be displayed
+  default_cover:
+    - /img/covers/1.jpg
+    - /img/covers/2.jpg
+    - /img/covers/3.jpg
+    - /img/covers/4.jpg
+    - /img/covers/5.jpg
+    - /img/covers/6.jpg
+    - /img/covers/7.jpg
+    - /img/covers/8.jpg
+    - /img/covers/9.jpg
+    - /img/covers/10.jpg
+    - /img/covers/11.jpg
+    - /img/covers/12.jpg
+    - /img/covers/13.jpg
+    - /img/covers/14.jpg
+    - /img/covers/15.jpg
+
+# 静态资源，别动
+stylesheets:
+  - /css/bootstrap.min.css
+  - /css/global.css
+  - /css/newsroom.css
+
+# scripts loaded in the end of the body
+scripts:
+  - /js/navbar.js
+  - /js/bootstrap.bundle.min.js

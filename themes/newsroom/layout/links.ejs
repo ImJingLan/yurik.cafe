@@ -1,0 +1,41 @@
+<div id="header">
+  <div class="pagetitle">
+    <h1 class="hero-headline" style="margin-top: 0.75rem !important">
+      <%=page.title%>
+    </h1>
+  </div>
+</div>
+
+<div class="row links">
+  <% for(const each of site.data.links.items || []) { %> <% if (!each.title ||
+  !each.link) continue %>
+  <div class="card col-lg-4 col-md-6 col-sm-12">
+    <a
+      href="<%= url_for(each.link) %>"
+      class="card-body hover-with-bg"
+      target="_blank"
+      rel="noopener"
+    >
+      <div class="card-content">
+        <% if (each.avatar || each.image) { %>
+        <div class="link-avatar my-auto">
+          <img
+            src="<%= url_for(each.avatar || each.image) %>"
+            alt="<%= each.title %>"
+            onerror="this.onerror=null; this.src=this.srcset='<%= url_for(site.data.links.onerror_avatar) %>'"
+          />
+        </div>
+        <% } %>
+        <div class="link-text">
+          <div class="link-title"><%- each.title %></div>
+          <div class="link-intro"><%- each.intro || '' %></div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <% } %>
+</div>
+
+<% if (site.data.links.more_content) { %>
+<div class="custom mx-auto"><%- page.content %></div>
+<% } %>

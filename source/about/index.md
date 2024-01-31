@@ -1,5 +1,5 @@
 ---
-title: about
+title: 关于我
 date: 2023-08-29 22:01:14
 layout: about
 ---
@@ -13,37 +13,37 @@ layout: about
 
 ## 关于我
 
--   互联网上常用 ID`ImJingLan` 有时也会写作 `JingLan`
+- 互联网上常用 ID`ImJingLan` 有时也会写作 `JingLan`
 
--   英文名`Howie`
+- 英文名`Howie`
 
 -- 当然了，如果这些都被注册了的话就会写作 `Emendio`和`Yurik`...
 
--   一般大家都叫我`景蓝` ，当然你叫我`祐袔`也可以
+- 一般大家都叫我`景蓝` ，当然你叫我`祐袔`也可以
 
--   是个接受过义务教育的苦逼高中生
+- 是个接受过义务教育的苦逼高中生
 
--   INFP-T
+- INFP-T
 
--   大概碰过:`PHP`,`HTML`,`JavaScript`,`C`,`C++`,`C#`,`python`, `易语言`都很菜就是了（~~退役~~ ~~现役~~ 退役 OIer）
+- 大概碰过:`PHP`,`HTML`,`JavaScript`,`C`,`C++`,`C#`,`python`, `易语言`都很菜就是了（~~退役~~ ~~现役~~ 退役 OIer）
 
--   常用软件：Premiere Pro，Photoshop ， Fl Studio ，Studio One 5 ， After Effect
+- 常用软件：Premiere Pro，Photoshop ， Fl Studio ，Studio One 5 ， After Effect
 
--   `EN-us`、`zh-CN`
+- `EN-us`、`zh-CN`
 
--   目前使用的设备：
+- 目前使用的设备：
 
-    手机：小米 11 白色 256G
+  手机：小米 11 白色 256G
 
-    电脑：神船 G8-CT7NK
+  电脑：神船 G8-CT7NK
 
-    手表：OPPO Watch 2 46mm
+  手表：OPPO Watch 2 46mm
 
-    耳机：Redmi Buds 4 Pro、水月雨夸克带麦版...
+  耳机：Redmi Buds 4 Pro、水月雨夸克带麦版...
 
-    鼠标：罗技 Pro X Superlight
+  鼠标：罗技 Pro X Superlight
 
--   目前就读于：`柳州高级中学 高新校区`
+- 目前就读于：`柳州高级中学 高新校区`
 
 ## 喜欢看的虚拟主播们的主页地址（没有 D!!.jpg）
 
@@ -73,15 +73,15 @@ Bison 仓鼠: [主页](https://space.bilibili.com/136107) [直播间](http://liv
 
 ## 博客历史
 
--   2023 年
+- 2023 年
 
 -- 采用 Hexo 啦！
 
--   2022 年
+- 2022 年
 
 -- 由于~~穷~~，换用 Hugo 静态页面系统，托管在~~Github~~ Vercel 上
 
--   2021 年
+- 2021 年
 
 -- 有了一台服务器，采用 Typecho 系统
 

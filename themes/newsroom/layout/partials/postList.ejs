@@ -1,0 +1,87 @@
+<% var i = 0; %> <% if (page.posts.length > 0) { %>
+<div id="list">
+  <% page.posts.sort('date', -1).each(post => { var category = "Blog"; i = i + 1
+  %> <% var post_url = url_for(post.path), post_cover = post.cover ||
+  theme.post.default_cover[Math.floor(Math.random() *
+  (theme.post.default_cover.length))] %> <%# ----- Hero Banner ----- %> <% if (
+  i == 1){%>
+  <div class="row align-items-md-stretch" id="hero">
+    <div class="col-md-12 mb-4">
+      <a href="<%=url_for(post_url)%>">
+        <div class="card mb-3 border-unset news_hover_zoom">
+          <div class="row g-0">
+            <div class="col-md-8 news_img_box">
+              <img
+                src="<%=url_for(post_cover)%>"
+                class="img-fluid news_img hero-img"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-4">
+              <div class="card-body hero">
+                <div class="news_description">
+                  <p class="news_category"><%=category%></p>
+                  <p class="news_title"><%=post.title%></p>
+                  <p
+                    class="news_timestamp pt-5"
+                    datetime="<%=post.date.toJSON()%>"
+                  >
+                    <%=date(post.date,"YYYY 年 MM 月 DD 日")%>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <%}%> <%# ----- Secondary Banner ----- %> <%if(i<=5 && i>=2){ if(i == 2){%>
+  <div class="row d-flex align-items-stretch secondary" id="secondary">
+    <%}%>
+    <div class="col-md-6 mb-4 news-card-flex">
+      <a href="<%=url_for(post_url)%>">
+        <div class="card mb-3 border-unset news_hover_zoom h-100 w-100">
+          <div class="news_img_box">
+            <img src="<%=url_for(post_cover)%>" class="card-img-top news_img" />
+          </div>
+          <div class="card-body secondary">
+            <div class="news_description">
+              <p class="news_category"><%=category%></p>
+              <p class="news_title"><%=post.title%></p>
+              <p class="news_timestamp pt-5" datetime="<%=post.date.toJSON()%>">
+                <%=date(post.date,"YYYY 年 MM 月 DD 日")%>
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <%if(i == 5){%>
+  </div>
+  <%}}%> <%# ----- normal Banner ----- %> <%if(i<=11 && i>=6){ if(i == 6){%>
+  <div class="row d-flex align-items-stretch normal" id="normal">
+    <%}%>
+    <div class="col-md-4 mb-4 news-card-flex">
+      <a href="<%=url_for(post_url)%>">
+        <div class="card mb-3 border-unset news_hover_zoom h-100">
+          <div class="news_img_box">
+            <img src="<%=url_for(post_cover)%>" class="card-img-top news_img" />
+          </div>
+          <div class="card-body normal">
+            <div class="news_description">
+              <p class="news_category"><%=category%></p>
+              <p class="news_title"><%=post.title%></p>
+              <p class="news_timestamp pt-5" datetime="<%=post.date.toJSON()%>">
+                <%=date(post.date,"YYYY 年 MM 月 DD 日")%>
+              </p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <%if(i == 11){%>
+  </div>
+  <%}}%> <% }); %>
+</div>
+<% } %>

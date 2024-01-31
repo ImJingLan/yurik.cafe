@@ -1,0 +1,25 @@
+<article id="post" class="post">
+  <div id="header">
+    <div class="category" style="color: #6e6e73">
+      <div class="content">
+        <div class="category-eyebrow">
+          <span>博文</span> ·
+          <span><%=date(page.date,"YYYY 年 MM 月 DD 日")%></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagetitle">
+      <div class="content">
+        <h1 class="hero-headline" style="margin-top: 0.75rem !important">
+          <%=page.title%>
+        </h1>
+      </div>
+    </div>
+  </div>
+  <div class="mt-5">
+    <div class="content"><%-page.content%></div>
+  </div>
+</article>
+
+<div id="paginator"><%-paginator()%></div>
