@@ -1,0 +1,165 @@
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 653px;
+  font-family: "Arial", sans-serif;
+}
+
+@media only screen and (max-width: 1068px) {
+  .content {
+    width: 576px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .content {
+    width: 87.5%;
+  }
+}
+
+.content img {
+  max-width: 100%;
+  margin: 1.5rem auto;
+  display: block;
+  background-color: transparent;
+}
+
+.article-subhead {
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 500;
+  letter-spacing: 0.009em;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-family: "Arial", sans-serif;
+}
+
+@media only screen and (max-width: 1068px) {
+  .article-subhead {
+    font-size: 21px;
+    line-height: 1.19048;
+    font-weight: 500;
+    letter-spacing: 0.011em;
+  }
+}
+
+.hero-headline {
+  font-size: 48px;
+  line-height: 1.08349;
+  font-weight: 700;
+  letter-spacing: -0.003em;
+  font-family: "Arial", sans-serif;
+}
+
+@media only screen and (max-width: 1068px) {
+  .hero-headline {
+    font-size: 40px !important;
+    line-height: 1.1 !important;
+    font-weight: 700 !important;
+    letter-spacing: 0em !important;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .hero-headline {
+    font-size: 32px !important;
+    line-height: 1.125 !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.004em !important;
+  }
+}
+.category-eyebrow {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  font-family: "Arial", sans-serif;
+}
+
+/*Text Styles*/
+
+/* 多级标题 Titles*/
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  margin-bottom: 0.75em;
+  margin-top: 1.25em;
+  font-family: "Arial", sans-serif;
+}
+
+.content h1 {
+  font-size: calc(1.225rem + 0.9vw) !important;
+}
+
+.content h2 {
+  font-size: calc(1.2rem + 0.6vw);
+}
+
+.content h3 {
+  font-size: calc(1.075rem + 0.3vw);
+}
+
+.content h4 {
+  font-size: calc(0.975rem + 0.3vw);
+}
+
+.content h5 {
+  font-size: 1rem;
+}
+
+.content h6 {
+  font-size: 0.75rem;
+}
+
+@media (min-width: 1200px) {
+  .content h1 {
+    font-size: 2rem;
+  }
+  .content h2 {
+    font-size: 1.75rem;
+  }
+  .content h3 {
+    font-size: 1.5rem;
+  }
+  .content h4 {
+    font-size: 1.25rem;
+  }
+}
+
+/*正文和列表*/
+.content p,
+.content li {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.4211em;
+  font-size: 19px;
+  line-height: 1.4211;
+  font-weight: 400;
+  letter-spacing: 0.012em;
+  font-family: "Arial", sans-serif;
+}
+
+@media only screen and (max-width: 1068px) {
+  .content p,
+  .content li {
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+  }
+}
+
+/*注释*/
+.content blockquote {
+  color: rgba(0, 0, 0, 0.75);
+  padding: 0 1em;
+  border-left: 0.25em solid rgba(0, 0, 0, 0.205);
+  font-family: "Arial", sans-serif;
+}
+
+.content li {
+  margin-top: 0.5em !important;
+}

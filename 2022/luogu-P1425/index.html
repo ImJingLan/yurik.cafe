@@ -1,297 +1,104 @@
 
 
 <!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=auto>
-
-
-
-<head>
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="https://unpkg.com/yurik-static@1.0.6/favicon/v2/apple-touch-icon.png">
-  <link rel="icon" href="https://unpkg.com/yurik-static@1.0.6/favicon/v2/favicon.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-  <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="景蓝Yurik">
-  <meta name="keywords" content="">
-  
-    <meta name="description" content="好久没碰过 C++了，也好久没碰竞赛了 今天突然想起来去洛谷注册了个账号（（（ 从入门题库中看到了这道入门题 觉得蛮有意思的，就记一下过程 题目原题：洛谷 - P1425 小鱼的游泳时间 题目描述伦敦奥运会要到了，小鱼在拼命练习游泳准备参加游泳比赛，可怜的小鱼并不知道鱼类是不能参加人类的奥运会的。 这一天，小鱼给自己的游泳时间做了精确的计时（本题中的计时都按 24 小时制计算），它发现自己从 a">
-<meta property="og:type" content="article">
-<meta property="og:title" content="P1425 - 小鱼的游泳时间">
-<meta property="og:url" content="https://yurik.cafe/2022/luogu-P1425/index.html">
-<meta property="og:site_name" content="景蓝的小屋">
-<meta property="og:description" content="好久没碰过 C++了，也好久没碰竞赛了 今天突然想起来去洛谷注册了个账号（（（ 从入门题库中看到了这道入门题 觉得蛮有意思的，就记一下过程 题目原题：洛谷 - P1425 小鱼的游泳时间 题目描述伦敦奥运会要到了，小鱼在拼命练习游泳准备参加游泳比赛，可怜的小鱼并不知道鱼类是不能参加人类的奥运会的。 这一天，小鱼给自己的游泳时间做了精确的计时（本题中的计时都按 24 小时制计算），它发现自己从 a">
-<meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://yurik.cafe/2022/luogu-P1425/banner.png">
-<meta property="article:published_time" content="2022-04-01T00:00:00.000Z">
-<meta property="article:modified_time" content="2024-01-15T15:46:47.325Z">
-<meta property="article:author" content="景蓝Yurik">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://yurik.cafe/2022/luogu-P1425/banner.png">
-  
-  
-  
-  <title>P1425 - 小鱼的游泳时间 - 景蓝的小屋</title>
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
-
-
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
-
-
-
-<!-- 主题依赖的图标库，不要自行修改 -->
-<!-- Do not modify the link that theme dependent icons -->
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
-
-
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
-
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
-  
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
-  
-
-
-
-  
-<link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4230030_f9v8o9aoqjg.css">
-
-
-
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"yurik.cafe","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
-
-    if (CONFIG.web_analytics.follow_dnt) {
-      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
-      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
-    }
-  </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
-  
-
-
-  
-<meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/feed.xml" title="景蓝的小屋" type="application/rss+xml">
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>P1425 - 小鱼的游泳时间 - 景蓝的小屋</title>
+     
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="/css/global.css" />
+    
+    <link rel="stylesheet" href="/css/newsroom.css" />
+      
+    <link rel="stylesheet" href="/css/post.css" />
+     
+    <link rel="stylesheet" href="/css/links.css" />
+        <link rel="apple-touch-icon" sizes="76x76" href="https://unpkg.com/yurik-static@1.0.6/favicon/v2/apple-touch-icon.png"> <link rel="icon" href="https://unpkg.com/yurik-static@1.0.6/favicon/v2/favicon.ico">
+  <meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/feed.xml" title="景蓝的小屋" type="application/rss+xml">
 </head>
-
-
-<body>
-  
-
-  <header>
-    
-
-<div class="header-inner" style="height: 70vh;">
-  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <strong>景蓝的小屋</strong>
-    </a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary fixed-top navbar-origin"
+      style="backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px)"
+      id="navbar"
+      data-bs-theme="white"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">景蓝的小屋</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            
             <li class="nav-item">
-              <a class="nav-link" href="/" target="_self">
-                <i class="iconfont icon-home-fill"></i>
-                <span>首页</span>
-              </a>
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="/"
+                >主页</a
+              >
             </li>
-          
-        
-          
-          
-          
-          
+            
             <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
-                <i class="iconfont icon-archive-fill"></i>
-                <span>归档</span>
-              </a>
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="/about"
+                >关于</a
+              >
             </li>
-          
-        
-          
-          
-          
-          
+            
             <li class="nav-item">
-              <a class="nav-link" href="/categories/" target="_self">
-                <i class="iconfont icon-category-fill"></i>
-                <span>分类</span>
-              </a>
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="/links"
+                >友情链接</a
+              >
             </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/" target="_self">
-                <i class="iconfont icon-user-fill"></i>
-                <span>关于</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/links/" target="_self">
-                <i class="iconfont icon-link-fill"></i>
-                <span>友链</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.travellings.cn/go.html" target="_self">
-                <i class="iconfont icon-subway"></i>
-                <span>开往</span>
-              </a>
-            </li>
-          
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              <i class="iconfont icon-search"></i>
-            </a>
-          </li>
-          
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
-              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
-            </a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
-  
-
-<div id="banner" class="banner" parallax=true
-     style="background: url('/2022/luogu-P1425/banner.png') no-repeat center center; background-size: cover;">
-  <div class="full-bg-img">
-    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-      <div class="banner-text text-center fade-in-up">
-        <div class="h2">
-          
-            <span id="subtitle" data-typed-text="P1425 - 小鱼的游泳时间"></span>
-          
+            
+          </ul>
         </div>
-
-        
-          
-  <div class="mt-3">
-    
-    
-      <span class="post-meta">
-        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-04-01 00:00" pubdate>
-          2022年4月1日 凌晨
-        </time>
-      </span>
-    
-  </div>
-
-  <div class="mt-1">
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-chart"></i>
-        
-          785 字
-        
-      </span>
-    
-
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-clock-fill"></i>
-        
-        
-        
-          7 分钟
-        
-      </span>
-    
-
-    
-    
-  </div>
-
-
-        
       </div>
+    </nav>
 
-      
+    <main>
+      <div id="content" class="container section-content py-5 mt-5">
+        <article id="post" class="post">
+  <div id="header">
+    <div class="category" style="color: #6e6e73">
+      <div class="content">
+        <div class="category-eyebrow">
+          <span>博文</span> ·
+          <span>2022 年 04 月 01 日</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagetitle">
+      <div class="content">
+        <h1 class="hero-headline" style="margin-top: 0.75rem !important">
+          P1425 - 小鱼的游泳时间
+        </h1>
+      </div>
     </div>
   </div>
-</div>
-
-</div>
-
-  </header>
-
-  <main>
-    
-      
-
-<div class="container-fluid nopadding-x">
-  <div class="row nomargin-x">
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
-
-    </div>
-
-    <div class="col-lg-8 nopadding-x-md">
-      <div class="container nopadding-x-md" id="board-ctn">
-        <div id="board">
-          <article class="post-content mx-auto">
-            <h1 id="seo-header">P1425 - 小鱼的游泳时间</h1>
-            
-            
-            <div class="markdown-body">
-              
-              <p>好久没碰过 C++了，也好久没碰竞赛了</p>
+  <div class="mt-5">
+    <div class="content"><p>好久没碰过 C++了，也好久没碰竞赛了</p>
 <p>今天突然想起来去洛谷注册了个账号（（（</p>
 <p>从入门题库中看到了这道入门题</p>
 <p>觉得蛮有意思的，就记一下过程</p>
@@ -302,410 +109,62 @@
 <h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>一行内输入 4 个整数，分别表示 a, b, c, d。</p>
 <h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>一行内输出 2 个整数 e 和 f，用空格间隔，依次表示小鱼这天一共游了多少小时多少分钟。其中表示分钟的整数 f 应该小于 60。</p>
 <h2 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h2><p><strong>输入 #1</strong></p>
-<figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs basic"><span class="hljs-symbol">12 </span><span class="hljs-number">50</span> <span class="hljs-number">19</span> <span class="hljs-number">10</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">12 50 19 10</span><br></pre></td></tr></table></figure>
 
 <p><strong>输出 #1</strong></p>
-<figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs basic"><span class="hljs-symbol">6 </span><span class="hljs-number">20</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">6 20</span><br></pre></td></tr></table></figure>
 
 <h2 id="说明-提示"><a href="#说明-提示" class="headerlink" title="说明&#x2F;提示"></a>说明&#x2F;提示</h2><p>对于全部测试数据，0 ≤ <em>a</em>,*c *≤ 24，0 ≤ b,d ≤ 600 ≤ <em>b</em>,<em>d</em> ≤ 60，且结束时间一定晚于开始时间。</p>
 <h1 id="解题"><a href="#解题" class="headerlink" title="解题"></a>解题</h1><p>很显然，这就是一个数学问题：怎么通过时间格式计算间隔</p>
 <p>1.通过计算将时间统一到所需最小单位 - minute</p>
 <p>2.通过取整，取余计算获得结果</p>
-<h2 id="AC-代码"><a href="#AC-代码" class="headerlink" title="AC 代码"></a>AC 代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span><span class="hljs-string">&lt;cstdio&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-type">int</span> a,b,c,d;<br><br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>	cin&gt;&gt;a&gt;&gt;b&gt;&gt;c&gt;&gt;d;<br><br>	<span class="hljs-type">int</span> allminute = <span class="hljs-number">60</span>*(c-a<span class="hljs-number">-1</span>)+(<span class="hljs-number">60</span>-b)+d;<br><br>	<span class="hljs-type">int</span> hours = allminute / <span class="hljs-number">60</span>;<br><br>	cout&lt;&lt;hours;<br><br>	cout&lt;&lt;<span class="hljs-string">&quot; &quot;</span>&lt;&lt;allminute %<span class="hljs-number">60</span>;<br><br>	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
-
-              
-            </div>
-            
-            <hr />
-            <div>
-              <div class="post-metas my-3">
-  
-    <div class="post-meta mr-3 d-flex align-items-center">
-      <i class="iconfont icon-category"></i>
-      
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E4%BF%A1%E7%AB%9E/" class="category-chain-item">信竞</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-    </div>
-  
-  
+<h2 id="AC-代码"><a href="#AC-代码" class="headerlink" title="AC 代码"></a>AC 代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="type">int</span> a,b,c,d;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	cin&gt;&gt;a&gt;&gt;b&gt;&gt;c&gt;&gt;d;</span><br><span class="line"></span><br><span class="line">	<span class="type">int</span> allminute = <span class="number">60</span>*(c-a<span class="number">-1</span>)+(<span class="number">60</span>-b)+d;</span><br><span class="line"></span><br><span class="line">	<span class="type">int</span> hours = allminute / <span class="number">60</span>;</span><br><span class="line"></span><br><span class="line">	cout&lt;&lt;hours;</span><br><span class="line"></span><br><span class="line">	cout&lt;&lt;<span class="string">&quot; &quot;</span>&lt;&lt;allminute %<span class="number">60</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </div>
+  </div>
+</article>
 
+<div id="paginator"></div>
 
-              
-  
+        <footer class="container pt-3 mt-4 border-top">
+          <div class="text-center pb-5 text-body-secondary">
+            <small>
+              Copyright © 2022 -
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Yurik all rights reserved. <br />
+              <a href="https://hexo.io" target="_blank" rel="nofollow noopener"
+                ><span>Hexo</span></a
+              >
+              ♥
+              <span
+                ><a
+                  href="https://yurik.cafe"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  >NewsRoom</a
+                >
+                By
+                <a
+                  href="https://yurik.cafe"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  >Yurik</a
+                ></span
+              ><br />
+            </small>
 
-  <div class="license-box my-3">
-    <div class="license-title">
-      <div>P1425 - 小鱼的游泳时间</div>
-      <div>https://yurik.cafe/2022/luogu-P1425/</div>
-    </div>
-    <div class="license-meta">
-      
-        <div class="license-meta-item">
-          <div>作者</div>
-          <div>景蓝Yurik</div>
-        </div>
-      
-      
-        <div class="license-meta-item license-meta-date">
-          <div>发布于</div>
-          <div>2022年4月1日</div>
-        </div>
-      
-      
-      
-        <div class="license-meta-item">
-          <div>许可协议</div>
-          <div>
-            
-              
-              
-                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
-                    <i class="iconfont icon-by"></i>
-                  </span>
-                </a>
-              
-                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-                  <span class="hint--top hint--rounded" aria-label="NC - 非商业性使用">
-                    <i class="iconfont icon-nc"></i>
-                  </span>
-                </a>
-              
-                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
-                  <span class="hint--top hint--rounded" aria-label="SA - 相同方式共享">
-                    <i class="iconfont icon-sa"></i>
-                  </span>
-                </a>
-              
-            
+            <span id="running_times" >本站勉强运行: <span id="runDays">0</span>天<span id="runHours" >0</span >小时<span id="runMins">0</span>分<span id="runSeconds">0</span >秒 <script> function runtime() { X = new Date("2022/3/07 00:00:00"); Y = new Date(); T = Y.getTime() - X.getTime(); M = 24 * 60 * 60 * 1000; a = T / M; A = Math.floor(a); b = (a - A) * 24; B = Math.floor(b); c = (b - B) * 60; C = Math.floor((b - B) * 60); D = Math.floor((c - C) * 60);
+document.getElementById("runDays").innerHTML = A; document.getElementById("runHours").innerHTML = B; document.getElementById("runMins").innerHTML = C; document.getElementById("runSeconds").innerHTML = D; } setInterval(runtime, 1000); </script> </span>
           </div>
-        </div>
-      
-    </div>
-    <div class="license-icon iconfont"></div>
-  </div>
-
-
-
-              
-              <div class="post-prevnext my-3">
-                <article class="post-prev col-6">
-                  
-                  
-                  <a href="/2022/dell-poweredge-r720-review/" title="戴尔 PowerEdge R720 上手 : 年轻人的第一台家庭服务器">
-                    <i class="iconfont icon-arrowleft"></i>
-                    <span class="hidden-mobile">戴尔 PowerEdge R720 上手 : 年轻人的第一台家庭服务器</span>
-                    <span class="visible-mobile">上一篇</span>
-                  </a>
-                  
-                </article>
-                <article class="post-next col-6">
-                  
-                  
-                  <a href="/2022/hugo-blog/" title="使用Hugo搭建个人博客">
-                    <span class="hidden-mobile">使用Hugo搭建个人博客</span>
-                    <span class="visible-mobile">下一篇</span>
-                    <i class="iconfont icon-arrowright"></i>
-                  </a>
-                  
-                </article>
-              </div>
-              
-            </div>
-
-            
-          </article>
-        </div>
+        </footer>
       </div>
-    </div>
+    </main>
 
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
-  <aside class="sidebar" style="margin-left: -1rem">
-    <div id="toc">
-  <p class="toc-header">
-    <i class="iconfont icon-list"></i>
-    <span>目录</span>
-  </p>
-  <div class="toc-body" id="toc-body"></div>
-</div>
-
-
-
-  </aside>
-
-
-    </div>
-  </div>
-</div>
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
+     
+    <script src="/js/navbar.js"></script>
     
-
-    
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
-    
-
-    
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    
-
-    
-  </main>
-
-  <footer>
-    <div class="footer-inner">
-  
-  <div class="footer-content">
-     Copyright © 2022 - 2023 Yurik all rights reserved. </br> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fabric Base On Fluid</span></a><br /> 
-  </div>
-  
-  
-  
-  
-  
-  <span id="running_times">本站勉强运行: <span id="runDays">0</span>天<span id="runHours">0</span>小时<span id="runMins">0</span>分<span id="runSeconds">0</span>秒
-    <script>
-      function runtime() {
-        X = new Date("2022/2/10 00:00:00");
-        Y = new Date();
-        T = (Y.getTime() - X.getTime());
-        M = 24 * 60 * 60 * 1000;
-        a = T / M;
-        A = Math.floor(a);
-        b = (a - A) * 24;
-        B = Math.floor(b);
-        c = (b - B) * 60;
-        C = Math.floor((b - B) * 60);
-        D = Math.floor((c - C) * 60);
-
-        document.getElementById("runDays").innerHTML = A
-        document.getElementById("runHours").innerHTML = B
-        document.getElementById("runMins").innerHTML = C
-        document.getElementById("runSeconds").innerHTML = D
-      }
-      setInterval(runtime, 1000);
-    </script>
-    
-</div>
-  </footer>
-
-  <!-- Scripts -->
-  
-  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
-
-<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
-<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
-
-
-  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var subtitle = document.getElementById('subtitle');
-      if (!subtitle || !typing) {
-        return;
-      }
-      var text = subtitle.getAttribute('data-typed-text');
-      
-        typing(text);
-      
-    })(window, document);
-  </script>
-
-
-
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
-
-
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
-    var toc = jQuery('#toc');
-    if (toc.length === 0 || !window.tocbot) { return; }
-    var boardCtn = jQuery('#board-ctn');
-    var boardTop = boardCtn.offset().top;
-
-    window.tocbot.init(Object.assign({
-      tocSelector     : '#toc-body',
-      contentSelector : '.markdown-body',
-      linkClass       : 'tocbot-link',
-      activeLinkClass : 'tocbot-active-link',
-      listClass       : 'tocbot-list',
-      isCollapsedClass: 'tocbot-is-collapsed',
-      collapsibleClass: 'tocbot-is-collapsible',
-      scrollSmooth    : true,
-      includeTitleTags: true,
-      headingsOffset  : -boardTop,
-    }, CONFIG.toc));
-    if (toc.find('.toc-list-item').length > 0) {
-      toc.css('visibility', 'visible');
-    }
-
-    Fluid.events.registerRefreshCallback(function() {
-      if ('tocbot' in window) {
-        tocbot.refresh();
-        var toc = jQuery('#toc');
-        if (toc.length === 0 || !tocbot) {
-          return;
-        }
-        if (toc.find('.toc-list-item').length > 0) {
-          toc.css('visibility', 'visible');
-        }
-      }
-    });
-  });
-</script>
-
-
-  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
-
-  <script>Fluid.plugins.codeWidget();</script>
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
-    window.anchors.options = {
-      placement: CONFIG.anchorjs.placement,
-      visible  : CONFIG.anchorjs.visible
-    };
-    if (CONFIG.anchorjs.icon) {
-      window.anchors.options.icon = CONFIG.anchorjs.icon;
-    }
-    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
-    var res = [];
-    for (var item of el) {
-      res.push('.markdown-body > ' + item.trim());
-    }
-    if (CONFIG.anchorjs.placement === 'left') {
-      window.anchors.options.class = 'anchorjs-link-left';
-    }
-    window.anchors.add(res.join(', '));
-
-    Fluid.events.registerRefreshCallback(function() {
-      if ('anchors' in window) {
-        anchors.removeAll();
-        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
-        var res = [];
-        for (var item of el) {
-          res.push('.markdown-body > ' + item.trim());
-        }
-        if (CONFIG.anchorjs.placement === 'left') {
-          anchors.options.class = 'anchorjs-link-left';
-        }
-        anchors.add(res.join(', '));
-      }
-    });
-  });
-</script>
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
-    Fluid.plugins.fancyBox();
-  });
-</script>
-
-
-  <script>Fluid.plugins.imageCaption();</script>
-
-  <script  src="/js/local-search.js" ></script>
-
-
-
-
-
-<!-- 主题的启动项，将它保持在最底部 -->
-<!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
-
-
-  
-
-  <noscript>
-    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
-  </noscript>
-</body>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+     
+  </body>
 </html>

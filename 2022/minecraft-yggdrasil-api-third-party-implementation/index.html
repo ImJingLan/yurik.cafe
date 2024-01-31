@@ -1,297 +1,104 @@
 
 
 <!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=auto>
-
-
-
-<head>
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="https://unpkg.com/yurik-static@1.0.6/favicon/v2/apple-touch-icon.png">
-  <link rel="icon" href="https://unpkg.com/yurik-static@1.0.6/favicon/v2/favicon.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-  <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="景蓝Yurik">
-  <meta name="keywords" content="">
-  
-    <meta name="description" content="原文链接：PRIN BLOG - 又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API  共享协议：本文与原文采用相同的 CC BY 4.0 协议而非本博客默认的共享协议  最近给 Blessing Skin 写了个插件，利用皮肤站本身的账号系统实现了 Yggdrasil API（就是 Mojang 的登录 API），然后配合 authlib-injector 这个">
-<meta property="og:type" content="article">
-<meta property="og:title" content="【转载】又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API">
-<meta property="og:url" content="https://yurik.cafe/2022/minecraft-yggdrasil-api-third-party-implementation/index.html">
-<meta property="og:site_name" content="景蓝的小屋">
-<meta property="og:description" content="原文链接：PRIN BLOG - 又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API  共享协议：本文与原文采用相同的 CC BY 4.0 协议而非本博客默认的共享协议  最近给 Blessing Skin 写了个插件，利用皮肤站本身的账号系统实现了 Yggdrasil API（就是 Mojang 的登录 API），然后配合 authlib-injector 这个">
-<meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://yurik.cafe/2022/minecraft-yggdrasil-api-third-party-implementation/715850d76b7db.png">
-<meta property="article:published_time" content="2022-02-11T00:00:00.000Z">
-<meta property="article:modified_time" content="2024-01-15T15:46:47.321Z">
-<meta property="article:author" content="景蓝Yurik">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://yurik.cafe/2022/minecraft-yggdrasil-api-third-party-implementation/715850d76b7db.png">
-  
-  
-  
-  <title>【转载】又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API - 景蓝的小屋</title>
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
-
-
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
-
-
-
-<!-- 主题依赖的图标库，不要自行修改 -->
-<!-- Do not modify the link that theme dependent icons -->
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
-
-
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
-
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
-  
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
-  
-
-
-
-  
-<link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4230030_f9v8o9aoqjg.css">
-
-
-
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"yurik.cafe","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
-
-    if (CONFIG.web_analytics.follow_dnt) {
-      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
-      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
-    }
-  </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
-  
-
-
-  
-<meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/feed.xml" title="景蓝的小屋" type="application/rss+xml">
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>【转载】又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API - 景蓝的小屋</title>
+     
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="/css/global.css" />
+    
+    <link rel="stylesheet" href="/css/newsroom.css" />
+      
+    <link rel="stylesheet" href="/css/post.css" />
+     
+    <link rel="stylesheet" href="/css/links.css" />
+        <link rel="apple-touch-icon" sizes="76x76" href="https://unpkg.com/yurik-static@1.0.6/favicon/v2/apple-touch-icon.png"> <link rel="icon" href="https://unpkg.com/yurik-static@1.0.6/favicon/v2/favicon.ico">
+  <meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/feed.xml" title="景蓝的小屋" type="application/rss+xml">
 </head>
-
-
-<body>
-  
-
-  <header>
-    
-
-<div class="header-inner" style="height: 70vh;">
-  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <strong>景蓝的小屋</strong>
-    </a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary fixed-top navbar-origin"
+      style="backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px)"
+      id="navbar"
+      data-bs-theme="white"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">景蓝的小屋</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            
             <li class="nav-item">
-              <a class="nav-link" href="/" target="_self">
-                <i class="iconfont icon-home-fill"></i>
-                <span>首页</span>
-              </a>
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="/"
+                >主页</a
+              >
             </li>
-          
-        
-          
-          
-          
-          
+            
             <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
-                <i class="iconfont icon-archive-fill"></i>
-                <span>归档</span>
-              </a>
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="/about"
+                >关于</a
+              >
             </li>
-          
-        
-          
-          
-          
-          
+            
             <li class="nav-item">
-              <a class="nav-link" href="/categories/" target="_self">
-                <i class="iconfont icon-category-fill"></i>
-                <span>分类</span>
-              </a>
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="/links"
+                >友情链接</a
+              >
             </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/" target="_self">
-                <i class="iconfont icon-user-fill"></i>
-                <span>关于</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/links/" target="_self">
-                <i class="iconfont icon-link-fill"></i>
-                <span>友链</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.travellings.cn/go.html" target="_self">
-                <i class="iconfont icon-subway"></i>
-                <span>开往</span>
-              </a>
-            </li>
-          
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              <i class="iconfont icon-search"></i>
-            </a>
-          </li>
-          
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
-              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
-            </a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
-  
-
-<div id="banner" class="banner" parallax=true
-     style="background: url('/2022/minecraft-yggdrasil-api-third-party-implementation/715850d76b7db.png') no-repeat center center; background-size: cover;">
-  <div class="full-bg-img">
-    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-      <div class="banner-text text-center fade-in-up">
-        <div class="h2">
-          
-            <span id="subtitle" data-typed-text="【转载】又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API"></span>
-          
+            
+          </ul>
         </div>
-
-        
-          
-  <div class="mt-3">
-    
-    
-      <span class="post-meta">
-        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-02-11 00:00" pubdate>
-          2022年2月11日 凌晨
-        </time>
-      </span>
-    
-  </div>
-
-  <div class="mt-1">
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-chart"></i>
-        
-          12k 字
-        
-      </span>
-    
-
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-clock-fill"></i>
-        
-        
-        
-          98 分钟
-        
-      </span>
-    
-
-    
-    
-  </div>
-
-
-        
       </div>
+    </nav>
 
-      
+    <main>
+      <div id="content" class="container section-content py-5 mt-5">
+        <article id="post" class="post">
+  <div id="header">
+    <div class="category" style="color: #6e6e73">
+      <div class="content">
+        <div class="category-eyebrow">
+          <span>博文</span> ·
+          <span>2022 年 02 月 11 日</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagetitle">
+      <div class="content">
+        <h1 class="hero-headline" style="margin-top: 0.75rem !important">
+          【转载】又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API
+        </h1>
+      </div>
     </div>
   </div>
-</div>
-
-</div>
-
-  </header>
-
-  <main>
-    
-      
-
-<div class="container-fluid nopadding-x">
-  <div class="row nomargin-x">
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
-
-    </div>
-
-    <div class="col-lg-8 nopadding-x-md">
-      <div class="container nopadding-x-md" id="board-ctn">
-        <div id="board">
-          <article class="post-content mx-auto">
-            <h1 id="seo-header">【转载】又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API</h1>
-            
-            
-            <div class="markdown-body">
-              
-              <p><strong>原文链接</strong>：PRIN BLOG - <a target="_blank" rel="noopener" href="https://printempw.github.io/minecraft-yggdrasil-api-third-party-implementation/">又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API</a></p>
+  <div class="mt-5">
+    <div class="content"><p><strong>原文链接</strong>：PRIN BLOG - <a target="_blank" rel="noopener" href="https://printempw.github.io/minecraft-yggdrasil-api-third-party-implementation/">又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API</a></p>
 <blockquote>
 <p><strong>共享协议</strong>：本文与原文采用相同的 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by/4.0/deed.zh">CC BY 4.0 协议</a>而非本博客默认的共享协议</p>
 </blockquote>
@@ -315,7 +122,7 @@
 <p>并不是所有腐竹都满足于 Authme + Discuz 这样的组合的（而且这类游戏内登录系统也有不少安全漏洞），毕竟在这个 Minecraft 多人联机服务器发展接近饱和的时候，如果想要你的服务器能够吸引新玩家，那么除了服务器本身建设之外的地方也是要好好考虑的。</p>
 <h1 id="外置登录系统"><a href="#外置登录系统" class="headerlink" title="外置登录系统"></a>外置登录系统</h1><p>正是这样的需求催生了不少 Minecraft 的「外置登录插件」、「网页登录」等等软件（而且人气都挺高的），我随手在 MCBBS 上一搜就有很多类似的产品，用啥语言写的都有：<em>MadAuth、WebLogin、BeeLogin、WebRegister、冰棂登陆系统……</em></p>
 <p>这些软件的原理就是将原本的登录鉴权这一步骤从游戏里抽出来了，将其放到启动器 or 网页上去，而服务端插件的功能就只剩下「查询数据库中用户的登录状态，决定是否放行」：</p>
-<p><img src="/2022/minecraft-yggdrasil-api-third-party-implementation/Minecraft.jpg" srcset="/img/loading.gif" lazyload alt="原理图"></p>
+<p><img src="/2022/minecraft-yggdrasil-api-third-party-implementation/Minecraft.jpg" alt="原理图"></p>
 <p><em>▲ 随手画的示意流程图，这里推荐一下 <a target="_blank" rel="noopener" href="https://www.processon.com/">ProcessOn</a> 这个在线作图网站，很好用 ;)</em></p>
 <blockquote>
 <p>Printempw 的图是透明的，对灯箱显示不是很友好，所以就自己上了一层白色底</p>
@@ -333,7 +140,7 @@
 <h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>可以说这个系统中，就是「开发完整实现了 Yggdrasil API 的后端」这一步最难了。为啥捏？这个服务端不止要实现用户的认证、皮肤获取，你还得实现用户的注册、登录、角色管理、皮肤上传、皮肤库等等七七八八的功能吧？你还得给这些功能套上一个好看的界面吧，不然你让你的玩家怎么使用？你还得来个后台管理页面吧，不然管理员怎么进行用户管理、封禁等操作？</p>
 <p>authlib-injector 官方也提供了一个 Java 编写的后端 <a target="_blank" rel="noopener" href="https://github.com/to2mbn/yggdrasil-mock">yggdrasil-mock</a>，虽然完整实现了 Yggdrasil API，但是它并没有提供直观的管理网页，只提供了一套 RESTful API，所以距离实装要求还是差得比较远的。</p>
 <p>要重头开发一套这样的系统是非常非常够呛的，不过幸运的是，我之前一直在持续开发的 Minecraft 皮肤站 <a target="_blank" rel="noopener" href="https://github.com/bs-community/blessing-skin-server">Blessing Skin Server</a>，这个项目的 v3 版本<strong>正好</strong>就满足的这些要求 —— 友好的用户界面、完善的用户系统、强大的后台管理、附带皮肤上传管理展示功能，再加上我之前开发的<a target="_blank" rel="noopener" href="https://printempw.github.io/laravel-plugin-system-1/">插件系统</a>（开发这玩意真是个正确的决定，一劳永逸啊），这让我可以很方便地开发一个插件出来，直接基于现成的皮肤站用户系统实现 Yggdrasil API。</p>
-<p><img src="/2022/minecraft-yggdrasil-api-third-party-implementation/2b4204b718b92.png" srcset="/img/loading.gif" lazyload alt="API"></p>
+<p><img src="/2022/minecraft-yggdrasil-api-third-party-implementation/2b4204b718b92.png" alt="API"></p>
 <h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><p>讲了那么多，那么到底该怎么使用呢？</p>
 <p>请参阅：<a target="_blank" rel="noopener" href="https://github.com/printempw/yggdrasil-api/wiki">printempw&#x2F;yggdrasil-api wiki</a>。</p>
 <p>以上步骤完成后你将得到什么？</p>
@@ -345,11 +152,11 @@
 <p>这还不够多吗？</p>
 <p>而且你还可以自己修改 HMCL 等开源启动器的源码，在启动时自动注入 <code>-javaagent</code> 参数，更加方便，还能得到一个服务器专用启动器，逼格更高了（笑）</p>
 <h2 id="实现效果"><a href="#实现效果" class="headerlink" title="实现效果"></a>实现效果</h2><p>皮肤站的用户管理系统、皮肤系统、后台界面之类的我就不截图了，有兴趣可以去 MCBBS 的 <a target="_blank" rel="noopener" href="http://www.mcbbs.net/forum.php?mod=viewthread&tid=552877">发布帖</a> 上感受一下。</p>
-<p><img src="/2022/minecraft-yggdrasil-api-third-party-implementation/37e6d2778c77a.png" srcset="/img/loading.gif" lazyload alt="网页管理"></p>
+<p><img src="/2022/minecraft-yggdrasil-api-third-party-implementation/37e6d2778c77a.png" alt="网页管理"></p>
 <p><em>▲ 在皮肤站「角色管理」中可添加多个角色</em></p>
-<p><img src="/2022/minecraft-yggdrasil-api-third-party-implementation/f8f9c076da123.png" srcset="/img/loading.gif" lazyload alt="多角色选择"></p>
+<p><img src="/2022/minecraft-yggdrasil-api-third-party-implementation/f8f9c076da123.png" alt="多角色选择"></p>
 <p><em>▲ 使用皮肤站的邮箱与密码登录后，配合 HMCL 实现多角色选择</em></p>
-<p><img src="/2022/minecraft-yggdrasil-api-third-party-implementation/715850d76b7db.png" srcset="/img/loading.gif" lazyload alt="游戏"></p>
+<p><img src="/2022/minecraft-yggdrasil-api-third-party-implementation/715850d76b7db.png" alt="游戏"></p>
 <p>▲ 游戏内的显示效果</p>
 <h1 id="Yggdrasil-API-踩坑记录"><a href="#Yggdrasil-API-踩坑记录" class="headerlink" title="Yggdrasil API 踩坑记录"></a>Yggdrasil API 踩坑记录</h1><p>下面记录一些自己实现 Yggdrasil API 时踩到的坑，毕竟 wiki.vg 里并不会提到这些在自己实现 API 时需要注意的东西（提到的大部分都是使用 API 时应该要注意的），所以我也只能摸着石头过河，踩了不少坑，这里记录一下，希望能帮到后来人。</p>
 <p>基础的 API 定义之类的我就不说了，下面主要讲一些 <a target="_blank" rel="noopener" href="http://wiki.vg/Authentication">文档</a> 里没怎么提到的东西。</p>
@@ -359,7 +166,7 @@
 </blockquote>
 <h2 id="登录与鉴权"><a href="#登录与鉴权" class="headerlink" title="登录与鉴权"></a>登录与鉴权</h2><p>用过正版 Minecraft 的登录系统的同学应该都知道，一般只有在初次登录游戏或者太久没有开过游戏的情况下，启动器才会要求你输入账号密码，其他情况下都是可以直接点击登录并启动游戏的。</p>
 <p>但这并不是因为启动器记下了你的密码，相反，启动器保存的是 Mojang 认证服务器返回的 AccessToken。如果你曾经观察过启动器启动游戏时所用的启动参数，你就能发现其实 Minecraft 游戏本体其实只拿到了角色名、角色 Profile 对应的 UUID 以及上面提到的 AccessToken 而已。可以说，只要拿到这个 AccessToken 就可以进行几乎所有的操作了。</p>
-<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs ada"><span class="hljs-comment">--username 621sama</span><br><span class="hljs-comment">--uuid d3af753b7cda4666adc2ff9bba85e0eb</span><br><span class="hljs-comment">--accessToken cc1e7c7d-00ab-4f37-bbe1-983e18f1755d</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">--username 621sama</span><br><span class="line">--uuid d3af753b7cda4666adc2ff9bba85e0eb</span><br><span class="line">--accessToken cc1e7c7d-00ab-4f37-bbe1-983e18f1755d</span><br></pre></td></tr></table></figure>
 
 <h3 id="获取-AccessToken"><a href="#获取-AccessToken" class="headerlink" title="获取 AccessToken"></a>获取 AccessToken</h3><p>用正确的 <code>username</code> 和 <code>password</code> 请求 <code>/authenticate</code> API 即可拿到 AccessToken，该令牌的有效期由服务端来决定（一般用 Redis 实现）。如果你请求 API 的时候没有带上 <code>clientToken</code>，那服务端就会帮你生成一个，你要记得把这个返回值记下来，因为 clientToken 和 accessToken 是对应关系，有些 API 是要求同时提供 AccessToken 和签发该令牌的 clientToken 的。</p>
 <p>另外需要注意的是，这个 <code>/authenticate</code> API 中请求体中的 <code>username</code> 字段，<strong>填的是邮箱</strong>。</p>
@@ -369,21 +176,21 @@
 <p>所以，虽然文档上没说，但是其实 <code>/refresh</code> 返回的结果应该是要和 <code>/authenticate</code> 的返回结果大致相同的，包括 accessToken、clientToken、availableProfiles、selectedProfile、user 等字段（具体下面再说）。</p>
 <h2 id="API-中的-Token"><a href="#API-中的-Token" class="headerlink" title="API 中的 Token"></a>API 中的 Token</h2><p>Yggdrasil API 的定义中主要有两个 Token，<code>clientToken</code> 与 <code>accessToken</code>，两者为对应关系。一般来说，启动器不会频繁变动 ClientToken（通常情况下，是永远不会变的），而 AccessToken 应该在每次登录游戏时通过 <code>/refresh</code> 重新签发一个。</p>
 <h3 id="Token-的生命周期"><a href="#Token-的生命周期" class="headerlink" title="Token 的生命周期"></a>Token 的生命周期</h3><p>需要注意的是，AccessToken 是有生命周期的，大致如下：</p>
-<figure class="highlight brainfuck"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs brainfuck"><span class="hljs-comment">|</span><span class="hljs-literal">----</span> <span class="hljs-comment">1</span><span class="hljs-string">.</span> <span class="hljs-comment">有效</span> <span class="hljs-literal">----</span><span class="hljs-comment">|</span><span class="hljs-literal">----</span> <span class="hljs-comment">2</span><span class="hljs-string">.</span> <span class="hljs-comment">暂时失效</span> <span class="hljs-literal">----</span><span class="hljs-comment">| 3</span><span class="hljs-string">.</span> <span class="hljs-comment">无效</span><br><span class="hljs-comment">|</span><span class="hljs-literal">------------------------------------------------------</span>&gt; <span class="hljs-comment">Time</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">|---- 1. 有效 ----|---- 2. 暂时失效 ----| 3. 无效</span><br><span class="line">|------------------------------------------------------&gt; Time</span><br></pre></td></tr></table></figure>
 
 <p>AccessToken 刚签发时处于「有效」状态，经过一段时间后（服务端自行设置）变成「暂时失效」状态。在这种状态下的 AccessToken 是无法进入任何开启了正版验证的服务器的（也就是 <code>/join</code> API 不认），但是该令牌还是能拿来请求 <code>/refresh</code> API，这会签发一个全新的处于「有效」状态的 AccessToken 并返回给客户端。</p>
 <p>但是如果处于「暂时失效」状态的 AccessToken 再放置一段时间后就会完全失效（一般的实现就是从 Redis 令牌桶中删掉该令牌），处于「无效」状态的 AccessToken 是无法进行任何操作的，只能让用户重新输入密码并请求 <code>/authenticate</code> API 以获取一个新的 AccessToken。</p>
 <h3 id="Token-的格式"><a href="#Token-的格式" class="headerlink" title="Token 的格式"></a>Token 的格式</h3><p>Yggdrasil API 中的 <code>clientToken</code>、<code>accessToken</code>、<code>id</code> 等字段的格式都是一大串 16 进制数字和 <code>-</code> 连字符组成的字符串，让人看起来很懵。其实这样的字符串格式就是 <strong>通用唯一识别码</strong>（<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%80%9A%E7%94%A8%E5%94%AF%E4%B8%80%E8%AF%86%E5%88%AB%E7%A0%81">Universally Unique Identifier</a>）标准，也就是我们经常听到的 UUID 了。标准形式的 UUID 包含 32 位 16 进制数字，并且由连字符分割成形式为 8-4-4-4-12 的字符串，就像这样：</p>
-<figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs subunit"> 至于如何生成 UUID，各个语言一般都有对应的库，搜一下就有了<br>550e8400-e29b<span class="hljs-string">-41</span>d4-a716<span class="hljs-string">-446655440000</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> 至于如何生成 UUID，各个语言一般都有对应的库，搜一下就有了</span><br><span class="line">550e8400-e29b-41d4-a716-446655440000</span><br></pre></td></tr></table></figure>
 
 <p>虽然文档中没说，但是 API 请求以及响应的 <code>clientToken</code> 、<code>accessToken</code> 以及玩家 Profile 中的 <code>id</code> 字段格式都是<strong>【不带连字符的 UUID】</strong>。下面拿 wiki.vg 中的 <code>/authenticate</code> 请求中的实例响应讲解一下：</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-punctuation">&#123;</span><br>  <span class="hljs-comment">// 不带连字符的 UUID 格式</span><br>  <span class="hljs-attr">&quot;accessToken&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;869a97cb2bc841be84bfd668c299a718&quot;</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-comment">// 无符号 UUID，与 accessToken 对应</span><br>  <span class="hljs-attr">&quot;clientToken&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;c0b2bac2eb434af5ae8ae7f824cee02f&quot;</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">&quot;availableProfiles&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><br>    <span class="hljs-punctuation">&#123;</span><br>      <span class="hljs-comment">// 无符号 UUID，下同</span><br>      <span class="hljs-attr">&quot;id&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;d3af753b7cda4666adc2ff9bba85e0eb&quot;</span><span class="hljs-punctuation">,</span><br>      <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;621sama&quot;</span><br>    <span class="hljs-punctuation">&#125;</span><br>  <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">&quot;selectedProfile&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>    <span class="hljs-attr">&quot;id&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;d3af753b7cda4666adc2ff9bba85e0eb&quot;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;621sama&quot;</span><br>  <span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br>  <span class="hljs-attr">&quot;user&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>    <span class="hljs-attr">&quot;id&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;d3af753b7cda4666adc2ff9bba85e0eb&quot;</span><span class="hljs-punctuation">,</span><br>    <span class="hljs-attr">&quot;properties&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span><span class="hljs-punctuation">]</span><br>  <span class="hljs-punctuation">&#125;</span><br><span class="hljs-punctuation">&#125;</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  // 不带连字符的 UUID 格式</span><br><span class="line">  &quot;accessToken&quot;: &quot;869a97cb2bc841be84bfd668c299a718&quot;,</span><br><span class="line">  // 无符号 UUID，与 accessToken 对应</span><br><span class="line">  &quot;clientToken&quot;: &quot;c0b2bac2eb434af5ae8ae7f824cee02f&quot;,</span><br><span class="line">  &quot;availableProfiles&quot;: [</span><br><span class="line">    &#123;</span><br><span class="line">      // 无符号 UUID，下同</span><br><span class="line">      &quot;id&quot;: &quot;d3af753b7cda4666adc2ff9bba85e0eb&quot;,</span><br><span class="line">      &quot;name&quot;: &quot;621sama&quot;</span><br><span class="line">    &#125;</span><br><span class="line">  ],</span><br><span class="line">  &quot;selectedProfile&quot;: &#123;</span><br><span class="line">    &quot;id&quot;: &quot;d3af753b7cda4666adc2ff9bba85e0eb&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;621sama&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;user&quot;: &#123;</span><br><span class="line">    &quot;id&quot;: &quot;d3af753b7cda4666adc2ff9bba85e0eb&quot;,</span><br><span class="line">    &quot;properties&quot;: []</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>至于后端存储时用怎样的格式就随意了，不过在 API 返回结果中是一定要按照上面的格式来的。</p>
 <h2 id="多角色选择功能"><a href="#多角色选择功能" class="headerlink" title="多角色选择功能"></a>多角色选择功能</h2><p>虽然 Mojang 官方迄今为止仍未支持同一个<strong>账号</strong>（Mojang 账号，用邮箱登录的那个）下添加多个<strong>角色</strong>（角色名，就是游戏里显示的那个），但是 Yggdrasil API 本身是可以实现这个<strong>「单账号多角色」</strong>功能的，并且官方启动器、HMCL 等著名的第三方启动器都支持<strong>登录后选择角色进入游戏</strong>（具体效果参见上方截图）。</p>
 <p>如果你仔细阅读过 wiki.vg 里的 API 文档的话就会发现，<code>/authenticate</code> 里面有好几个包含了 Profile 的字段，分别是 <code>availableProfiles</code>、<code>selectedProfile</code> 和 <code>user</code>。下面我稍微说一下这几个字段的功能。</p>
 <p>首先，<code>availableProfiles</code> 中存放的是这个<strong>账号</strong>下所有可用<strong>角色</strong>的 Profile，格式为 JSON 数组：</p>
-<figure class="highlight prolog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs prolog"><span class="hljs-string">&quot;availableProfiles&quot;</span>: [<br>  &#123;<br>    <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;不带连字符的 UUID&quot;</span>,<br>    <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;角色名&quot;</span><br>  &#125;,<br>  &#123;<br>    <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;d3af753b7cda4666adc2ff9bba85e0eb&quot;</span>,<br>    <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;621sama&quot;</span><br>  &#125;<br>]<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&quot;availableProfiles&quot;: [</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;id&quot;: &quot;不带连字符的 UUID&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;角色名&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;id&quot;: &quot;d3af753b7cda4666adc2ff9bba85e0eb&quot;,</span><br><span class="line">    &quot;name&quot;: &quot;621sama&quot;</span><br><span class="line">  &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
 
 <p>需要注意的是，每个<strong>角色 Profile</strong> 都应该有一个唯一的 <code>id</code>（格式为不带连字符的 UUID），而不是每个账号一个。而且，虽然官方文档上没有写，其实 <code>/refresh</code> API 返回的结果应该和 <code>/authenticate</code> 一样带上 <code>availableProfiles</code> 这个属性（因为只有第一次密码登录才会请求 <code>/authenticate</code>，之后进游戏就只会请求 <code>/refresh</code> 了）。</p>
 <p>而 <code>selectedProfile</code> 字段内容为<strong>被选中</strong>的角色 Profile。如果这个字段存在，启动器就会<strong>直接</strong>用这个角色进入游戏。只有在 <code>selectedProfile</code> 字段不存在时，启动器才会弹出「选择角色」对话框，并根据用户的输入选择不同的角色进入游戏。如果你想要搞支持<strong>单账户多角色</strong>的 API 的话，可以不用管这个字段（不过当该账号名下只有一个角色的话记得指定 <code>selectedProfile</code> ，这样启动器就可以直接用这个角色进游戏了）。</p>
@@ -391,12 +198,12 @@
 <h2 id="加载皮肤与披风"><a href="#加载皮肤与披风" class="headerlink" title="加载皮肤与披风"></a>加载皮肤与披风</h2><p>这里稍微提一下 Minecraft 使用 Yggdrasil API 时加载皮肤的原理。</p>
 <p>首先你要知道，Minecraft 游戏启动时从启动器那边（i.e. 从命令行）拿到的 API 相关属性只有「AccessToken」、「选中角色的 UUID」以及「选中角色的角色名」这三样东西。获取 Profile 以及加载皮肤是 Minecraft 游戏该做的工作，具体流程如下。</p>
 <h3 id="获取完整-Profile"><a href="#获取完整-Profile" class="headerlink" title="获取完整 Profile"></a>获取完整 Profile</h3><p>首先 Minecraft 会请求 API <code>/profiles/minecraft/&#123;uuid&#125;</code> 获取角色的完整 Profile，差不多长这样：</p>
-<figure class="highlight prolog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs prolog">&#123;<br>  <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;d3af753b7cda4666adc2ff9bba85e0eb&quot;</span>,<br>  <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;621sama&quot;</span>,<br>  <span class="hljs-string">&quot;properties&quot;</span>: [<br>    &#123;<br>      <span class="hljs-string">&quot;name&quot;</span>: <span class="hljs-string">&quot;textures&quot;</span>,<br>      <span class="hljs-string">&quot;value&quot;</span>: <span class="hljs-string">&quot;eyJ0aW1lc3RhbXAiOjE1MDIyMDA5OTAwMjgsInByb2ZpbGVJZCI6ImQzYWY3NTNiLTdjZGEtNDY2Ni1hZGMyLWZmOWJiYTg1ZTBlYiIsInByb2ZpbGVOYW1lIjoiNjIxc2FtYSIsImlzUHVibGljIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly9za2luLmRldi90ZXh0dXJlcy84MzRjYmQ4NDhmMGEyOTAwOGJmNWIxZDU5ZDAyZWNiMWNmMjVkZmQyMWZjODhiZTFjMTgzYzkyNjFmNWZkZDY5In0sIkNBUEUiOnsidXJsIjoiaHR0cDovL3NraW4uZGV2L3RleHR1cmVzLzI5MTE0MzhlODI4MmQ0MGU2ZDY0ZmJlZmQwNzZlZWYwYTkwMWNiOTBkM2RlYWU0MDU3ZmVjNjBjNjZlYjkzZDIifX0sInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlfQ==&quot;</span>,<br>      <span class="hljs-string">&quot;signature&quot;</span>: <span class="hljs-string">&quot;Zvox4YClUMHIAMe1tRLV/JmMaGF0pZhkmrigFpo7jOme8f559gZVyBQoTXeZsXn7Hwq5TE0b9m09MzuAGoT7dQ7kxkHA60xvVQXMQlbWP5O+EA8fzOM0hgINe8Qv7hSBG89osr+wWE7pTJ1CIKD6CBoK1a/U9UiCyQuDlO2gnfnXebBDIXJCBMKiowTu1LubZ9EQn7WkgrFD/M7TY+2dr8DOdoq15Pv0EZ2kLO1Gu9y6vOPq+5nAhce/TN/sWGAvfCJJkSYqALBSFh7QkExTJXPM7QHgP++rn96m6/nDe/ND6NwEovwdVqD5KiPnTvzRLkr92QEdZniT6hH2DUrToA==&quot;</span><br>    &#125;<br>  ]<br>&#125;<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;id&quot;: &quot;d3af753b7cda4666adc2ff9bba85e0eb&quot;,</span><br><span class="line">  &quot;name&quot;: &quot;621sama&quot;,</span><br><span class="line">  &quot;properties&quot;: [</span><br><span class="line">    &#123;</span><br><span class="line">      &quot;name&quot;: &quot;textures&quot;,</span><br><span class="line">      &quot;value&quot;: &quot;eyJ0aW1lc3RhbXAiOjE1MDIyMDA5OTAwMjgsInByb2ZpbGVJZCI6ImQzYWY3NTNiLTdjZGEtNDY2Ni1hZGMyLWZmOWJiYTg1ZTBlYiIsInByb2ZpbGVOYW1lIjoiNjIxc2FtYSIsImlzUHVibGljIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly9za2luLmRldi90ZXh0dXJlcy84MzRjYmQ4NDhmMGEyOTAwOGJmNWIxZDU5ZDAyZWNiMWNmMjVkZmQyMWZjODhiZTFjMTgzYzkyNjFmNWZkZDY5In0sIkNBUEUiOnsidXJsIjoiaHR0cDovL3NraW4uZGV2L3RleHR1cmVzLzI5MTE0MzhlODI4MmQ0MGU2ZDY0ZmJlZmQwNzZlZWYwYTkwMWNiOTBkM2RlYWU0MDU3ZmVjNjBjNjZlYjkzZDIifX0sInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlfQ==&quot;,</span><br><span class="line">      &quot;signature&quot;: &quot;Zvox4YClUMHIAMe1tRLV/JmMaGF0pZhkmrigFpo7jOme8f559gZVyBQoTXeZsXn7Hwq5TE0b9m09MzuAGoT7dQ7kxkHA60xvVQXMQlbWP5O+EA8fzOM0hgINe8Qv7hSBG89osr+wWE7pTJ1CIKD6CBoK1a/U9UiCyQuDlO2gnfnXebBDIXJCBMKiowTu1LubZ9EQn7WkgrFD/M7TY+2dr8DOdoq15Pv0EZ2kLO1Gu9y6vOPq+5nAhce/TN/sWGAvfCJJkSYqALBSFh7QkExTJXPM7QHgP++rn96m6/nDe/ND6NwEovwdVqD5KiPnTvzRLkr92QEdZniT6hH2DUrToA==&quot;</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>好吧好吧，看到这么多字符先别懵，<code>value</code> 和 <code>signature</code> 字段的内容都是 BASE64 编码过的，解码后 <code>value</code> 字段就是个普通的 JSON 而已。至于 JSON 里是什么内容，就自己去看 wiki 吧。</p>
 <h3 id="数字签名"><a href="#数字签名" class="headerlink" title="数字签名"></a>数字签名</h3><p>需要注意的是上述 Profile 中的 <code>signature</code> 字段。顾名思义，这个字段就是 <code>value</code> 字段的数字签名。虽然官方 API 只有在指定 <code>unsigned=false</code> 时才会返回带签名的 Profile，但是目前（截至本文发布）authlib-injector 在服务端未返回数字签名时会出现<a target="_blank" rel="noopener" href="https://github.com/printempw/blessing-skin-server/issues/81">神秘的错误</a>，所以还是默认返回 <code>signature</code> 字段来得好。</p>
 <p>至于数字签名如何生成，其实就是用的 OpenSSL 内置的签名算法。各个平台都有 OpenSSL 库的实现，我这里贴一下 PHP 的示例代码：</p>
-<figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs haxe"><span class="hljs-variable">$privateKeyPath</span> = __DIR__.<span class="hljs-string">&#x27;/key.pem&#x27;</span>;<br><br><span class="hljs-comment">// Load private key</span><br><span class="hljs-keyword">if</span> (! file_exists(<span class="hljs-variable">$privateKeyPath</span>)) &#123;<br>  <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-type">IllegalArgumentException</span>(<span class="hljs-string">&#x27;RSA 私钥不存在&#x27;</span>);<br>&#125;<br><br><span class="hljs-variable">$privateKeyContent</span> = file_get_contents(<span class="hljs-variable">$privateKeyPath</span>);<br><br><span class="hljs-variable">$key</span> = openssl_pkey_get_private(<span class="hljs-variable">$privateKeyContent</span>);<br><br><span class="hljs-keyword">if</span> (! <span class="hljs-variable">$key</span>) &#123;<br>  <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-type">IllegalArgumentException</span>(<span class="hljs-string">&#x27;无效的 RSA 私钥&#x27;</span>);<br>&#125;<br><br>openssl_sign(<span class="hljs-variable">$data</span>, <span class="hljs-variable">$sign</span>, <span class="hljs-variable">$key</span>);<br><br>openssl_free_key(<span class="hljs-variable">$key</span>);<br><br><span class="hljs-keyword">return</span> base64_encode(<span class="hljs-variable">$sign</span>);<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">$privateKeyPath = __DIR__.&#x27;/key.pem&#x27;;</span><br><span class="line"></span><br><span class="line">// Load private key</span><br><span class="line">if (! file_exists($privateKeyPath)) &#123;</span><br><span class="line">  throw new IllegalArgumentException(&#x27;RSA 私钥不存在&#x27;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$privateKeyContent = file_get_contents($privateKeyPath);</span><br><span class="line"></span><br><span class="line">$key = openssl_pkey_get_private($privateKeyContent);</span><br><span class="line"></span><br><span class="line">if (! $key) &#123;</span><br><span class="line">  throw new IllegalArgumentException(&#x27;无效的 RSA 私钥&#x27;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">openssl_sign($data, $sign, $key);</span><br><span class="line"></span><br><span class="line">openssl_free_key($key);</span><br><span class="line"></span><br><span class="line">return base64_encode($sign);</span><br></pre></td></tr></table></figure>
 
 <p>其他语言大同小异，我就不多赘述了。</p>
 <h3 id="加载材质"><a href="#加载材质" class="headerlink" title="加载材质"></a>加载材质</h3><p>拿到角色 Profile，并且验证了数字签名后（签名不对的话不会加载的），Minecraft 游戏就会根据 Profile 中指定的皮肤、披风图片 URL 加载材质。需要注意的是，Minecraft 自带的 authlib 是只会加载 Mojang 官方域名下的材质的（白名单之外的材质地址是不会被加载的），这也是为什么需要 CustomSkinLoader 等皮肤 Mod 的原因。不过 <a target="_blank" rel="noopener" href="https://github.com/to2mbn/authlib-injector/blob/master/configure.sh">authlib-injector</a> 自带了对 authlib 的 hack，在配置文件（或者远程配置加载）中直接指定材质加载白名单即可。</p>
@@ -406,7 +213,7 @@
 <p>向 Yggdrasil API 发送完 <code>join</code> 请求后，Minecraft 客户端会向要加入的那个游戏服务器发送一个请求（这部分我们不用操心），服务器收到加入请求后，会向 Yggdrasil API 发送一个 <code>hasJoined</code> 请求（Query String 中包含角色名、IP 以及服务器唯一标识符），如果该用户已经加入了服务器（也就是判断数据库中有没有之前 <code>join</code> 时添加的记录），那就返回角色的完整 Profile，同时服务器允许用户进入。</p>
 <p>这也就是为什么客户端和服务端同样需要使用 authlib-injector hack 的原因，因为我们要确保两者请求的都是同一个 API，这样才能起到一个维护登录状态的功能。</p>
 <h2 id="经常用到的-API"><a href="#经常用到的-API" class="headerlink" title="经常用到的 API"></a>经常用到的 API</h2><p>虽然 Yggdrasil 规范中定义了很多 API，但是其实日常游戏中用到的没几个，这里列举一些频繁使用的 API，也方便诸君知道哪里该认真开发哪里可以小小偷懒一下：</p>
-<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs gradle"> 初次登录时，用账号密码拿到 AccessToken<br>POST <span class="hljs-regexp">/authserver/</span>authenticate<br> 之后的登录都是直接用这个 API 签发新的令牌<br>POST <span class="hljs-regexp">/authserver/</span>refresh<br> 加入服务器<br>POST <span class="hljs-regexp">/sessionserver/</span>session<span class="hljs-regexp">/minecraft/</span><span class="hljs-keyword">join</span><br> 验证是否加入了服务器<br>GET  <span class="hljs-regexp">/sessionserver/</span>session<span class="hljs-regexp">/minecraft/</span>hasJoined<br> 获取玩家完整 Profile<br>GET  <span class="hljs-regexp">/api/</span>profiles<span class="hljs-regexp">/minecraft/</span>&#123;uuid&#125;<br></code></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> 初次登录时，用账号密码拿到 AccessToken</span><br><span class="line">POST /authserver/authenticate</span><br><span class="line"> 之后的登录都是直接用这个 API 签发新的令牌</span><br><span class="line">POST /authserver/refresh</span><br><span class="line"> 加入服务器</span><br><span class="line">POST /sessionserver/session/minecraft/join</span><br><span class="line"> 验证是否加入了服务器</span><br><span class="line">GET  /sessionserver/session/minecraft/hasJoined</span><br><span class="line"> 获取玩家完整 Profile</span><br><span class="line">GET  /api/profiles/minecraft/&#123;uuid&#125;</span><br></pre></td></tr></table></figure>
 
 <p>其他 API 感觉都是几万年用不到一次的，很神秘。</p>
 <h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>上周折腾了好几天这玩意，写篇博文记录一下，既能理清自己的思路，还有可能帮到后来人<del>（花时间研究了东西，却没人知道，多亏啊）</del>，何乐而不为呢 :P</p>
@@ -426,388 +233,52 @@
 <li>将具体部署步骤移动至 <a target="_blank" rel="noopener" href="https://github.com/prinsss/yggdrasil-api">yggdrasil-api</a> 页面</li>
 <li>同时也更新了 MCBBS 上的 <a target="_blank" rel="noopener" href="http://www.mcbbs.net/thread-718219-1-1.html">相关帖子</a></li>
 </ul>
-
-              
-            </div>
-            
-            <hr />
-            <div>
-              <div class="post-metas my-3">
-  
-    <div class="post-meta mr-3 d-flex align-items-center">
-      <i class="iconfont icon-category"></i>
-      
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E6%8A%80%E6%9C%AF/" class="category-chain-item">技术</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-    </div>
-  
-  
 </div>
+  </div>
+</article>
 
+<div id="paginator"></div>
 
-              
-  
+        <footer class="container pt-3 mt-4 border-top">
+          <div class="text-center pb-5 text-body-secondary">
+            <small>
+              Copyright © 2022 -
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              Yurik all rights reserved. <br />
+              <a href="https://hexo.io" target="_blank" rel="nofollow noopener"
+                ><span>Hexo</span></a
+              >
+              ♥
+              <span
+                ><a
+                  href="https://yurik.cafe"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  >NewsRoom</a
+                >
+                By
+                <a
+                  href="https://yurik.cafe"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  >Yurik</a
+                ></span
+              ><br />
+            </small>
 
-  <div class="license-box my-3">
-    <div class="license-title">
-      <div>【转载】又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API</div>
-      <div>https://yurik.cafe/2022/minecraft-yggdrasil-api-third-party-implementation/</div>
-    </div>
-    <div class="license-meta">
-      
-        <div class="license-meta-item">
-          <div>作者</div>
-          <div>景蓝Yurik</div>
-        </div>
-      
-      
-        <div class="license-meta-item license-meta-date">
-          <div>发布于</div>
-          <div>2022年2月11日</div>
-        </div>
-      
-      
-      
-        <div class="license-meta-item">
-          <div>许可协议</div>
-          <div>
-            
-              
-              
-                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
-                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
-                    <i class="iconfont icon-by"></i>
-                  </span>
-                </a>
-              
-            
+            <span id="running_times" >本站勉强运行: <span id="runDays">0</span>天<span id="runHours" >0</span >小时<span id="runMins">0</span>分<span id="runSeconds">0</span >秒 <script> function runtime() { X = new Date("2022/3/07 00:00:00"); Y = new Date(); T = Y.getTime() - X.getTime(); M = 24 * 60 * 60 * 1000; a = T / M; A = Math.floor(a); b = (a - A) * 24; B = Math.floor(b); c = (b - B) * 60; C = Math.floor((b - B) * 60); D = Math.floor((c - C) * 60);
+document.getElementById("runDays").innerHTML = A; document.getElementById("runHours").innerHTML = B; document.getElementById("runMins").innerHTML = C; document.getElementById("runSeconds").innerHTML = D; } setInterval(runtime, 1000); </script> </span>
           </div>
-        </div>
-      
-    </div>
-    <div class="license-icon iconfont"></div>
-  </div>
-
-
-
-              
-              <div class="post-prevnext my-3">
-                <article class="post-prev col-6">
-                  
-                  
-                  <a href="/2022/hugo-blog/" title="使用Hugo搭建个人博客">
-                    <i class="iconfont icon-arrowleft"></i>
-                    <span class="hidden-mobile">使用Hugo搭建个人博客</span>
-                    <span class="visible-mobile">上一篇</span>
-                  </a>
-                  
-                </article>
-                <article class="post-next col-6">
-                  
-                  
-                  <a href="/2022/hello-world/" title="你好，好久不见">
-                    <span class="hidden-mobile">你好，好久不见</span>
-                    <span class="visible-mobile">下一篇</span>
-                    <i class="iconfont icon-arrowright"></i>
-                  </a>
-                  
-                </article>
-              </div>
-              
-            </div>
-
-            
-          </article>
-        </div>
+        </footer>
       </div>
-    </div>
+    </main>
 
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
-  <aside class="sidebar" style="margin-left: -1rem">
-    <div id="toc">
-  <p class="toc-header">
-    <i class="iconfont icon-list"></i>
-    <span>目录</span>
-  </p>
-  <div class="toc-body" id="toc-body"></div>
-</div>
-
-
-
-  </aside>
-
-
-    </div>
-  </div>
-</div>
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
+     
+    <script src="/js/navbar.js"></script>
     
-
-    
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
-    
-
-    
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    
-
-    
-  </main>
-
-  <footer>
-    <div class="footer-inner">
-  
-  <div class="footer-content">
-     Copyright © 2022 - 2023 Yurik all rights reserved. </br> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fabric Base On Fluid</span></a><br /> 
-  </div>
-  
-  
-  
-  
-  
-  <span id="running_times">本站勉强运行: <span id="runDays">0</span>天<span id="runHours">0</span>小时<span id="runMins">0</span>分<span id="runSeconds">0</span>秒
-    <script>
-      function runtime() {
-        X = new Date("2022/2/10 00:00:00");
-        Y = new Date();
-        T = (Y.getTime() - X.getTime());
-        M = 24 * 60 * 60 * 1000;
-        a = T / M;
-        A = Math.floor(a);
-        b = (a - A) * 24;
-        B = Math.floor(b);
-        c = (b - B) * 60;
-        C = Math.floor((b - B) * 60);
-        D = Math.floor((c - C) * 60);
-
-        document.getElementById("runDays").innerHTML = A
-        document.getElementById("runHours").innerHTML = B
-        document.getElementById("runMins").innerHTML = C
-        document.getElementById("runSeconds").innerHTML = D
-      }
-      setInterval(runtime, 1000);
-    </script>
-    
-</div>
-  </footer>
-
-  <!-- Scripts -->
-  
-  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
-
-<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
-<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
-
-
-  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var subtitle = document.getElementById('subtitle');
-      if (!subtitle || !typing) {
-        return;
-      }
-      var text = subtitle.getAttribute('data-typed-text');
-      
-        typing(text);
-      
-    })(window, document);
-  </script>
-
-
-
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
-
-
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
-    var toc = jQuery('#toc');
-    if (toc.length === 0 || !window.tocbot) { return; }
-    var boardCtn = jQuery('#board-ctn');
-    var boardTop = boardCtn.offset().top;
-
-    window.tocbot.init(Object.assign({
-      tocSelector     : '#toc-body',
-      contentSelector : '.markdown-body',
-      linkClass       : 'tocbot-link',
-      activeLinkClass : 'tocbot-active-link',
-      listClass       : 'tocbot-list',
-      isCollapsedClass: 'tocbot-is-collapsed',
-      collapsibleClass: 'tocbot-is-collapsible',
-      scrollSmooth    : true,
-      includeTitleTags: true,
-      headingsOffset  : -boardTop,
-    }, CONFIG.toc));
-    if (toc.find('.toc-list-item').length > 0) {
-      toc.css('visibility', 'visible');
-    }
-
-    Fluid.events.registerRefreshCallback(function() {
-      if ('tocbot' in window) {
-        tocbot.refresh();
-        var toc = jQuery('#toc');
-        if (toc.length === 0 || !tocbot) {
-          return;
-        }
-        if (toc.find('.toc-list-item').length > 0) {
-          toc.css('visibility', 'visible');
-        }
-      }
-    });
-  });
-</script>
-
-
-  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
-
-  <script>Fluid.plugins.codeWidget();</script>
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
-    window.anchors.options = {
-      placement: CONFIG.anchorjs.placement,
-      visible  : CONFIG.anchorjs.visible
-    };
-    if (CONFIG.anchorjs.icon) {
-      window.anchors.options.icon = CONFIG.anchorjs.icon;
-    }
-    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
-    var res = [];
-    for (var item of el) {
-      res.push('.markdown-body > ' + item.trim());
-    }
-    if (CONFIG.anchorjs.placement === 'left') {
-      window.anchors.options.class = 'anchorjs-link-left';
-    }
-    window.anchors.add(res.join(', '));
-
-    Fluid.events.registerRefreshCallback(function() {
-      if ('anchors' in window) {
-        anchors.removeAll();
-        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
-        var res = [];
-        for (var item of el) {
-          res.push('.markdown-body > ' + item.trim());
-        }
-        if (CONFIG.anchorjs.placement === 'left') {
-          anchors.options.class = 'anchorjs-link-left';
-        }
-        anchors.add(res.join(', '));
-      }
-    });
-  });
-</script>
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
-    Fluid.plugins.fancyBox();
-  });
-</script>
-
-
-  <script>Fluid.plugins.imageCaption();</script>
-
-  <script  src="/js/local-search.js" ></script>
-
-
-
-
-
-<!-- 主题的启动项，将它保持在最底部 -->
-<!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
-
-
-  
-
-  <noscript>
-    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
-  </noscript>
-</body>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+     
+  </body>
 </html>
