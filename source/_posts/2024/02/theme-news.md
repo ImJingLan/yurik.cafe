@@ -4,10 +4,10 @@ copyright: BY-NC-SA
 date: 2024-02-01 00:00:00
 tags:
 categories:
-cover: /2024/theme-newsroom/banner.webp
+cover: /2024/theme-news/banner.webp
 ---
 
-![](/2024/theme-newsroom/banner.webp)
+![](banner.webp)
 
 如你所见，我给博客换上了一个新主题。
 
