@@ -59,7 +59,7 @@ cover: /2024/theme-newsroom/banner.webp
 # 下载地址
 
 <div class="alert alert-danger" role="alert">
-  警告：<b>Newsroom「新闻中心」</b>仍处于早期开发阶段，<b>文档尚未编写</b>，<b>代码未经过完整测试</b>，无法保证其在生产环境中的安全与稳定！我们不对使用当前版本主题造成的损失负责，请谨慎下载。
+  警告：<b>Newsroom「新闻中心」</b>暂时停止开发。
 </div>
 
 <a href="https://github.com/Newsroom-Dev/hexo-theme-newsroom" target="_blank" type="button" class="btn btn-outline-dark btn-lg w-100" ><i class="bi bi-github"></i> Newsroom-Dev/hexo-theme-newsroom</a>

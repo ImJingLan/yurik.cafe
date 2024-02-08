@@ -9,7 +9,7 @@ description: ""
 keywords:
 author: 景蓝Yurik
 
-theme: newsroom
+theme: fabric
 language: zh-CN # 指定语言，会影响主题显示的语言，按需修改
 
 timezone: ""
