@@ -236,6 +236,8 @@ custom_js:
 # The usage is the same as custom_js
 custom_css: https://at.alicdn.com/t/c/font_4230030_f9v8o9aoqjg.css
 
+custom_head: "<script>hljs.initHighlightingOnLoad();</script>"
+
 # 网页访问统计
 # Analysis of website visitors
 web_analytics:  # 网页访问统计
