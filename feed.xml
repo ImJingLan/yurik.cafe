@@ -8,8 +8,8 @@
     
     <atom:link href="https://yurik.cafe/feed.xml" rel="self" type="application/rss+xml"/>
     
-    <description></description>
-    <pubDate>Sat, 17 Feb 2024 20:19:49 GMT</pubDate>
+    <description>Yurik&#39;s Lab</description>
+    <pubDate>Fri, 23 Feb 2024 11:59:01 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -115,21 +115,23 @@
     </item>
     
     <item>
-      <title>【简要发布】RimeWave.News 现已可用！</title>
+      <title>「过时」 | 【简要发布】RimeWave.News 现已可用！</title>
       <link>https://yurik.cafe/2023/rimewave-news-is-available/</link>
       <guid>https://yurik.cafe/2023/rimewave-news-is-available/</guid>
       <pubDate>Mon, 06 Nov 2023 16:18:24 GMT</pubDate>
       
         
         
-      <description>&lt;p&gt;RimeWave.News 现已可用！&lt;/p&gt;
-&lt;p&gt;访问 &lt;a href=&quot;https://rimewave.top/?module=news&quot;&gt;https://rimewave.top/?module=news&lt;/a&gt; 了解更多&lt;/p&gt;
-</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;RimeWave.top 现已停止运营&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;RimeWave.News 现已可用！&lt;/p&gt;
+&lt;p&gt;访问 &lt;a href=&quot;https://rimewave.top/?module=news&quot;&gt;https://r</description>
         
       
       
       
-      <content:encoded><![CDATA[<p>RimeWave.News 现已可用！</p><p>访问 <a href="https://rimewave.top/?module=news">https://rimewave.top/?module=news</a> 了解更多</p>]]></content:encoded>
+      <content:encoded><![CDATA[<blockquote><p>RimeWave.top 现已停止运营</p></blockquote><p>RimeWave.News 现已可用！</p><p>访问 <a href="https://rimewave.top/?module=news">https://rimewave.top/?module=news</a> 了解更多</p>]]></content:encoded>
       
       
       <category domain="https://yurik.cafe/categories/%E7%AE%80%E8%A6%81%E5%8F%91%E5%B8%83/">简要发布</category>
