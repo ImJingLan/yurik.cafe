@@ -45,5 +45,3 @@ cover: /2024/warma-shark-unity/warmashark.jpg
 # 下载
 
 > 当前游戏还未开发好
-
-[Win_x64.zip](Win_x64.zip)
