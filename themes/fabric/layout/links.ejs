@@ -33,7 +33,9 @@ page.comment = theme.links.comments.type
 
 <% if (site.data.links.more_content) { %>
   <div class="custom mx-auto">
-    <%- page.content %>
+    <div class="markdown-body">
+      <%- page.content %>
+    </div>
   </div>
 <% } %>
 

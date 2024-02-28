@@ -30,6 +30,6 @@ layout: links
 
 - 链接：[yurik.cafe](//yurik.cafe)
 
-- 图片：[unpkg.com/yurik-static@1.0.6/favicon/v2/icon@1024px.jpg](//unpkg.com/yurik-static@1.0.6/favicon/v2/icon@1024px.jpg)
+- 图片：[/favicon/v2/icon@1024px.jpg](/favicon/v2/icon@1024px.jpg)
 
-- 更多图标可以访问 [NPM Package:yurik-static](//unpkg.com/browse/yurik-static@1.0.6/favicon/v2/)
+- 更多图标可以访问 [`站点 Favicon 目录`](/favicon/v2/)

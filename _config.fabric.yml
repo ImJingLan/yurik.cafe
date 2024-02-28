@@ -17,11 +17,11 @@
 
 # 用于浏览器标签的图标
 # Icon for browser tab
-favicon: https://unpkg.com/yurik-static@1.0.6/favicon/v2/favicon.ico
+favicon: /favicon/v2/favicon.ico
 
 # 用于苹果设备的图标
 # Icon for Apple touch
-apple_touch_icon: https://unpkg.com/yurik-static@1.0.6/favicon/v2/apple-touch-icon.png
+apple_touch_icon: /favicon/v2/apple-touch-icon.png
 
 # 浏览器标签页中的标题分隔符，效果： 文章名 - 站点名
 # Title separator in browser tab, eg: article - site
