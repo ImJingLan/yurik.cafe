@@ -31,5 +31,6 @@ layout: links
 - 链接：[yurik.cafe](//yurik.cafe)
 
 - 图片：[/favicon/v2/icon@1024px.jpg](/favicon/v2/icon@1024px.jpg)
+  [/favicon/v2/icon-circle@1024px.png](/favicon/v2/icon-circle@1024px.png)
 
 - 更多图标可以访问 [`站点 Favicon 目录`](/favicon/v2/)
