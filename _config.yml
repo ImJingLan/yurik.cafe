@@ -9,7 +9,7 @@ description: "Yurik's Lab"
 keywords: "景蓝,Yurik,Yurik's Blog,博客,祐柯,祐里柯,祐柯文化（柳州）有限公司"
 author: 景蓝Yurik
 
-theme: fluidEE
+theme: fluidee
 language: zh-CN # 指定语言，会影响主题显示的语言，按需修改
 
 timezone: ""
