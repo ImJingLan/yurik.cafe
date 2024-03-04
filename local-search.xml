@@ -4,12 +4,18 @@
   
   
   <entry>
-    <title>「重要」站点Icon变更通知</title>
-    <link href="/2024/new-avatar/"/>
-    <url>/2024/new-avatar/</url>
+    <title>「随笔」这世界有那么多人</title>
+    <link href="/2024/thought-memories/"/>
+    <url>/2024/thought-memories/</url>
     
-    <content type="html"><![CDATA[<p><strong>站点公告</strong> 本站于 2024 年 2 月 29 日零时启用新的 icon 并将其 URL 地址迁回至站点源地址。</p><p>烦请各位友站将原先的 unpkg 源地址修改为新地址。</p><p>仅需将原先地址中的 <code>https://unpkg.com/yurik-static@1.0.6/</code> 修改为本站地址 <code>https://yurik.cafe</code> 即可</p><p>如 <code>https://unpkg.com/yurik-static@1.0.6/favicon/v2/favicon.ico</code> -&gt; <code>https://yurik.cafe/favicon/v2/favicon.ico</code></p><p>icon 列表及对应地址可查看 <a href="/favicon/v2/">&#x2F;favicon&#x2F;v2&#x2F;</a></p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>这世界有那么个人，活在我飞扬的青春<br>在泪水里浸湿过的长吻，常让我想啊想出神</p></blockquote><p>再一次听到这首歌，还是不自觉的跟唱。</p><p>上高中两年了，还是总会想到初中的事。与我小升初时转入另一个的学区不同，上了高中的我还是能见到他们，打招呼，是一件刻在骨子里的习惯。</p><p>我可能是一个私下里比较感性的，对于分别，我是难以接受的。但通过互联网能再次阅读他们的文字，体会他们表达的感情，是一件很奇妙的事。</p><p>『这世界有那么多人』总让我想到分别。</p><p>早先国 V 刚刚开始起步，彩虹社与 B 站成立了 VirtuaReal。B 站对 VR 的一期生做了很多宣发，我大抵是当时关注<strong>爹</strong>的，后来就躺在我的关注列表里，一直没看过了。重新记起爹是因为「我开动物园那些年」的 OP 和「<a href="https://www.bilibili.com/video/BV1SE411V78E/">夭夭</a>」，而重新看爹的直播&#x2F;录播是因为她当时打 Apex 和 MC，迷于爹的「琉声电台」。当时的「琉声电台」是我初二时每天写完作业的哄睡音频。</p><p>初三时因为学校的安排，班级从走读转为住校，一同告别的便是每日都可以接触到的手机与电脑。当时求了我妈一个多月，才终于同意给我买了一块 Oppo Watch 2，小小的安卓表，让我与学校围墙外的世界重新建立了联系，也让我得知了那个紫发女孩毕业了。</p><blockquote><p>弹幕：好像去 VR 做 Ru 爹的同事啊。 Ru：（沉默）也有可能到时候我就是你的前同事了。</p></blockquote><p>当然，互联网也不是杳无音讯，那段时间，我不记得听了多少次<a href="https://www.bilibili.com/video/BV14j411f79e">初号机的告别视频《再见》</a>和这一首女水友唱的<a href="https://www.bilibili.com/video/BV1H3411h7mN">《这世界那么多人》</a></p><p>当时正值中考前，可能人也变得伤感了吧。与朋友的分别，D 的管人的毕业，组成了这首歌留在记忆里的画面。</p><p>心中感慨良多，却难以写出，诸君权当一笑尔。</p><blockquote><p>看管人不要入脑。</p></blockquote>]]></content>
     
+    
+    <categories>
+      
+      <category>随笔</category>
+      
+    </categories>
     
     
   </entry>
@@ -17,7 +23,26 @@
   
   
   <entry>
-    <title>我的小鲨鱼 By Unity</title>
+    <title>「重要」站点Icon变更通知</title>
+    <link href="/2024/new-avatar/"/>
+    <url>/2024/new-avatar/</url>
+    
+    <content type="html"><![CDATA[<p><strong>站点公告</strong> 本站于 2024 年 2 月 29 日零时启用新的 icon 并将其 URL 地址迁回至站点源地址。</p><p>烦请各位友站将原先的 unpkg 源地址修改为新地址。</p><p>仅需将原先地址中的 <code>https://unpkg.com/yurik-static@1.0.6/</code> 修改为本站地址 <code>https://yurik.cafe</code> 即可</p><p>如 <code>https://unpkg.com/yurik-static@1.0.6/favicon/v2/favicon.ico</code> -&gt; <code>https://yurik.cafe/favicon/v2/favicon.ico</code></p><p>icon 列表及对应地址可查看 <a href="/favicon/v2/">&#x2F;favicon&#x2F;v2&#x2F;</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>站点公告</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>「游戏开发」我的小鲨鱼 By Unity</title>
     <link href="/2024/warma-shark-unity/"/>
     <url>/2024/warma-shark-unity/</url>
     
@@ -26,18 +51,16 @@
     
     <categories>
       
-      <category>游戏开发</category>
+      <category>项目</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>游戏</tag>
-      
       <tag>Unity</tag>
       
-      <tag>沃玛</tag>
+      <tag>游戏开发</tag>
       
     </tags>
     
@@ -46,7 +69,7 @@
   
   
   <entry>
-    <title>使用 Hexo 搭建静态博客</title>
+    <title>「技术」使用 Hexo 搭建静态博客</title>
     <link href="/2024/hexo-guidebook-1/"/>
     <url>/2024/hexo-guidebook-1/</url>
     
@@ -75,33 +98,53 @@
   
   
   <entry>
-    <title>Hexo 主题 Newsroom「新闻中心」现已上线</title>
-    <link href="/2024/theme-news/"/>
-    <url>/2024/theme-news/</url>
+    <title>「项目」Hexo 主题 News 现已上线</title>
+    <link href="/2024/hexo-theme-news/"/>
+    <url>/2024/hexo-theme-news/</url>
     
-    <content type="html"><![CDATA[<p><img src="/2024/theme-news/banner.webp"></p><p>如你所见，我给博客换上了一个新主题。</p><p>与别的主题不同的是，这个主题是我从 1 开始制作的。为什么是从 1 开始？因为这个主题我参考了 <a href="https://www.apple.com.cn/newsroom/">Apple 公司的 Newsroom 页面</a>，也使用了部分 Apple 的 CSS 样式表（主要是文字相关部分），因此这个主题也被我命名为<strong>Newsroom「新闻中心」</strong>。这篇博文是制作<strong>Newsroom「新闻中心」</strong>主题的记录。</p><h1 id="灵感"><a href="#灵感" class="headerlink" title="灵感"></a>灵感</h1><p>最开始的想法是在给班级网站写新闻中心页面。当时给网站主页使用的 Bootstrap 5 的 Jumbotron 模板，想着设计一个和他向契合的新闻页面，突然我想到了之前看到的 Apple Newsroom 我十分喜欢，于是便用 Bootstrap 的 Card 放置了一个差不多的页面出来，这可以称为是<strong>Newsroom「新闻中心」</strong>的 <strong>α1</strong> 测试版本。</p><blockquote><p>此处因保护隐私原因不放出参考网址</p></blockquote><p>之后这个站点便因为准备期考而暂停了更新，但我仍时不时的对他的样式表做一点细微的调整，直到期考结束。期考结束的这个寒假，我按照计划维护着博客，突发奇想要不把之前写的「新闻中心」改成主题吧！</p><p><strong>说干就干</strong></p><h1 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h1><p>我使用的是 <a href="https://www.npmjs.com/package/yo">YO(Yeoman generators) 生成器</a>来创建的 Hexo 主题模板，使用的 EJS 模板语言和 CSS 样式表，具体的技术细节就不再文中赘述了。我感觉主题的开发就和使用 PHP 写程序一样，要注重代码的<strong>“复用”</strong>，即模块化编程，将不同的组件单独编写，按需调用，省去了重复造轮子的麻烦。</p><p>目前，<strong>Newsroom「新闻中心」</strong>已经实现了以下功能：</p><ul><li>基础文章的渲染</li><li>友情链接页面</li></ul><p>计划实现的功能：</p><ul><li>灯箱 Fancybox</li><li>完善配置文件</li><li>代码高亮</li></ul><h1 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h1><p><strong>Newsroom「新闻中心」</strong>具有以下特性：</p><ul><li>使用了最新的 Bootstrap 5 作为框架，「新闻中心」支持其全部组件和特性</li></ul><h1 id="鸣谢"><a href="#鸣谢" class="headerlink" title="鸣谢"></a>鸣谢</h1><p>以下项目在 Newsroom 开发时提供了无可取代的帮助，特在此表达诚挚的谢意（排名不分先后）</p><ul><li><p>设计灵感和部分 CSS 代码来自：<a href="//apple.com.cn">Apple Inc.</a></p></li><li><p>导航栏动画来自：<a href="https://nero978.top/">Nero978</a> | <a href="https://github.com/Miracle-Town/mt-web">Miracal Town&#x2F;mt-web</a></p></li><li><p>Hexo 主题启蒙，提供了部分样式和脚本代码：<a href="https://github.com/fluid-dev/hexo-theme-fluid">Fluid 主题</a></p></li><li><p>默认随机封面图来自我使用的第一个博客主题：<a href="https://github.com/BigCoke233/miracles">BigCoke233&#x2F;Miracles</a></p></li></ul><h1 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h1><div class="alert alert-danger" role="alert">  警告：<b>Newsroom「新闻中心」</b>暂时停止开发。</div><p><a href="https://github.com/Newsroom-Dev/hexo-theme-newsroom" target="_blank" type="button" class="btn btn-outline-dark btn-lg w-100" ><i class="bi bi-github"></i> Newsroom-Dev&#x2F;hexo-theme-newsroom</a></p>]]></content>
+    <content type="html"><![CDATA[<p><img src="/2024/hexo-theme-news/banner.webp"></p><p>如你所见，我给博客换上了一个新主题。</p><p>与别的主题不同的是，这个主题是我从 1 开始制作的。为什么是从 1 开始？因为这个主题我参考了 <a href="https://www.apple.com.cn/newsroom/">Apple 公司的 Newsroom 页面</a>，也使用了部分 Apple 的 CSS 样式表（主要是文字相关部分），因此这个主题也被我命名为<strong>News「新闻中心」</strong>。这篇博文是制作<strong>News「新闻中心」</strong>主题的记录。</p><h1 id="灵感"><a href="#灵感" class="headerlink" title="灵感"></a>灵感</h1><p>最开始的想法是在给班级网站写新闻中心页面。当时给网站主页使用的 Bootstrap 5 的 Jumbotron 模板，想着设计一个和他向契合的新闻页面，突然我想到了之前看到的 Apple Newsroom 我十分喜欢，于是便用 Bootstrap 的 Card 放置了一个差不多的页面出来，这可以称为是<strong>News「新闻中心」</strong>的 <strong>α1</strong> 测试版本。</p><blockquote><p>此处因保护隐私原因不放出参考网址</p></blockquote><p>之后这个站点便因为准备期考而暂停了更新，但我仍时不时的对他的样式表做一点细微的调整，直到期考结束。期考结束的这个寒假，我按照计划维护着博客，突发奇想要不把之前写的「新闻中心」改成主题吧！</p><p><strong>说干就干</strong></p><h1 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h1><p>我使用的是 <a href="https://www.npmjs.com/package/yo">YO(Yeoman generators) 生成器</a>来创建的 Hexo 主题模板，使用的 EJS 模板语言和 CSS 样式表，具体的技术细节就不再文中赘述了。我感觉主题的开发就和使用 PHP 写程序一样，要注重代码的<strong>“复用”</strong>，即模块化编程，将不同的组件单独编写，按需调用，省去了重复造轮子的麻烦。</p><p>目前，<strong>News「新闻中心」</strong>已经实现了以下功能：</p><ul><li>基础文章的渲染</li><li>友情链接页面</li></ul><p>计划实现的功能：</p><ul><li>灯箱 Fancybox</li><li>完善配置文件</li><li>代码高亮</li></ul><h1 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h1><p><strong>News「新闻中心」</strong>具有以下特性：</p><ul><li>使用了最新的 Bootstrap 5 作为框架，「新闻中心」支持其全部组件和特性</li></ul><h1 id="鸣谢"><a href="#鸣谢" class="headerlink" title="鸣谢"></a>鸣谢</h1><p>以下项目在 Newsroom 开发时提供了无可取代的帮助，特在此表达诚挚的谢意（排名不分先后）</p><ul><li><p>设计灵感和部分 CSS 代码来自：<a href="//apple.com.cn">Apple Inc.</a></p></li><li><p>导航栏动画来自：<a href="https://nero978.top/">Nero978</a> | <a href="https://github.com/Miracle-Town/mt-web">Miracal Town&#x2F;mt-web</a></p></li><li><p>Hexo 主题启蒙，提供了部分样式和脚本代码：<a href="https://github.com/fluid-dev/hexo-theme-fluid">Fluid 主题</a></p></li><li><p>默认随机封面图来自我使用的第一个博客主题：<a href="https://github.com/BigCoke233/miracles">BigCoke233&#x2F;Miracles</a></p></li></ul><h1 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h1><div class="alert alert-danger" role="alert">  警告：<b>News「新闻中心」</b>因个人原因无限期停止开发。</div><a href="https://github.com/ImJingLan/hexo-theme-news" target="_blank" type="button" class="btn btn-outline-dark btn-lg w-100" ><i class="bi bi-github"></i> ImJingLan/hexo-theme-news</a>]]></content>
     
     
+    <categories>
+      
+      <category>项目</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Hexo</tag>
+      
+      <tag>Hexo 主题</tag>
+      
+    </tags>
     
   </entry>
   
   
   
   <entry>
-    <title>使用 GitHub Actions 部署 Hexo</title>
+    <title>「技术」使用 GitHub Actions 部署 Hexo</title>
     <link href="/2024/github-action-depoly-hexo/"/>
     <url>/2024/github-action-depoly-hexo/</url>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近把博客从 Vercel 迁移到了 Netlify 了，这两家都是 ServerLess 部署平台，属于完全的无痛迁移了。</p><p>无论是 Vercel 还是 Netlify，都对于应用的部署时长有限制，但相对与 Vercel 免费的每月 6000 分钟来说，Netlify 的 300 分钟就略显寒酸了。但自从去年国庆我的网站挂在 Vercel 被墙外加最近 Vercel 访问不畅之后我就在研究 Netlify 了。</p><p>因为直接上传 NPM 包到 Netlify 上部署相比上传静态的 HTML 页面更耗时间，而我最近学习了 Github Actions，Github Actions 提供了每月 3000 分钟的部署时长，因此决定使用 Github Actions 来构建静态页面，之后仅同步静态页面到 Netlify 就完成了。</p><h2 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h2><p>首先在仓库中新建一个 deploy 分支用于存放构建完成的静态页面。</p><p>别忘了在 <strong>Setting - Actions - General - Workflow permissions</strong> 中将权限设置为 <code>Read and write permissions</code></p><p>在仓库主分支下的<code>.github/workflows/</code>文件夹新建一个 yml 文件，名称随意，如<code>deploy.yml</code></p><p>随后在 yml 文件下写入以下代码</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">name:</span> <span class="hljs-string">部署静态页面到</span> <span class="hljs-string">Deploy</span> <span class="hljs-string">分支</span><br><br><span class="hljs-attr">on:</span><br>  <span class="hljs-attr">push:</span><br>    <span class="hljs-attr">branches:</span><br>      <span class="hljs-bullet">-</span> <span class="hljs-string">main</span><br>  <span class="hljs-comment">#手动触发</span><br>  <span class="hljs-attr">workflow_dispatch:</span><br><br><span class="hljs-attr">jobs:</span><br>  <span class="hljs-attr">build:</span><br>    <span class="hljs-attr">runs-on:</span> <span class="hljs-string">ubuntu-latest</span><br>    <span class="hljs-attr">steps:</span><br>      <span class="hljs-comment"># 获取源码</span><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">迁出代码</span><br>        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout@master</span><br><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">安装node.js环境</span><br>        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/setup-node@master</span><br><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">安装Hexo-cli</span> <span class="hljs-string">和</span> <span class="hljs-string">其他</span> <span class="hljs-string">node</span> <span class="hljs-string">环境</span><br>        <span class="hljs-attr">run:</span> <span class="hljs-string">|</span><br><span class="hljs-string">          npm install hexo-cli -g</span><br><span class="hljs-string">          npm install</span><br><span class="hljs-string"></span><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">构建静态页面</span><br>        <span class="hljs-attr">run:</span> <span class="hljs-string">|</span><br><span class="hljs-string">          npm run g</span><br><span class="hljs-string"></span><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">你也可以在这里执行更多Linux命令</span><br>        <span class="hljs-attr">run:</span> <span class="hljs-string">|</span><br><span class="hljs-string">          echo Example</span><br><span class="hljs-string"></span><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">推送到</span> <span class="hljs-string">deploy</span> <span class="hljs-string">分支</span> <span class="hljs-comment"># 部署</span><br>        <span class="hljs-attr">uses:</span> <span class="hljs-string">JamesIves/github-pages-deploy-action@v4.3.3</span><br>        <span class="hljs-attr">with:</span><br>          <span class="hljs-attr">branch:</span> <span class="hljs-string">deploy</span> <span class="hljs-comment"># 部署后提交到的分支</span><br>          <span class="hljs-attr">folder:</span> <span class="hljs-string">public</span> <span class="hljs-comment"># 打包好的目录名称</span><br></code></pre></td></tr></table></figure><p>最后 Push 到 Github 就好啦</p><p>别忘了把 Netlify 中的链接仓库重新绑定到 deploy 分支噢</p>]]></content>
     
     
+    <categories>
+      
+      <category>技术</category>
+      
+    </categories>
+    
     
   </entry>
   
   
   
   <entry>
-    <title>【朝花夕拾】我的PHP开发之路</title>
+    <title>「随笔」我的PHP开发之路</title>
     <link href="/2024/my-way-to-php/"/>
     <url>/2024/my-way-to-php/</url>
     
@@ -110,7 +153,7 @@
     
     <categories>
       
-      <category>朝花夕拾</category>
+      <category>随笔</category>
       
     </categories>
     
@@ -120,7 +163,7 @@
   
   
   <entry>
-    <title>「过时」 | 【简要发布】RimeWave.News 现已可用！</title>
+    <title>「站点公告」RimeWave.News 现已可用！</title>
     <link href="/2023/rimewave-news-is-available/"/>
     <url>/2023/rimewave-news-is-available/</url>
     
@@ -129,7 +172,7 @@
     
     <categories>
       
-      <category>简要发布</category>
+      <category>站点公告</category>
       
     </categories>
     
@@ -139,24 +182,11 @@
   
   
   <entry>
-    <title>Counter-Strike 2 : 未来已来，时不我待</title>
+    <title>「杂谈」Counter-Strike 2 : 未来已来，时不我待</title>
     <link href="/2023/hello-counter-strike-2/"/>
     <url>/2023/hello-counter-strike-2/</url>
     
     <content type="html"><![CDATA[<blockquote><p>Counter-Strike、Counter-Strike 2、CS:GO 以及它们各自的标识是 Valve Corporation 的商标和&#x2F;或注册商标。</p></blockquote><p>北京时间 2023 年 9 月 28 日 凌晨 4:40 , <strong>Valve Corporation（V 社）</strong>发布了<strong>反恐精英：全球攻势</strong>（下称 CSGO）有史以来最大的更新</p><p>全新的<strong>反恐精英 2</strong>（下称为 CS2）覆盖了原先的 CSGO 页面，预示着内测 6 个月的 CS2 正式取代 CSGO，称为下一代反恐精英系列游戏</p><p>与 反恐精英 1.6（CS1.6）、反恐精英:起源（CSS）、CSGO 之间的更新不同，本次更新中 V 社直接使用过 CS2 覆盖了原先 CSGO 的页面，这意味着玩家将无法同时游玩 CS2 与 CSGO。不过你依然可以通过游戏属性-&gt;测试版-&gt; <strong>csgo_demo_viewer - 1.38.7.9</strong> 来启动 CSGO</p><p>今天这篇文章，咱们不聊 CS2，而是聊聊我与 CS 的故事，权当一篇琐记吧</p><h1 id="初识"><a href="#初识" class="headerlink" title="初识"></a>初识</h1><p>我玩的第一款 FPS，就是 CS 了。那时候我 5 岁，我哥便带我玩 CSOL（虐我）。当时主要是打一些大灾变之类的生化模式。有一次，我哥问我知不知道 Steam，我还记得他还提了一嘴：“知不知道 CSGO？”那年，我 10 岁</p><p>缘分总是很巧，第二年，2017 年，我忽然想起了这款游戏，便去网上搜索了一下。那时候，CSGO 国服刚刚开始内测。</p><p>我大概是第二批国服内测玩家，在游玩了几天国服之后，我又花钱购买了国际服的优先（那时候 CSGO 还是一个付费游戏）。</p><p>后来，我对于他的兴趣渐渐消失，逐渐的，他便成为我 Steam 库中静静的一员。</p><p>直到初一。</p><h1 id="重逢"><a href="#重逢" class="headerlink" title="重逢"></a>重逢</h1><p>小学，吃鸡的风潮席卷全球，大伙都在聊着绝地求生，CSGO 却默默无闻。</p><p>初中，也尝试着和朋友一起玩 PUBG，有一日，他突然问我打不打 CSGO。</p><p>一发不可收拾。</p><p>我不知道自己打了多少局白银段的对局，也不知道自己起过多少次<strong>内格夫</strong>和 <strong>PP-野牛</strong>。但是从此之后，我再也没放下他。</p><p>我买了人生中第一款皮肤。</p><p>很早的时候，我曾经掉落过一把皮肤，但我天真的以为如果我装备了皮肤，他的磨损值会不断下降，直到完全磨损。因此 2019 年之前我从来没用过皮肤。</p><p>从初一打到高二，虽然中途有短暂的退游，却依旧在电脑上保留着他，他成为了我和朋友交流的一大方式。我依旧记得段位机制更新后我升上黄金的感动；在 Nuke 打出 1V5 残局队友的赞美（<a href="https://www.bilibili.com/video/BV1aM411i7Tw">点我去看</a>）</p><p>我买过很多把刀，但都是比较普通的折叠刀。2023 年春节，我下定决心，花了 1980 元买了一把<strong>折叠刀 | 多普勒 （崭新出厂）[Phase 1]</strong></p><p>后来，又陆续地添置了印花集 UPS、沙漠之鹰和一个手套。</p><p><img src="/2023/hello-counter-strike-2/The-Teenagers-First-Knife.jpg" alt="&quot;The Teenagers&#39; First Knife&quot;"></p><h1 id="明天-，后天-？"><a href="#明天-，后天-？" class="headerlink" title="明天 _ _ _ ，后天 _ _ _ ？"></a>明天 _ _ _ ，后天 _ _ _ ？</h1><p>2023 年 3 月 23 日，V 社公布了基于起源二引擎打造的 CS2。</p><p>你要问我，那一日我记忆犹新的，居然是皮肤交易市场。年初我 1980 买的刀，一夜之间涨到 4000 元（求购）。</p><p>随后就是长时间地等待资格，实际上直到最后一次大规模发放资格时我才收到了邀请。</p><p>游玩了一段时间的 CS2，感觉枪械手感、Sub-Tick 等的调教有待加强，不过谁还不是 1.6 遗老了呢？</p><p><img src="/2023/hello-counter-strike-2/limitest.webp" alt="CS2 Limit Test"></p><h1 id="永远怀念"><a href="#永远怀念" class="headerlink" title="永远怀念"></a>永远怀念</h1><p>或许我有些矫情，但我昨晚熬夜到 1 点，等着 CS2 的发布。但当我早上起来，看见库中的<strong>Counter-Strike : Global Offensive</strong> 变成了 <strong>Counter-Strike 2</strong>。看着 CSGO 国服发的<a href="https://www.bilibili.com/video/BV1PC4y1o7So">《这，就是反恐精英》</a>，依旧感觉有些许伤感。</p><blockquote><p>我们终会理解那些依旧在玩 1.6 的人</p></blockquote><p>时代在进步，技术在发展。一款 11 年前的游戏终将被取代。11 年，不长，但是一个人的青春。11 年，有多少人在等着起源二的上线呢？11 年，后天也变成了今天。一眼之间，我们已迈入全新的战场。</p><p>2018 年 10 月 4 日，一个不知名的小网站，上传了一篇名为<a href="https://www.rushb.net/csgo-update-2018-10-4.html">《CSGO 2018 年 10 月 4 日更新日志【人物重制】》</a>的文章</p><p>从此，这个网站就记录了 CSGO 的所有更新记录、地图彩蛋、选手配置、地图推荐，直到</p><p>嗨，B 哥，今天 CS2 上线了，你在那边见到了吗？</p><p><img src="/2023/hello-counter-strike-2/rip_rushb.webp" alt="R.I.P. - RushB"></p><h1 id="完"><a href="#完" class="headerlink" title="完"></a>完</h1>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>琐记 Vol.2 : 写一篇博客吧</title>
-    <link href="/2023/miscellanies-2/"/>
-    <url>/2023/miscellanies-2/</url>
-    
-    <content type="html"><![CDATA[<blockquote><p>你们这些孩子哪里是真为了写博客。</p><p>你们只是想体会换新工具的愉快感觉，顺便体会一下否定掉旧工具，觉得自己特别的小欣喜。</p><p>—— dboy</p></blockquote><h1 id="开篇聊聊天"><a href="#开篇聊聊天" class="headerlink" title="开篇聊聊天"></a>开篇聊聊天</h1><p>2018 年，可能是我捣鼓这些站点的起点，<code>imjinglan.cn</code>这个域名，是我注册的第一个域名，也是我第一个博客的地址。</p><p>正如我开头所引用的话一样，那是一个不断尝试的年级，Wordpress、Typecho 都试过，还用过更多的主题。重装了很多次站点。</p><p>众多博客，却没有留下一点记忆，所写的文章如今早已没有了印象。</p><p>自 2022 年 2 月 10 日，我使用 Hugo 搭建静态博客，再到 2023 年使用 Hexo 重构了现在的博客，已经过去了 583 天，该纪录保持至今</p><p>今日突发奇想，写一篇文章，聊聊博客本身</p><h1 id="保持写作"><a href="#保持写作" class="headerlink" title="保持写作"></a>保持写作</h1><p>我是怎么保持写博客的习惯的？说实话，<strong>我也不知道</strong></p><p>我喜欢炫耀，和别人炫耀我的博客。尽管这样子引流屁用没有 QAQ。但这样做我就会记得我有个博客（这很重要！）</p><p>其次，博客文章最重要的就是选题，自己的博客当然想写啥就写啥了。在学校的时候我喜欢拿着一个小笔记本在上面记着我的文章草稿，周末回家了直接照着打就好了</p><h1 id="一些写作小习惯"><a href="#一些写作小习惯" class="headerlink" title="一些写作小习惯"></a>一些写作小习惯</h1><p>在写博客中，我也养成了一些自认为比较好的书写习惯，分享给大家</p><ol><li><p>对于中文引号，我更加偏向于使用直角引号<strong>「」『』</strong>，这样在屏幕阅读中会更加易读</p></li><li><p>除了需要多张截图的技术文章，我基本坚持了每个一级标题末放一张图的习惯（如 <a href="/2023/ipod-classic-review">『iPod Classic 上手』</a> 和 <a href="/2023/YGR-Raft">『Raft 木筏评测』</a> ），这种方法使得行文阅读更加连续</p></li></ol><h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>这个博客大概会一直写下去的吧。。。是吧。。</p>]]></content>
     
     
     <categories>
@@ -171,16 +201,16 @@
   
   
   <entry>
-    <title>iPod Classic 上手 : 优雅永不过时</title>
-    <link href="/2023/ipod-classic-review/"/>
-    <url>/2023/ipod-classic-review/</url>
+    <title>「随笔」写一篇博客吧</title>
+    <link href="/2023/miscellanies-2/"/>
+    <url>/2023/miscellanies-2/</url>
     
-    <content type="html"><![CDATA[<h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>终于下定决心写这篇文章了, 截至文章截稿，iPod Classic 陪着我走完了艰难的初三时光。随着我进入高中，每日骑车上学，iPod Classic 也成为了我背包的必备单品。</p><p>回想起来，似乎我从没有为他写过一篇评测（或许以前有过，但当他不存在吧）</p><p>虽然 iPod Classic 可以通过刷 Rockbox 达到原系统做不到的效果，但本文更想偏重于原版系统的体验</p><h1 id="精心设计，浑然天成"><a href="#精心设计，浑然天成" class="headerlink" title="精心设计，浑然天成"></a>精心设计，浑然天成</h1><p>一块金属正面，一块亮面不锈钢背板，中间镶嵌着 Click Wheel 和一块 2.5 英寸的 LCD 彩色显示屏，这便是我手上的 iPod Classic</p><p>我选择的是黑色的版本，沉稳，耐用是我对它的感受</p><p>尽管乔布斯说：「每一台 iPod 的划痕都是独一无二的」，我还是给他的背壳贴上了一层保护膜，以及一块早已被磨花的亚克力外壳（还好不是不锈钢边框）</p><p><img src="/2023/ipod-classic-review/IMG_0008.jpg" alt="iPod Classic 背板，贴上了一层保护膜"></p><h1 id="你好-Click-Wheel"><a href="#你好-Click-Wheel" class="headerlink" title="你好, Click Wheel !"></a>你好, Click Wheel !</h1><p>或许你已经久仰大名，但当你第一次上手时仍会感到这项设计的精妙。一转一点，刷新了人们对于音乐的理解。</p><p>在普通 MP3 只有几 MB 存储容量时，iPod 拥有惊人的 5GB 容量，而我手上的 iPod Classic 经过改装竟然可以高达 160GB，足以装下你一生中所有的歌曲。</p><p>那么传统的按键式列表操作便不再合适。于是圆盘 Click Wheel 便诞生了，可以说 iPod 的大容量成就了 Click Wheel，Click Wheel 也成就了 iPod</p><p>如果你需要切换项目，只需要将手指放在圆环上，轻轻转动，便可以看见项目的切换，配合着 iPod Classic 模拟的音效，好似实体的段落感的感觉是一种全新的操作体验</p><p>搭配 Cover Flow，你还可以实现类似于在多张专辑中挑选心仪唱片的感觉</p><p><img src="/2023/ipod-classic-review/IMG_0001.jpg" alt="Cover Flow"></p><h1 id="需要适应的音频管理方式"><a href="#需要适应的音频管理方式" class="headerlink" title="需要适应的音频管理方式"></a>需要适应的音频管理方式</h1><p>让我们请出 iTunes!</p><p>苹果将把音乐导入 iPod 的行为称为 「同步」，你需要先将音乐拖进 iTunes 中后再同步才能将音乐导入到 iPod 中。同时现在许多主流格式居然不支持，如 FLAC</p><p>我一般会使用 foobar2000 将所有格式转换为 <a href="https://macosforge.github.io/alac/">Apple Lossless Audio Codec (ALAC)</a> 格式后导入</p><p>不同于网络上他人对这个特性的吐槽，我个人还是比较喜欢使用 iTunes 的，他使得我整理专辑更加高效了</p><p>需要注意的是，如果你是导入本地音频的话，更换计算机或者重装系统后在新设备上同步将会<strong>失去旧设备同步的所有歌曲！注意备份！</strong></p><p>我一般是通过家庭存储服务器搭配 Syncthing 同步管理歌曲</p><p><img src="/2023/ipod-classic-review/IMG_0002.jpg" alt="iTunes"></p><h1 id="戴上耳机，倾听她"><a href="#戴上耳机，倾听她" class="headerlink" title="戴上耳机，倾听她"></a>戴上耳机，倾听她</h1><p>作为一款数字音乐播放器，怎么能错过音乐？</p><p>iPod Classic 的是一台简单易用的前端，也是捆绑的主力之一。在日常出行中，即使不用外置解码器也十分出色。最高 32Ω 的阻抗足以推动大部分耳机</p><p>我手上的这台 iPod Classic 改装了固态硬盘，在快速读取音乐的同时塞进了更大的电池。</p><p>我每日上下学骑车时都会使用它，如果注意不使用时暂停播放（当你拔出耳机时会自动暂停，但我有时会误触），可以使用两个月之久。连续播放时长估计在 30 小时左右</p><p>纯粹的听歌体验，没有续航焦虑，这些都使得 iPod 成为了我外出时的必备单品</p><p><img src="/2023/ipod-classic-review/IMG_0006.jpg" alt="iPod Classic"></p><h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p><strong>「如果计算机成为一个中心，还可以使便携式设备变得更简单。」</strong></p><p>2000 年左右，乔布斯着手用苹果电脑打入音乐市场，推出了 iTunes 音乐软件，所有苹果电脑用户可以免费使用该软件，而这仅仅是推动数字中枢战略的第一步。</p><p>下一步便是制造一个便携式音乐播放器。乔布斯意识到，苹果可以设计一个和 iTunes 配套的设备，让收听音乐变得更加简单。由计算机来完成复杂的任务，而音乐播放器的功能要简单。iPod 因此而诞生了。</p><p>iPod 代表了苹果品牌的核心价值——诗意与工程紧密相连，艺术、创意和科技完美结合，设计风格既醒目又简洁。</p><p>如果你问我：「<strong>2023 年了,iPod Classic 还值得买吗？</strong>」</p><p>我会回答：「<strong>如果你想，买下他吧，别忘了享受音乐</strong>」</p><p><img src="/2023/ipod-classic-review/banner.png" alt="iPod Classic"></p><blockquote><p>写于 2023 年 9 月 14 日 , 柳州</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>你们这些孩子哪里是真为了写博客。</p><p>你们只是想体会换新工具的愉快感觉，顺便体会一下否定掉旧工具，觉得自己特别的小欣喜。</p><p>—— dboy</p></blockquote><h1 id="开篇聊聊天"><a href="#开篇聊聊天" class="headerlink" title="开篇聊聊天"></a>开篇聊聊天</h1><p>2018 年，可能是我捣鼓这些站点的起点，<code>imjinglan.cn</code>这个域名，是我注册的第一个域名，也是我第一个博客的地址。</p><p>正如我开头所引用的话一样，那是一个不断尝试的年级，Wordpress、Typecho 都试过，还用过更多的主题。重装了很多次站点。</p><p>众多博客，却没有留下一点记忆，所写的文章如今早已没有了印象。</p><p>自 2022 年 2 月 10 日，我使用 Hugo 搭建静态博客，再到 2023 年使用 Hexo 重构了现在的博客，已经过去了 583 天，该纪录保持至今</p><p>今日突发奇想，写一篇文章，聊聊博客本身</p><h1 id="保持写作"><a href="#保持写作" class="headerlink" title="保持写作"></a>保持写作</h1><p>我是怎么保持写博客的习惯的？说实话，<strong>我也不知道</strong></p><p>我喜欢炫耀，和别人炫耀我的博客。尽管这样子引流屁用没有 QAQ。但这样做我就会记得我有个博客（这很重要！）</p><p>其次，博客文章最重要的就是选题，自己的博客当然想写啥就写啥了。在学校的时候我喜欢拿着一个小笔记本在上面记着我的文章草稿，周末回家了直接照着打就好了</p><h1 id="一些写作小习惯"><a href="#一些写作小习惯" class="headerlink" title="一些写作小习惯"></a>一些写作小习惯</h1><p>在写博客中，我也养成了一些自认为比较好的书写习惯，分享给大家</p><ol><li><p>对于中文引号，我更加偏向于使用直角引号<strong>「」『』</strong>，这样在屏幕阅读中会更加易读</p></li><li><p>除了需要多张截图的技术文章，我基本坚持了每个一级标题末放一张图的习惯（如 <a href="/2023/ipod-classic-review">『iPod Classic 上手』</a> 和 <a href="/2023/YGR-Raft">『Raft 木筏评测』</a> ），这种方法使得行文阅读更加连续</p></li></ol><h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>这个博客大概会一直写下去的吧。。。是吧。。</p>]]></content>
     
     
     <categories>
       
-      <category>开箱</category>
+      <category>随笔</category>
       
     </categories>
     
@@ -190,11 +220,11 @@
   
   
   <entry>
-    <title>将博客主页封面修改为随机图片</title>
-    <link href="/2023/fluid-random-index-img/"/>
-    <url>/2023/fluid-random-index-img/</url>
+    <title>「开箱」iPod Classic 上手 : 优雅永不过时</title>
+    <link href="/2023/ipod-classic-review/"/>
+    <url>/2023/ipod-classic-review/</url>
     
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Fluid 是一款很好用的 Hexo 主题，但他默认的主页封面并不能做到多张图片随机。于是我决定魔改他</p><h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1><p>通过查看 <code>layout/index.ejs</code> 文件可以看出 index_img 的定义为<code>index_img = post.cover || theme.post.default_cover</code></p><p>我们只需要将 <code>theme.post.default_cover</code> 改为数字外加随机数取出就好了</p><p>而 ejs 支持 js 的 Math.random 语法，稍微学习 Javascript 就可以修改了</p><h1 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h1><p>进入 <code>主题文件夹/layout</code>，打开<code>index.ejs</code></p><p>搜索 <code>theme.post.default_cover</code></p><p>将其修改成 <code>theme.post.default_cover[Math.floor(Math.random() * (theme.post.default_cover.length))]</code></p><p>修改 Fluid 的配置文件 <strong>_config.fluid.yml</strong></p><p>将 <strong>default_index_img</strong> 配置项修改为这样</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">default_index_img:</span><br>    <span class="hljs-bullet">-</span> <span class="hljs-string">此处为图片链接</span><br>    <span class="hljs-bullet">-</span> <span class="hljs-string">此处为图片链接</span><br></code></pre></td></tr></table></figure><p>重新部署就好啦！</p><h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>我同时也修改了 Fluid 的封面命名规则，这样子只需要设置一次封面属性就可以同时应用到 index_img 和 banner_img 啦</p><p><del>我也将修改后的主题改名为 Farbic 开源在 Github 仓库中 <strong>Rabbit-Clan&#x2F;hexo-theme-farbic</strong>，欢迎 Star + Fork</del></p><p><del>Farbic 主题还重新修改了部分页面的配置方式，使配置方式更加直观</del></p><p><del>只是还没来得及编写文档，可能安装后会出现无法使用的情况</del></p><p>2023.09.14 : 由于技术原因，暂时不单独提供修改的主题，您可以前往本博客仓库自行克隆后提取</p><p><strong>修改后的主题仍遵循 GPL 协议公开！</strong></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>终于下定决心写这篇文章了, 截至文章截稿，iPod Classic 陪着我走完了艰难的初三时光。随着我进入高中，每日骑车上学，iPod Classic 也成为了我背包的必备单品。</p><p>回想起来，似乎我从没有为他写过一篇评测（或许以前有过，但当他不存在吧）</p><p>虽然 iPod Classic 可以通过刷 Rockbox 达到原系统做不到的效果，但本文更想偏重于原版系统的体验</p><h1 id="精心设计，浑然天成"><a href="#精心设计，浑然天成" class="headerlink" title="精心设计，浑然天成"></a>精心设计，浑然天成</h1><p>一块金属正面，一块亮面不锈钢背板，中间镶嵌着 Click Wheel 和一块 2.5 英寸的 LCD 彩色显示屏，这便是我手上的 iPod Classic</p><p>我选择的是黑色的版本，沉稳，耐用是我对它的感受</p><p>尽管乔布斯说：「每一台 iPod 的划痕都是独一无二的」，我还是给他的背壳贴上了一层保护膜，以及一块早已被磨花的亚克力外壳（还好不是不锈钢边框）</p><p><img src="/2023/ipod-classic-review/IMG_0008.jpg" alt="iPod Classic 背板，贴上了一层保护膜"></p><h1 id="你好-Click-Wheel"><a href="#你好-Click-Wheel" class="headerlink" title="你好, Click Wheel !"></a>你好, Click Wheel !</h1><p>或许你已经久仰大名，但当你第一次上手时仍会感到这项设计的精妙。一转一点，刷新了人们对于音乐的理解。</p><p>在普通 MP3 只有几 MB 存储容量时，iPod 拥有惊人的 5GB 容量，而我手上的 iPod Classic 经过改装竟然可以高达 160GB，足以装下你一生中所有的歌曲。</p><p>那么传统的按键式列表操作便不再合适。于是圆盘 Click Wheel 便诞生了，可以说 iPod 的大容量成就了 Click Wheel，Click Wheel 也成就了 iPod</p><p>如果你需要切换项目，只需要将手指放在圆环上，轻轻转动，便可以看见项目的切换，配合着 iPod Classic 模拟的音效，好似实体的段落感的感觉是一种全新的操作体验</p><p>搭配 Cover Flow，你还可以实现类似于在多张专辑中挑选心仪唱片的感觉</p><p><img src="/2023/ipod-classic-review/IMG_0001.jpg" alt="Cover Flow"></p><h1 id="需要适应的音频管理方式"><a href="#需要适应的音频管理方式" class="headerlink" title="需要适应的音频管理方式"></a>需要适应的音频管理方式</h1><p>让我们请出 iTunes!</p><p>苹果将把音乐导入 iPod 的行为称为 「同步」，你需要先将音乐拖进 iTunes 中后再同步才能将音乐导入到 iPod 中。同时现在许多主流格式居然不支持，如 FLAC</p><p>我一般会使用 foobar2000 将所有格式转换为 <a href="https://macosforge.github.io/alac/">Apple Lossless Audio Codec (ALAC)</a> 格式后导入</p><p>不同于网络上他人对这个特性的吐槽，我个人还是比较喜欢使用 iTunes 的，他使得我整理专辑更加高效了</p><p>需要注意的是，如果你是导入本地音频的话，更换计算机或者重装系统后在新设备上同步将会<strong>失去旧设备同步的所有歌曲！注意备份！</strong></p><p>我一般是通过家庭存储服务器搭配 Syncthing 同步管理歌曲</p><p><img src="/2023/ipod-classic-review/IMG_0002.jpg" alt="iTunes"></p><h1 id="戴上耳机，倾听她"><a href="#戴上耳机，倾听她" class="headerlink" title="戴上耳机，倾听她"></a>戴上耳机，倾听她</h1><p>作为一款数字音乐播放器，怎么能错过音乐？</p><p>iPod Classic 的是一台简单易用的前端，也是捆绑的主力之一。在日常出行中，即使不用外置解码器也十分出色。最高 32Ω 的阻抗足以推动大部分耳机</p><p>我手上的这台 iPod Classic 改装了固态硬盘，在快速读取音乐的同时塞进了更大的电池。</p><p>我每日上下学骑车时都会使用它，如果注意不使用时暂停播放（当你拔出耳机时会自动暂停，但我有时会误触），可以使用两个月之久。连续播放时长估计在 30 小时左右</p><p>纯粹的听歌体验，没有续航焦虑，这些都使得 iPod 成为了我外出时的必备单品</p><p><img src="/2023/ipod-classic-review/IMG_0006.jpg" alt="iPod Classic"></p><h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p><strong>「如果计算机成为一个中心，还可以使便携式设备变得更简单。」</strong></p><p>2000 年左右，乔布斯着手用苹果电脑打入音乐市场，推出了 iTunes 音乐软件，所有苹果电脑用户可以免费使用该软件，而这仅仅是推动数字中枢战略的第一步。</p><p>下一步便是制造一个便携式音乐播放器。乔布斯意识到，苹果可以设计一个和 iTunes 配套的设备，让收听音乐变得更加简单。由计算机来完成复杂的任务，而音乐播放器的功能要简单。iPod 因此而诞生了。</p><p>iPod 代表了苹果品牌的核心价值——诗意与工程紧密相连，艺术、创意和科技完美结合，设计风格既醒目又简洁。</p><p>如果你问我：「<strong>2023 年了,iPod Classic 还值得买吗？</strong>」</p><p>我会回答：「<strong>如果你想，买下他吧，别忘了享受音乐</strong>」</p><p><img src="/2023/ipod-classic-review/banner.png" alt="iPod Classic"></p><blockquote><p>写于 2023 年 9 月 14 日 , 柳州</p></blockquote>]]></content>
     
     
     
@@ -203,11 +233,30 @@
   
   
   <entry>
-    <title>【YGR】Raft 木筏 - 你也想在海上捡垃圾吗</title>
+    <title>「技术」将博客主页封面修改为随机图片</title>
+    <link href="/2023/fluid-random-index-img/"/>
+    <url>/2023/fluid-random-index-img/</url>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>Fluid 是一款很好用的 Hexo 主题，但他默认的主页封面并不能做到多张图片随机。于是我决定魔改他</p><h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1><p>通过查看 <code>layout/index.ejs</code> 文件可以看出 index_img 的定义为<code>index_img = post.cover || theme.post.default_cover</code></p><p>我们只需要将 <code>theme.post.default_cover</code> 改为数字外加随机数取出就好了</p><p>而 ejs 支持 js 的 Math.random 语法，稍微学习 Javascript 就可以修改了</p><h1 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h1><p>进入 <code>主题文件夹/layout</code>，打开<code>index.ejs</code></p><p>搜索 <code>theme.post.default_cover</code></p><p>将其修改成 <code>theme.post.default_cover[Math.floor(Math.random() * (theme.post.default_cover.length))]</code></p><p>修改 Fluid 的配置文件 <strong>_config.fluid.yml</strong></p><p>将 <strong>default_index_img</strong> 配置项修改为这样</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">default_index_img:</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-string">此处为图片链接</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-string">此处为图片链接</span><br></code></pre></td></tr></table></figure><p>重新部署就好啦！</p><h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>我同时也修改了 Fluid 的封面命名规则，这样子只需要设置一次封面属性就可以同时应用到 index_img 和 banner_img 啦</p><p><del>我也将修改后的主题改名为 Farbic 开源在 Github 仓库中 <strong>Rabbit-Clan&#x2F;hexo-theme-farbic</strong>，欢迎 Star + Fork</del></p><p><del>Farbic 主题还重新修改了部分页面的配置方式，使配置方式更加直观</del></p><p><del>只是还没来得及编写文档，可能安装后会出现无法使用的情况</del></p><p>2023.09.14 : 由于技术原因，暂时不单独提供修改的主题，您可以前往本博客仓库自行克隆后提取</p><p><strong>修改后的主题仍遵循 GPL 协议公开！</strong></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>技术</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>「YGR」Raft 木筏 - 你也想在海上捡垃圾吗</title>
     <link href="/2023/YGR-Raft/"/>
     <url>/2023/YGR-Raft/</url>
     
-    <content type="html"><![CDATA[<p><img src="/2023/YGR-Raft/cover.webp" alt="《Raft木筏》"></p><h1 id="有趣的物资收集系统"><a href="#有趣的物资收集系统" class="headerlink" title="有趣的物资收集系统"></a>有趣的物资收集系统</h1><p>在木筏中，玩家出生时将会获得一个塑料勾。通过塑料勾你可以勾取到漂在洋面的材料：木板、塑料、棕榈叶等等，海面上还会刷新出包含隐藏物资的木桶，里面包含着较为丰富的奖励（当然这也取决于你是否幸运）</p><p>塑料勾和金属勾同时也是在海底挖掘矿石、石头的工具</p><p>当你较为深入地游玩 Raft 后，你会学习如何制作 <strong>收集网</strong> 。收集网将会帮你自动拾取网下的物品，你只需要定期清理即可</p><p>于此同时，游戏中还存在着鱼竿、斧头、铲子等工具，你可以使用它们来钓鱼（也有可能是臭皮靴），砍伐岛上的树木、挖取污泥等</p><p><img src="/2023/YGR-Raft/screenshot_1.jpg" alt="收集网"></p><h1 id="基于地点转换的剧情"><a href="#基于地点转换的剧情" class="headerlink" title="基于地点转换的剧情"></a>基于地点转换的剧情</h1><p>当你在海上茫无目的的漂荡时，你可能会在木桶中获得 <strong>接收器</strong> 和 <strong>天线</strong> 的蓝图，当你按照要求连接好天线（这个过程是自动的）后，你的接收器上将会出现一个信号点，这便是你所要探索的第一个剧情区域</p><p>当你探索玩一个区域后，你将会获得一个写着一串四位数字的纸条，按照纸条上的数字调整接收器，便可以根据信号指引到下一个区域</p><p><img src="/2023/YGR-Raft/screenshot_2.jpg" alt="接收器"></p><h1 id="丰富的探索元素"><a href="#丰富的探索元素" class="headerlink" title="丰富的探索元素"></a>丰富的探索元素</h1><p>每一个剧情区域都有丰富的探索元素。在探索路上，你将会见到很多字条，捡起字条后会自动播放相关语音。通过这些语音，你或许可以理解关于剧情的一些细节</p><p>除此之外，信号塔后的剧情区域都十分巨大，无论是大篷车镇还是唐加罗瓦号，在其中探索将会花费你大量的时间，注意！</p><p>在航行的过程中，接收器上也会出现一些蓝色的小点，这些便是大型岛屿上的交易站，在其中你可以通过交易获得高级鱼饵及一些稀有物品！</p><p>交易站中没有 NPC，但你可以让你的朋友钻入其中并截图，这很有趣！</p><p><img src="/2023/YGR-Raft/screenshot_10.jpg" alt="交易站"></p><h1 id="强大的建筑系统"><a href="#强大的建筑系统" class="headerlink" title="强大的建筑系统"></a>强大的建筑系统</h1><p>你可以随心所欲地修建你的木筏！你可以把它改造成一艘巨轮，也可以天马行空地搭建出一个只有 4 块底板的天空之城。</p><p>木筏给玩家提供了丰富的材质，如木板、高级木板（这个消耗材料更多）、棕榈叶。同时，你还可以使用刷子给自己的墙体上漆（颜料需要通过花朵与染料厂获取）</p><p>各种自动化的设备（你后期甚至可以建造全自动净化器）使你的木筏化身全能海上城市。你还可以在船上搭建自己的种植园</p><p><img src="/2023/YGR-Raft/screenshot_4.jpg" alt="我们的木筏"></p><h1 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h1><p>木筏是一款好游戏，他也非常适合朋友间进行联机游玩，但我们认为他还是存在一些缺点</p><ol><li><p><strong>存在穿模、卡入地底等 BUG。</strong></p><p> 有一次游玩时，在乘坐唐加罗瓦电梯时我们突然掉入电梯下方空间，无法操作，只能通过生命值减少来重生，同时我们也丧失了我们大部分物资</p></li><li><p><strong>部分物件摆放有待加强</strong></p><p> 我们还是期待如管道可穿墙（虽然这个可以通过 BUG 做到，但十分不优雅）、引擎的注油口可以镜像对称(再见了，烦人的走线)</p></li><li><p><strong>种植物种子掉落概率低</strong></p><p> 在小概率情况下，收获果实才会掉落种子（至少我们掉落的种子永远不够下一次种植），或许这样并不合理？</p></li><li><p><strong>光照渲染</strong></p><p> 在天黑与天亮的转换过程中，游戏中的灯光可能会<strong>短暂失效</strong>，并且自然环境对于全封闭室内灯光居然存在影响！</p></li></ol><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>木筏的创意是无与伦比的，在海上收集物资的想法也很酷！探索元素、BOSS 战斗等使得游戏在休闲中仍然保持着一丝肾上腺素飙升的快感</p><p>诚然，开发商<strong>Redbeet Interactive</strong>实力距离超一线大厂还是有所差距，我们在游玩时还是遇到了部分痛点，不过这些都可以算是不痛不痒的特性吧</p><p>如果你想和朋友一同体验海上捡垃圾的快乐，享受建造的乐趣，一同搭建自己的木筏的话，<strong>《Raft 木筏》</strong> 值得一试</p><h1 id="YGR-评分"><a href="#YGR-评分" class="headerlink" title="YGR 评分"></a>YGR 评分</h1><p>《Raft 木筏》 YGR 评分为 <strong>7.2</strong> 分</p><p><img src="/2023/YGR-Raft/Rating.png" alt="Rating"></p>]]></content>
+    <content type="html"><![CDATA[<p><img src="/2023/YGR-Raft/cover.webp" alt="《Raft木筏》"></p><h1 id="有趣的物资收集系统"><a href="#有趣的物资收集系统" class="headerlink" title="有趣的物资收集系统"></a>有趣的物资收集系统</h1><p>在木筏中，玩家出生时将会获得一个塑料勾。通过塑料勾你可以勾取到漂在洋面的材料：木板、塑料、棕榈叶等等，海面上还会刷新出包含隐藏物资的木桶，里面包含着较为丰富的奖励（当然这也取决于你是否幸运）</p><p>塑料勾和金属勾同时也是在海底挖掘矿石、石头的工具</p><p>当你较为深入地游玩 Raft 后，你会学习如何制作 <strong>收集网</strong> 。收集网将会帮你自动拾取网下的物品，你只需要定期清理即可</p><p>于此同时，游戏中还存在着鱼竿、斧头、铲子等工具，你可以使用它们来钓鱼（也有可能是臭皮靴），砍伐岛上的树木、挖取污泥等</p><p><img src="/2023/YGR-Raft/screenshot_1.jpg" alt="收集网"></p><h1 id="基于地点转换的剧情"><a href="#基于地点转换的剧情" class="headerlink" title="基于地点转换的剧情"></a>基于地点转换的剧情</h1><p>当你在海上茫无目的的漂荡时，你可能会在木桶中获得 <strong>接收器</strong> 和 <strong>天线</strong> 的蓝图，当你按照要求连接好天线（这个过程是自动的）后，你的接收器上将会出现一个信号点，这便是你所要探索的第一个剧情区域</p><p>当你探索玩一个区域后，你将会获得一个写着一串四位数字的纸条，按照纸条上的数字调整接收器，便可以根据信号指引到下一个区域</p><p><img src="/2023/YGR-Raft/screenshot_2.jpg" alt="接收器"></p><h1 id="丰富的探索元素"><a href="#丰富的探索元素" class="headerlink" title="丰富的探索元素"></a>丰富的探索元素</h1><p>每一个剧情区域都有丰富的探索元素。在探索路上，你将会见到很多字条，捡起字条后会自动播放相关语音。通过这些语音，你或许可以理解关于剧情的一些细节</p><p>除此之外，信号塔后的剧情区域都十分巨大，无论是大篷车镇还是唐加罗瓦号，在其中探索将会花费你大量的时间，注意！</p><p>在航行的过程中，接收器上也会出现一些蓝色的小点，这些便是大型岛屿上的交易站，在其中你可以通过交易获得高级鱼饵及一些稀有物品！</p><p>交易站中没有 NPC，但你可以让你的朋友钻入其中并截图，这很有趣！</p><p><img src="/2023/YGR-Raft/screenshot_10.jpg" alt="交易站"></p><h1 id="强大的建筑系统"><a href="#强大的建筑系统" class="headerlink" title="强大的建筑系统"></a>强大的建筑系统</h1><p>你可以随心所欲地修建你的木筏！你可以把它改造成一艘巨轮，也可以天马行空地搭建出一个只有 4 块底板的天空之城。</p><p>木筏给玩家提供了丰富的材质，如木板、高级木板（这个消耗材料更多）、棕榈叶。同时，你还可以使用刷子给自己的墙体上漆（颜料需要通过花朵与染料厂获取）</p><p>各种自动化的设备（你后期甚至可以建造全自动净化器）使你的木筏化身全能海上城市。你还可以在船上搭建自己的种植园</p><p><img src="/2023/YGR-Raft/screenshot_4.jpg" alt="我们的木筏"></p><h1 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h1><p>木筏是一款好游戏，他也非常适合朋友间进行联机游玩，但我们认为他还是存在一些缺点</p><ol><li><p><strong>存在穿模、卡入地底等 BUG。</strong></p><p>有一次游玩时，在乘坐唐加罗瓦电梯时我们突然掉入电梯下方空间，无法操作，只能通过生命值减少来重生，同时我们也丧失了我们大部分物资</p></li><li><p><strong>部分物件摆放有待加强</strong></p><p>我们还是期待如管道可穿墙（虽然这个可以通过 BUG 做到，但十分不优雅）、引擎的注油口可以镜像对称(再见了，烦人的走线)</p></li><li><p><strong>种植物种子掉落概率低</strong></p><p>在小概率情况下，收获果实才会掉落种子（至少我们掉落的种子永远不够下一次种植），或许这样并不合理？</p></li><li><p><strong>光照渲染</strong></p><p>在天黑与天亮的转换过程中，游戏中的灯光可能会<strong>短暂失效</strong>，并且自然环境对于全封闭室内灯光居然存在影响！</p></li></ol><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>木筏的创意是无与伦比的，在海上收集物资的想法也很酷！探索元素、BOSS 战斗等使得游戏在休闲中仍然保持着一丝肾上腺素飙升的快感</p><p>诚然，开发商<strong>Redbeet Interactive</strong>实力距离超一线大厂还是有所差距，我们在游玩时还是遇到了部分痛点，不过这些都可以算是不痛不痒的特性吧</p><p>如果你想和朋友一同体验海上捡垃圾的快乐，享受建造的乐趣，一同搭建自己的木筏的话，<strong>《Raft 木筏》</strong> 值得一试</p><h1 id="YGR-评分"><a href="#YGR-评分" class="headerlink" title="YGR 评分"></a>YGR 评分</h1><p>《Raft 木筏》 YGR 评分为 <strong>7.2</strong> 分</p><p><img src="/2023/YGR-Raft/Rating.png" alt="Rating"></p>]]></content>
     
     
     <categories>
@@ -232,7 +281,7 @@
   
   
   <entry>
-    <title>【YGR】Yurik’s Game Rating 简介</title>
+    <title>「YGR」Yurik’s Game Rating 简介</title>
     <link href="/2023/YGM-Introduce/"/>
     <url>/2023/YGM-Introduce/</url>
     
@@ -261,26 +310,32 @@
   
   
   <entry>
-    <title>每周TODO [23.9.4-23.9.10]</title>
+    <title>每周Todo [23.9.4-23.9.10]</title>
     <link href="/2023/Week-TODO-1/"/>
     <url>/2023/Week-TODO-1/</url>
     
-    <content type="html"><![CDATA[<p>TODO:</p><ul><li><p><input checked="" disabled="" type="checkbox"> Raft 游戏报告</p></li><li><p><input checked="" disabled="" type="checkbox"> 清清友链</p></li><li><p><input checked="" disabled="" type="checkbox"> 可能还有别的吧…</p></li></ul>]]></content>
+    <content type="html"><![CDATA[<p>ToDo:</p><ul><li><p><input checked="" disabled="" type="checkbox"> Raft 游戏报告</p></li><li><p><input checked="" disabled="" type="checkbox"> 清清友链</p></li><li><p><input checked="" disabled="" type="checkbox"> 可能还有别的吧…</p></li></ul>]]></content>
     
     
     <categories>
       
-      <category>每周TODO</category>
+      <category>其他</category>
       
     </categories>
     
+    
+    <tags>
+      
+      <tag>Todo List</tag>
+      
+    </tags>
     
   </entry>
   
   
   
   <entry>
-    <title>琐记 Vol.1 : 记于 17 岁生日前</title>
+    <title>「随笔」记于 17 岁生日前</title>
     <link href="/2023/miscellanies-1/"/>
     <url>/2023/miscellanies-1/</url>
     
@@ -289,7 +344,7 @@
     
     <categories>
       
-      <category>杂谈</category>
+      <category>随笔</category>
       
     </categories>
     
@@ -299,7 +354,7 @@
   
   
   <entry>
-    <title>使用Vercel托管静态网页</title>
+    <title>「技术」使用Vercel托管静态网页</title>
     <link href="/2023/use-vercel-introduction/"/>
     <url>/2023/use-vercel-introduction/</url>
     
@@ -318,7 +373,7 @@
   
   
   <entry>
-    <title>树莓派4B烧录CentOS镜像并安装宝塔面板</title>
+    <title>「技术」树莓派4B烧录CentOS镜像并安装宝塔面板</title>
     <link href="/2023/raspberry-pi-install-centos/"/>
     <url>/2023/raspberry-pi-install-centos/</url>
     
@@ -337,7 +392,7 @@
   
   
   <entry>
-    <title>在Linux上搭建MC服务器（一）</title>
+    <title>「技术」在Linux上搭建MC服务器（一）</title>
     <link href="/2022/minecraft-server-on-linux-1/"/>
     <url>/2022/minecraft-server-on-linux-1/</url>
     
@@ -356,7 +411,7 @@
   
   
   <entry>
-    <title>获取B站视频封面</title>
+    <title>「技术」获取B站视频封面</title>
     <link href="/2022/get-bilibili-album/"/>
     <url>/2022/get-bilibili-album/</url>
     
@@ -375,7 +430,7 @@
   
   
   <entry>
-    <title>戴尔 PowerEdge R720 上手 : 年轻人的第一台家庭服务器</title>
+    <title>「开箱」戴尔 PowerEdge R720 上手 : 年轻人的第一台家庭服务器</title>
     <link href="/2022/dell-poweredge-r720-review/"/>
     <url>/2022/dell-poweredge-r720-review/</url>
     
@@ -394,7 +449,7 @@
   
   
   <entry>
-    <title>P1425 - 小鱼的游泳时间</title>
+    <title>「信竞」P1425 - 小鱼的游泳时间</title>
     <link href="/2022/luogu-P1425/"/>
     <url>/2022/luogu-P1425/</url>
     
@@ -413,7 +468,7 @@
   
   
   <entry>
-    <title>使用Hugo搭建个人博客</title>
+    <title>「技术」使用Hugo搭建个人博客</title>
     <link href="/2022/hugo-blog/"/>
     <url>/2022/hugo-blog/</url>
     
@@ -432,7 +487,7 @@
   
   
   <entry>
-    <title>【转载】又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API</title>
+    <title>「转载」又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API</title>
     <link href="/2022/minecraft-yggdrasil-api-third-party-implementation/"/>
     <url>/2022/minecraft-yggdrasil-api-third-party-implementation/</url>
     
@@ -446,17 +501,29 @@
     </categories>
     
     
+    <tags>
+      
+      <tag>转载</tag>
+      
+    </tags>
+    
   </entry>
   
   
   
   <entry>
-    <title>你好，好久不见</title>
+    <title>「随笔」你好，好久不见</title>
     <link href="/2022/hello-world/"/>
     <url>/2022/hello-world/</url>
     
     <content type="html"><![CDATA[<h1 id="重新认识一下吧"><a href="#重新认识一下吧" class="headerlink" title="重新认识一下吧"></a>重新认识一下吧</h1><p>从初一开始捣鼓自己的服务器，从一开始在一台废旧的办公电脑上安装 Windows Server 搭配 Sakura Frp 国外服务器的穿透来使自己的网站能够访问（那时候建站节点还没有收费），后来将系统装成了 CentOS 7，从此就一直泡在 Linux 系统里面了</p><p>那时候 Sakura Frp 的节点对于我家的网络还不是特别的稳定，有一次一个月内换了好几个节点。（也有可能是移动网络的问题）</p><p>后来接触了虚拟主机，陆陆续续换了几家主机商，可最终因为没钱而取消续费</p><p>现在的博客的框架是 <del>Hugo</del> Hexo + Vercel，优势就是免费，并且我的文章在本地留有备份</p><p>就这样吧。</p><p>感谢你读到这里。</p><p>你好，好久不见</p>]]></content>
     
+    
+    <categories>
+      
+      <category>随笔</category>
+      
+    </categories>
     
     
   </entry>

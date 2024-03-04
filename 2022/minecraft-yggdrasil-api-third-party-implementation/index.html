@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/v2/apple-touch-icon.png">
-  <link rel="icon" href="/favicon/v2/favicon.ico">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -18,24 +18,26 @@
   
     <meta name="description" content="原文链接：PRIN BLOG - 又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API  共享协议：本文与原文采用相同的 CC BY 4.0 协议而非本博客默认的共享协议  最近给 Blessing Skin 写了个插件，利用皮肤站本身的账号系统实现了 Yggdrasil API（就是 Mojang 的登录 API），然后配合 authlib-injector 这个">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【转载】又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API">
+<meta property="og:title" content="「转载」又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API">
 <meta property="og:url" content="https://yurik.cafe/2022/minecraft-yggdrasil-api-third-party-implementation/index.html">
 <meta property="og:site_name" content="景蓝的小屋">
 <meta property="og:description" content="原文链接：PRIN BLOG - 又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API  共享协议：本文与原文采用相同的 CC BY 4.0 协议而非本博客默认的共享协议  最近给 Blessing Skin 写了个插件，利用皮肤站本身的账号系统实现了 Yggdrasil API（就是 Mojang 的登录 API），然后配合 authlib-injector 这个">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://yurik.cafe/2022/minecraft-yggdrasil-api-third-party-implementation/Minecraft.jpg">
+<meta property="og:image" content="https://yurik.cafe/2022/minecraft-yggdrasil-api-third-party-implementation/2b4204b718b92.png">
+<meta property="og:image" content="https://yurik.cafe/2022/minecraft-yggdrasil-api-third-party-implementation/37e6d2778c77a.png">
+<meta property="og:image" content="https://yurik.cafe/2022/minecraft-yggdrasil-api-third-party-implementation/f8f9c076da123.png">
 <meta property="og:image" content="https://yurik.cafe/2022/minecraft-yggdrasil-api-third-party-implementation/715850d76b7db.png">
 <meta property="article:published_time" content="2022-02-11T00:00:00.000Z">
-<meta property="article:modified_time" content="2024-02-28T17:20:11.788Z">
+<meta property="article:modified_time" content="2024-03-04T14:50:54.695Z">
 <meta property="article:author" content="景蓝Yurik">
-<meta property="article:tag" content="景蓝,Yurik,Yurik&#39;s Blog,博客,祐柯,祐里柯,祐柯文化（柳州）有限公司">
+<meta property="article:tag" content="转载">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://yurik.cafe/2022/minecraft-yggdrasil-api-third-party-implementation/715850d76b7db.png">
+<meta name="twitter:image" content="https://yurik.cafe/2022/minecraft-yggdrasil-api-third-party-implementation/Minecraft.jpg">
   
   
   
-    <script>hljs.initHighlightingOnLoad();</script>
-  
-  <title>【转载】又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API - 景蓝的小屋</title>
+  <title>「转载」又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API - 景蓝的小屋</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -69,15 +71,11 @@
 
 
 
-  
-<link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4230030_f9v8o9aoqjg.css">
-
-
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"yurik.cafe","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"yurik.cafe","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -104,7 +102,7 @@
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
-      <strong>景蓝的小屋</strong>
+      <strong>Fluid</strong>
     </a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
@@ -158,33 +156,21 @@
           
           
             <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
               <a class="nav-link" href="/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/links/" target="_self">
-                <i class="iconfont icon-link-fill"></i>
-                <span>友链</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.travellings.cn/go.html" target="_self">
-                <i class="iconfont icon-subway"></i>
-                <span>开往</span>
               </a>
             </li>
           
@@ -218,7 +204,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="【转载】又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API"></span>
+            <span id="subtitle" data-typed-text="「转载」又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API"></span>
           
         </div>
 
@@ -241,7 +227,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          12k 字
+          5.9k 字
         
       </span>
     
@@ -252,7 +238,7 @@
         
         
         
-          98 分钟
+          50 分钟
         
       </span>
     
@@ -276,7 +262,7 @@
 
   <main>
     
-      
+    
 
 <div class="container-fluid nopadding-x">
   <div class="row nomargin-x">
@@ -289,7 +275,7 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">【转载】又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API</h1>
+            <h1 id="seo-header">「转载」又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API</h1>
             
             
             <div class="markdown-body">
@@ -459,6 +445,13 @@
     </div>
   
   
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E8%BD%AC%E8%BD%BD/" class="print-no-link">#转载</a>
+      
+    </div>
+  
 </div>
 
 
@@ -467,7 +460,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>【转载】又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API</div>
+      <div>「转载」又是一种 Minecraft 外置登录解决方案：自行实现 Yggdrasil API</div>
       <div>https://yurik.cafe/2022/minecraft-yggdrasil-api-third-party-implementation/</div>
     </div>
     <div class="license-meta">
@@ -512,9 +505,9 @@
                 <article class="post-prev col-6">
                   
                   
-                  <a href="/2022/hugo-blog/" title="使用Hugo搭建个人博客">
+                  <a href="/2022/hugo-blog/" title="「技术」使用Hugo搭建个人博客">
                     <i class="iconfont icon-arrowleft"></i>
-                    <span class="hidden-mobile">使用Hugo搭建个人博客</span>
+                    <span class="hidden-mobile">「技术」使用Hugo搭建个人博客</span>
                     <span class="visible-mobile">上一篇</span>
                   </a>
                   
@@ -522,8 +515,8 @@
                 <article class="post-next col-6">
                   
                   
-                  <a href="/2022/hello-world/" title="你好，好久不见">
-                    <span class="hidden-mobile">你好，好久不见</span>
+                  <a href="/2022/hello-world/" title="「随笔」你好，好久不见">
+                    <span class="hidden-mobile">「随笔」你好，好久不见</span>
                     <span class="visible-mobile">下一篇</span>
                     <i class="iconfont icon-arrowright"></i>
                   </a>
@@ -589,13 +582,13 @@
     
 
     
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
+    <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
     
 
     
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
      aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
@@ -624,37 +617,14 @@
   <footer>
     <div class="footer-inner">
   
-  <div class="footer-content">
-     Copyright © 2022 - 2023 Yurik all rights reserved. </br> <a href="https://icp.gov.moe/?keyword=20244220" target="_blank">萌ICP备20244220号</a> </br> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fabric Base On Fluid</span></a><br /> 
-  </div>
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
   
   
   
   
   
-  <span id="running_times">本站勉强运行: <span id="runDays">0</span>天<span id="runHours">0</span>小时<span id="runMins">0</span>分<span id="runSeconds">0</span>秒
-    <script>
-      function runtime() {
-        X = new Date("2022/2/10 00:00:00");
-        Y = new Date();
-        T = (Y.getTime() - X.getTime());
-        M = 24 * 60 * 60 * 1000;
-        a = T / M;
-        A = Math.floor(a);
-        b = (a - A) * 24;
-        B = Math.floor(b);
-        c = (b - B) * 60;
-        C = Math.floor((b - B) * 60);
-        D = Math.floor((c - C) * 60);
-
-        document.getElementById("runDays").innerHTML = A
-        document.getElementById("runHours").innerHTML = B
-        document.getElementById("runMins").innerHTML = C
-        document.getElementById("runSeconds").innerHTML = D
-      }
-      setInterval(runtime, 1000);
-    </script>
-    
 </div>
   </footer>
 
@@ -813,4 +783,5 @@
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
 </body>
+
 </html>
