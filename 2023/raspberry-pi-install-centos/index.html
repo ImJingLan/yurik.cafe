@@ -1,0 +1,743 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/v2/apple-touch-icon.png">
+  <link rel="icon" href="/favicon/v2/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="景蓝Yurik">
+  <meta name="keywords" content="景蓝,Yurik,Yurik&#39;s Blog,博客,祐柯,祐里柯,祐柯文化（柳州）有限公司">
+  
+    <meta name="description" content="前言很古早的时候我买了一台 树莓派 4B 4GB 版本（怀念当时 4GB 版本 500 块的日子） 由于 Cortex-A72 处理器，树莓派 4B 的性能其实很薄弱，当时我也只是勉强用它跑一跑 QQ 机器人和网站服务器。（宝塔跑 Mariadb 安装 CPU 占用率都能 100%）随后用旧电脑刷服务器后树莓派就闲置了。 最近有朋友想尝试在家里搭建个人网站，我就把树莓派借给了他，但是尝试了很多个">
+<meta property="og:type" content="article">
+<meta property="og:title" content="「技术」树莓派4B烧录CentOS镜像并安装宝塔面板">
+<meta property="og:url" content="https://yurik.cafe/2023/raspberry-pi-install-centos/index.html">
+<meta property="og:site_name" content="景蓝的小屋">
+<meta property="og:description" content="前言很古早的时候我买了一台 树莓派 4B 4GB 版本（怀念当时 4GB 版本 500 块的日子） 由于 Cortex-A72 处理器，树莓派 4B 的性能其实很薄弱，当时我也只是勉强用它跑一跑 QQ 机器人和网站服务器。（宝塔跑 Mariadb 安装 CPU 占用率都能 100%）随后用旧电脑刷服务器后树莓派就闲置了。 最近有朋友想尝试在家里搭建个人网站，我就把树莓派借给了他，但是尝试了很多个">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://yurik.cafe/2023/raspberry-pi-install-centos/console.png">
+<meta property="article:published_time" content="2023-01-19T00:00:00.000Z">
+<meta property="article:modified_time" content="2024-03-04T15:04:09.728Z">
+<meta property="article:author" content="景蓝Yurik">
+<meta property="article:tag" content="景蓝,Yurik,Yurik&#39;s Blog,博客,祐柯,祐里柯,祐柯文化（柳州）有限公司">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://yurik.cafe/2023/raspberry-pi-install-centos/console.png">
+  
+  
+  
+    <script>hljs.initHighlightingOnLoad();</script>
+  
+  <title>「技术」树莓派4B烧录CentOS镜像并安装宝塔面板 - 景蓝的小屋</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+  
+<link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4230030_f9v8o9aoqjg.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"yurik.cafe","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.0.0"><link rel="alternate" href="/feed.xml" title="景蓝的小屋" type="application/rss+xml">
+</head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>景蓝的小屋</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.travellings.cn/go.html" target="_self">
+                <i class="iconfont icon-subway"></i>
+                <span>开往</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/2023/raspberry-pi-install-centos/banner.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="「技术」树莓派4B烧录CentOS镜像并安装宝塔面板"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-01-19 00:00" pubdate>
+          2023年1月19日 凌晨
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.1k 字
+        
+      </span>
+    
+
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+    
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">「技术」树莓派4B烧录CentOS镜像并安装宝塔面板</h1>
+            
+            
+            <div class="markdown-body">
+              
+              <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>很古早的时候我买了一台 树莓派 4B 4GB 版本（怀念当时 4GB 版本 500 块的日子）</p>
+<p>由于 Cortex-A72 处理器，树莓派 4B 的性能其实很薄弱，当时我也只是勉强用它跑一跑 QQ 机器人和网站服务器。（宝塔跑 Mariadb 安装 CPU 占用率都能 100%）随后用旧电脑刷服务器后树莓派就闲置了。</p>
+<p>最近有朋友想尝试在家里搭建个人网站，我就把树莓派借给了他，但是尝试了很多个 Linux 发行版（Debian、Ubuntu）后宝塔+LNMP 环境还是无法安装成功，不是宝塔无法运行就是 Mysql 无法安装。</p>
+<p>在查阅了互联网资料后，发现我用的最多的 Centos 也存在 Arm 版本，在使用这个发行版后安装宝塔和 LNMP 环境也变得顺利了，于是打算写一篇博客记录一下安装过程</p>
+<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>需要准备：</p>
+<ul>
+<li>一台接入内网树莓派 4B</li>
+<li>至少 16GB 的内存卡 + 读卡器 (USB3.0 最佳)</li>
+<li>一台电脑</li>
+<li>系统镜像</li>
+<li>Raspberry Pi Imager (可前往 <a target="_blank" rel="noopener" href="//www.raspberrypi.com/software/">https://www.raspberrypi.com/software/</a> 下载)</li>
+</ul>
+<h1 id="烧录镜像"><a href="#烧录镜像" class="headerlink" title="烧录镜像"></a>烧录镜像</h1><p>其实 CentOS 7 为树莓派提供了专门的系统镜像，在<a target="_blank" rel="noopener" href="https://www.centos.org/download/">CentOS - Download</a>中给 Arm 架构的处理器提供了 <a target="_blank" rel="noopener" href="//isoredirect.centos.org/altarch/7/isos/aarch64/">ARM64(aarch64)</a> 和 <a target="_blank" rel="noopener" href="//isoredirect.centos.org/altarch/7/isos/armhfp/">ARM32(armhfp)</a> ，因为我的树莓派 4B 是 4GB 版本的，所以就选择了 ARM64 的版本</p>
+<p>你可以在对应架构的下载界面中选择官方推荐的镜像下载地址，国内用户可以前往<a target="_blank" rel="noopener" href="http://mirror.nju.edu.cn/centos-altarch/7.9.2009/isos/aarch64/images">NJU Mirror</a>、<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/centos-altarch/7.9.2009/isos/aarch64/images/">清华大学开源软件镜像站</a> 或 <a target="_blank" rel="noopener" href="https://mirrors.bfsu.edu.cn/centos-altarch/7.9.2009/isos/aarch64/images/">北京外国语大学开源软件镜像站</a> 下载</p>
+<p>下载文件名带 <code>RaspberryPI</code> 的镜像</p>
+<p>下载完毕后使用树莓派官方的烧录工具 Raspberry Pi Imager 烧录</p>
+<p>插入读卡器，启动 Raspberry Pi Imager</p>
+<p>选择操作系统-&gt;使用自定义镜像，选择刚才下载好的 CentOS 镜像，再选择要烧录的内存卡，点击<strong>烧录</strong>按钮即可开始烧录</p>
+<blockquote>
+<p>若内存卡中已烧录其它系统，请擦除一遍后在进行烧录</p>
+<p><strong>注意 1</strong>：烧录后内存卡中原存储文件将<strong>永久</strong>丢失，请及时备份！</p>
+<p><strong>注意 2</strong>：烧录无需使用 Imager 的高级设置，若设置永久设置请清空后烧录</p>
+</blockquote>
+<h1 id="配置系统"><a href="#配置系统" class="headerlink" title="配置系统"></a>配置系统</h1><p>等待烧录完成后即可取出内存卡插入树莓派内，插上电源与网线即可启动</p>
+<p>使用 ssh 登录树莓派，默认用户名为<code>root</code>， 初始密码为<code>centos</code></p>
+<blockquote>
+<p>ssh 连接命令: <code>ssh 用户名@主机IP</code></p>
+<p>登录后可使用<code>passwd</code>修改密码，请牢记修改后密码</p>
+<p>若不清楚树莓派 IP 可进入路由器后台或使用<a target="_blank" rel="noopener" href="https://www.advanced-ip-scanner.com/">Advanced IP Scanner</a>扫描</p>
+</blockquote>
+<p>进入系统后输入<code>df -h</code>查看各分区大小</p>
+<p>使用<code>rootfs-expand</code>拓展系统空间</p>
+<blockquote>
+<p><strong>警告</strong>：请务必拓展系统空间，否则可能导致空间过下使得宝塔安装失败</p>
+</blockquote>
+<p>新系统启动后推荐将软件源改为国内镜像，具体请参考镜像站帮助文档，如<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/help/centos-altarch/">清华大学镜像站</a>可运行以下命令一键换源</p>
+<figure class="highlight coq"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs coq">sudo sed -e &#x27;s|<span class="hljs-type">^mirrorlist</span>=|<span class="hljs-type">#mirrorlist</span>=|<span class="hljs-type">g</span>&#x27; \<br>         -e &#x27;s|<span class="hljs-type">^#baseurl</span>=http://mirror.centos.org/altarch/|<span class="hljs-type">baseurl</span>=https://mirrors.tuna.tsinghua.edu.cn/centos-altarch/|<span class="hljs-type">g</span>&#x27; \<br>         -e &#x27;s|<span class="hljs-type">^#baseurl</span>=http://mirror.centos.org/$contentdir/|<span class="hljs-type">baseurl</span>=https://mirrors.tuna.tsinghua.edu.cn/centos-altarch/|<span class="hljs-type">g</span>&#x27; \<br>         -i.bak \<br>         /etc/yum.repos.d/CentOS-*.repo<br></code></pre></td></tr></table></figure>
+
+<p>最后，更新软件包缓存 <code>sudo yum makecache</code></p>
+<p>你也可以将系统语言设置为中文，设置方式如下：</p>
+<ol>
+<li>查看当前系统语言包 <code>locale</code></li>
+<li>查看所有系统语言包 <code>locale -a</code></li>
+<li>检查是否存在 <code>zh_CN</code> 开头的语言包</li>
+<li>使用 <code>nano /etc/locale.conf</code> 编辑 <code>/etc/locale.conf</code> 文件，将其中的<strong>LANG</strong>值改为<code>zh_CN.UTF-8</code>（若第三步中未找到<code>zh_CN.UTF-8</code>，可用其他<code>zh_CN</code>开头的语言包替换）</li>
+<li>使用<code>reboot</code>命令重启系统让修改生效</li>
+</ol>
+<blockquote>
+<p>修改语言为中文后部分软件<strong>可能存在未知错误</strong>，若错误发生请按照第四步将<strong>LANG</strong>值改为<code>en_US.UTF-8</code></p>
+</blockquote>
+<h1 id="安装宝塔面板"><a href="#安装宝塔面板" class="headerlink" title="安装宝塔面板"></a>安装宝塔面板</h1><p>参考<a target="_blank" rel="noopener" href="https://www.bt.cn/new/download.html">宝塔官网-下载</a>使用 CentOS 安装脚本安装</p>
+<p><code>yum install -y wget &amp;&amp; wget -O install.sh https://download.bt.cn/install/install_6.0.sh &amp;&amp; sh install.sh</code></p>
+<blockquote>
+<p>请删除命令末尾 9 位字符串后运行命令</p>
+<p><strong>警告</strong>: 请在纯净环境中安装宝塔面板，若你先前已安装其他 LNMP&#x2F;LAMP 运行环境或先前宝塔面板安装失败请参考<strong>一、烧录镜像</strong>擦除内存卡并重新烧录系统后安装</p>
+</blockquote>
+<p>稍等一段时间后宝塔面板将安装完成</p>
+<p><img src="/2023/raspberry-pi-install-centos/console.png" srcset="/img/loading.gif" lazyload alt="BT-Install-Done"></p>
+
+              
+            </div>
+            
+            <hr />
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8A%80%E6%9C%AF/" class="category-chain-item">技术</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>「技术」树莓派4B烧录CentOS镜像并安装宝塔面板</div>
+      <div>https://yurik.cafe/2023/raspberry-pi-install-centos/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>景蓝Yurik</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年1月19日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="NC - 非商业性使用">
+                    <i class="iconfont icon-nc"></i>
+                  </span>
+                </a>
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="SA - 相同方式共享">
+                    <i class="iconfont icon-sa"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+              <div class="post-prevnext my-3">
+                <article class="post-prev col-6">
+                  
+                  
+                  <a href="/2023/use-vercel-introduction/" title="「技术」使用Vercel托管静态网页">
+                    <i class="iconfont icon-arrowleft"></i>
+                    <span class="hidden-mobile">「技术」使用Vercel托管静态网页</span>
+                    <span class="visible-mobile">上一篇</span>
+                  </a>
+                  
+                </article>
+                <article class="post-next col-6">
+                  
+                  
+                  <a href="/2022/minecraft-server-on-linux-1/" title="「技术」在Linux上搭建MC服务器（一）">
+                    <span class="hidden-mobile">「技术」在Linux上搭建MC服务器（一）</span>
+                    <span class="visible-mobile">下一篇</span>
+                    <i class="iconfont icon-arrowright"></i>
+                  </a>
+                  
+                </article>
+              </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+    
+
+    
+    <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+    
+
+    
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       Copyright © 2022 - 2023 Yurik all rights reserved. </br> <a href="https://icp.gov.moe/?keyword=20244220" target="_blank">萌ICP备20244220号</a> </br> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/imjinglan/hexo-theme-fluidee" target="_blank" rel="nofollow noopener"><span>Fabric AKA. FluidEE</span></a><br /> 
+    </div>
+  
+  
+  
+  
+  
+    <span id="running_times">本站勉强运行: <span id="runDays">0</span>天<span id="runHours">0</span>小时<span id="runMins">0</span>分<span id="runSeconds">0</span>秒
+      <script>
+        function runtime() {
+          X = new Date("2022/2/10 00:00:00");
+          Y = new Date();
+          T = (Y.getTime() - X.getTime());
+          M = 24 * 60 * 60 * 1000;
+          a = T / M;
+          A = Math.floor(a);
+          b = (a - A) * 24;
+          B = Math.floor(b);
+          c = (b - B) * 60;
+          C = Math.floor((b - B) * 60);
+          D = Math.floor((c - C) * 60);
+  
+          document.getElementById("runDays").innerHTML = A
+          document.getElementById("runHours").innerHTML = B
+          document.getElementById("runMins").innerHTML = C
+          document.getElementById("runSeconds").innerHTML = D
+        }
+        setInterval(runtime, 1000);
+      </script>
+      
+</div>
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+
+</html>
