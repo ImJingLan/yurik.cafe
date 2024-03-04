@@ -1,9 +1,9 @@
 ---
-title: 【朝花夕拾】我的PHP开发之路
+title: 「随笔」我的PHP开发之路
 copyright: BY-NC-SA
 date: 2024-01-10 17:45:49
 tags:
-categories: 朝花夕拾
+categories: 随笔
 cover:
 ---
 

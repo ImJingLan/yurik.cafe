@@ -1,9 +1,9 @@
 ---
-title: "「过时」 | 【简要发布】RimeWave.News 现已可用！"
+title: "「站点公告」RimeWave.News 现已可用！"
 copyright: BY-NC-SA
 date: 2023-11-06 16:18:24
 tags:
-categories: 简要发布
+categories: 站点公告
 cover:
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: "琐记 Vol.1 : 记于 17 岁生日前"
+title: "「随笔」记于 17 岁生日前"
 date: 2023-03-04
 tags:
-categories: 杂谈
+categories: 随笔
 ---
 
 记于 17 岁生日前 3 天

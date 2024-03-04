@@ -1,13 +1,12 @@
 ---
-title: 我的小鲨鱼 By Unity
+title: 「游戏开发」我的小鲨鱼 By Unity
 description: "创意、美术: WARMA | 《我的小鲨鱼》的 UNITY 实现"
 copyright: BY-NC-SA
 date: 2024-02-24 21:25:15
 tags:
   - Unity
-  - 游戏
-  - 沃玛
-categories: 游戏开发
+  - 游戏开发
+categories: 项目
 cover: /2024/warma-shark-unity/warmashark.jpg
 ---
 

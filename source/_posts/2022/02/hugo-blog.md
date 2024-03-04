@@ -1,5 +1,5 @@
 ---
-title: 使用Hugo搭建个人博客
+title: 「技术」使用Hugo搭建个人博客
 cover: /2022/hugo-blog/banner.png
 date: 2022-02-13
 tags:

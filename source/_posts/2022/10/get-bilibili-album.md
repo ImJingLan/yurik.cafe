@@ -1,9 +1,8 @@
 ---
-title: 获取B站视频封面
+title: 「技术」获取B站视频封面
 cover: /2022/get-bilibili-album/banner.png
 tags:
 categories: 技术
-
 date: 2022-10-23
 ---
 

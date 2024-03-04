@@ -1,9 +1,9 @@
 ---
-title: "Counter-Strike 2 : 未来已来，时不我待"
+title: "「杂谈」Counter-Strike 2 : 未来已来，时不我待"
 copyright: BY-NC-SA
 date: 2023-09-28 20:34:21
 tags:
-categories:
+categories: 杂谈
 cover: /2023/hello-counter-strike-2/cover.webp
 ---
 

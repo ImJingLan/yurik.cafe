@@ -1,8 +1,8 @@
 ---
-title: 【YGR】Yurik’s Game Rating 简介
+title: 「YGR」Yurik’s Game Rating 简介
 copyright: BY-NC-SA
 date: 2023-09-09 13:22:49
-tags: [游戏,测评,YGR]
+tags: [游戏, 测评, YGR]
 categories: Yurik's Game Rating
 
 cover: /2023/YGM-Introduce/Cover.webp

@@ -1,9 +1,9 @@
 ---
-title: "琐记 Vol.2 : 写一篇博客吧"
+title: "「随笔」写一篇博客吧"
 copyright: BY-NC-SA
 date: 2023-09-16 17:33:04
 tags:
-categories: 杂谈
+categories: 随笔
 ---
 
 > 你们这些孩子哪里是真为了写博客。

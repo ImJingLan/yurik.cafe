@@ -25,3 +25,6 @@ icons:
       tip: "X",
     }
   - { class: "iconfont icon-rss", link: "/feed.xml", tip: "RSS Feed" }
+
+custom:
+  enable: true

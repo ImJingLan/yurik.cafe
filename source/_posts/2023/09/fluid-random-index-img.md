@@ -1,9 +1,9 @@
 ---
-title: 将博客主页封面修改为随机图片
+title: 「技术」将博客主页封面修改为随机图片
 copyright: BY-NC-SA
 date: 2023-09-12 12:27:51
 tags:
-categories:
+categories: 技术
 index_img:
 ---
 
@@ -33,8 +33,8 @@ Fluid 是一款很好用的 Hexo 主题，但他默认的主页封面并不能�
 
 ```yml
 default_index_img:
-    - 此处为图片链接
-    - 此处为图片链接
+  - 此处为图片链接
+  - 此处为图片链接
 ```
 
 重新部署就好啦！

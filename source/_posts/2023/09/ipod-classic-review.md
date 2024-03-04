@@ -1,8 +1,8 @@
 ---
-title: "iPod Classic 上手 : 优雅永不过时"
+title: "「开箱」iPod Classic 上手 : 优雅永不过时"
 date: 2023-09-14 18:15:53
 image:
-categories: 开箱
+categories:
 
 cover: /2023/ipod-classic-review/banner.png
 ---

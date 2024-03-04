@@ -9,7 +9,7 @@ description: "Yurik's Lab"
 keywords: "景蓝,Yurik,Yurik's Blog,博客,祐柯,祐里柯,祐柯文化（柳州）有限公司"
 author: 景蓝Yurik
 
-theme: fabric
+theme: fluidEE
 language: zh-CN # 指定语言，会影响主题显示的语言，按需修改
 
 timezone: ""
@@ -72,9 +72,20 @@ index_generator:
   order_by: -date
 
 # Category & Tag
-default_category: uncategorized
+default_category: 其他
 category_map:
+  "项目": projects
+  "信息竞赛": oi
+  "随笔": thoughts
+  "站点公告": announces
+  "Yurik's Game Rating": ygr
+  "开箱": reviews
+  "工具": tools
+  "其他": others
+
 tag_map:
+  "游戏开发": game-dev
+  "Todo List": todo
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta

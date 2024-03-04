@@ -1,5 +1,5 @@
 ---
-title: 使用 Hexo 搭建静态博客
+title: 「技术」使用 Hexo 搭建静态博客
 copyright: BY-NC-SA
 date: 2024-02-18 02:33:21
 tags:

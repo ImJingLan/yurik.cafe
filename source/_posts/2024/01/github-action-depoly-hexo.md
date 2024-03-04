@@ -1,9 +1,9 @@
 ---
-title: 使用 GitHub Actions 部署 Hexo
+title: "「技术」使用 GitHub Actions 部署 Hexo"
 copyright: BY-NC-SA
 date: 2024-01-15 17:53:21
 tags:
-categories:
+categories: 技术
 cover:
 ---
 

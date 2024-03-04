@@ -3,7 +3,7 @@ title: 「重要」站点Icon变更通知
 copyright: BY-NC-SA
 date: 2024-02-29 01:05:47
 tags:
-categories:
+categories: 站点公告
 cover: /favicon/v2/icon@4k.jpg
 ---
 

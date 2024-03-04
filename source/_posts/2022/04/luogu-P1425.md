@@ -1,5 +1,5 @@
 ---
-title: P1425 - 小鱼的游泳时间
+title: 「信竞」P1425 - 小鱼的游泳时间
 cover: /2022/luogu-P1425/banner.png
 date: 2022-04-01
 tags:

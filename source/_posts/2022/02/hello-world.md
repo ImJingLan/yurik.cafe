@@ -1,8 +1,8 @@
 ---
-title: 你好，好久不见
+title: 「随笔」你好，好久不见
 date: 2022-02-10
 tags:
-
+categories: 随笔
 cover: /2022/hello-world/cover.webp
 ---
 

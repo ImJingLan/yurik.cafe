@@ -1,10 +1,8 @@
 ---
-title: 树莓派4B烧录CentOS镜像并安装宝塔面板
+title: 「技术」树莓派4B烧录CentOS镜像并安装宝塔面板
 date: 2023-01-19
 tags:
-
 categories: 技术
-
 cover: "/2023/raspberry-pi-install-centos/banner.jpg"
 ---
 
@@ -22,11 +20,11 @@ cover: "/2023/raspberry-pi-install-centos/banner.jpg"
 
 需要准备：
 
--   一台接入内网树莓派 4B
--   至少 16GB 的内存卡 + 读卡器 (USB3.0 最佳)
--   一台电脑
--   系统镜像
--   Raspberry Pi Imager (可前往 [https://www.raspberrypi.com/software/](//www.raspberrypi.com/software/) 下载)
+- 一台接入内网树莓派 4B
+- 至少 16GB 的内存卡 + 读卡器 (USB3.0 最佳)
+- 一台电脑
+- 系统镜像
+- Raspberry Pi Imager (可前往 [https://www.raspberrypi.com/software/](//www.raspberrypi.com/software/) 下载)
 
 # 烧录镜像
 

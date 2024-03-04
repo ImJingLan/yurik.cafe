@@ -1,5 +1,5 @@
 ---
-title: "在Linux上搭建MC服务器（一）"
+title: "「技术」在Linux上搭建MC服务器（一）"
 cover: /2022/minecraft-server-on-linux-1/done.png
 date: 2022-12-14
 tags:
@@ -102,9 +102,9 @@ Download(下载) -> Server(服务端)下载服务端
 
 你可以使用命令行来管理服务器，常用的命令有：
 
--   `stop`：停止服务器
--   `list`：列出当前在线的玩家
--   `kick [player]`：将玩家踢出服务器
--   `ban [player]`：封禁玩家
--   `op [player]`：将玩家提升为服务器管理员
--   `whitelist add [player]`：将玩家添加到白名单
+- `stop`：停止服务器
+- `list`：列出当前在线的玩家
+- `kick [player]`：将玩家踢出服务器
+- `ban [player]`：封禁玩家
+- `op [player]`：将玩家提升为服务器管理员
+- `whitelist add [player]`：将玩家添加到白名单
