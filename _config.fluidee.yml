@@ -417,6 +417,7 @@ footer:
     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
     <i class="iconfont icon-love"></i>
     <a href="https://github.com/imjinglan/hexo-theme-fluidee" target="_blank" rel="nofollow noopener"><span>FluidEE</span></a><br />
+    Hosted By <a href="//norph1n.top" target="_blank">Norph1n's Raspberry Pi 4B</a>
   '
 
   running_time: "2022/2/10 00:00:00"
