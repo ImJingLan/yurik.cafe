@@ -51,12 +51,6 @@ jobs:
         run: |
           cat html_files.txt # 输出修改后的 HTML 文件列表
 
-      - name: 格式化HTML文件
-        run: |
-          cd ./public/
-          npx prettier --write .
-          cd ../
-
       - name: 部署到 Deploy 分支 # 部署
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
