@@ -13,23 +13,23 @@ layout: about
 
 ## 关于我
 
-- 互联网上常用 ID`ImJingLan` 有时也会写作 `JingLan`
+- 互联网上常用 ID `ImJingLan` 有时也会写作 `JingLan`
 
-- 英文名`Yurik`
+- 英文名 `Yurik`（又是 `i` 也写作 `1` ）
 
--- 当然了，如果这些都被注册了的话就会写作 `Emendio`和`Howie`...
+-- 当然了，如果这些都被注册了的话就会写作 `Emendio` 和 `Howie` ...
 
-- 一般大家都叫我`景蓝` ，当然你叫我`祐袔`也可以
+- 一般大家都叫我`景蓝`，当然你叫我`祐袔`也可以
 
 - 是个接受过义务教育的苦逼高中生
 
 - INFP-T
 
-- 大概碰过:`PHP`,`HTML`,`JavaScript`,`C`,`C++`,`C#`,`python`, `易语言`都很菜就是了（~~退役~~ ~~现役~~ 退役 OIer）
+- 大概碰过: `PHP`, `HTML`, `JavaScript`, `C`, `C++`, `C#`, `Python`, `易语言`都很菜就是了（~~退役~~ ~~现役~~ 最后还是退役 OIer）
 
-- 常用软件：Premiere Pro，Photoshop ， Fl Studio ，Studio One 6 ， After Effect
+- 常用软件：Premiere Pro, Photoshop, Fl Studio, Studio One 6, After Effect
 
-- `EN-us`、`zh-CN`
+- `EN-us` 、 `zh-CN`
 
 - 目前使用的设备：
 
@@ -39,13 +39,13 @@ layout: about
 
   手表：OPPO Watch 2 46mm
 
-  耳机：Redmi Buds 4 Pro、水月雨「竹」带麦版...
+  耳机：水月雨「竹」带麦版...
 
-  鼠标：罗技 Pro X Superlight
+  鼠标：迈从 A5 Ultra
 
 ## 喜欢看的虚拟主播们的主页地址（没有 D!!.jpg）
 
-[巴琦 Baki](https://space.bilibili.com/1588646945)（爹！~~我真的好想你啊~~）
+[巴琦 Baki](https://space.bilibili.com/1588646945) （爹！~~我真的好想你啊~~）
 
 ---
 
@@ -71,6 +71,10 @@ Bison 仓鼠: [主页](https://space.bilibili.com/136107) [直播间](http://liv
 
 ## 博客历史
 
+- 2024 年
+
+-- 使用 Github Actions 渲染页面
+
 - 2023 年
 
 -- 采用 Hexo 啦！
@@ -85,7 +89,7 @@ Bison 仓鼠: [主页](https://space.bilibili.com/136107) [直播间](http://liv
 
 ## 关于博客
 
-`Powered By Hexo`，`Theme Fabric Modded By Yurik`。
+`Powered By Hexo`，`Theme FluidEE Modded By Yurik`。
 
 本博客所有文章在 **未特殊声明** 的前提下均采用
 

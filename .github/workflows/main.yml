@@ -1,35 +1,59 @@
 name: 同步至 Deploy 分支
 
 on:
-    push:
-        branches:
-            - main
-    #手动触发
-    workflow_dispatch:
+  push:
+    branches:
+      - main
+  #手动触发
+  workflow_dispatch:
 
 jobs:
-    build:
-        runs-on: ubuntu-latest
-        steps:
-            # 获取源码
-            - name: 迁出代码
-              uses: actions/checkout@master
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # 获取源码
+      - name: 迁出代码
+        uses: actions/checkout@master
 
-            - name: 设置Node环境
-              uses: actions/setup-node@master
+      - name: 设置Node环境
+        uses: actions/setup-node@master
 
-            - name: 安装Hexo Cli 和 其他 环境
-              run: |
-                  npm install hexo-cli -g
-                  npm install
+      - name: 安装Hexo Cli 和 其他 环境
+        run: |
+          npm install hexo-cli -g
+          npm install
 
-            - name: 渲染博客界面
-              run: |
-                  npm run g
+      - name: 渲染博客界面
+        run: |
+          npm run g
 
-            - name: 部署到 Deploy 分支 # 部署
-              uses: JamesIves/github-pages-deploy-action@v4.3.3
-              with:
-                  branch: deploy # 部署后提交到的分支
-                  folder: public # 打包好的目录名称
+      - name: 获取提交版本号
+        id: get_version
+        run: |
+          version=$(git rev-parse --short HEAD)
+          echo "VERSION=$version" >> $GITHUB_ENV
+          echo "Latest commit version: $version"
+
+      - name: 查询所有 HTML 文件
+        run: |
+          find . -type f -name "*.html" > html_files.txt
+          cat html_files.txt # 输出查找到的 HTML 文件列表
+
+      - name: 更新 HTML 中的版本号
+        run: |
+          version=${{ env.VERSION }}
+          while IFS= read -r file; do
+            sed -i "s/!!!GITVERSION!!!/$version/g" "$file"
+            echo "Updated version in $file"
+          done < html_files.txt
+
+      - name: 输出修改后的 HTML 文件列表
+        run: |
+          cat html_files.txt # 输出修改后的 HTML 文件列表
+
+      - name: 部署到 Deploy 分支 # 部署
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: deploy # 部署后提交到的分支
+          folder: public # 打包好的目录名称
 
