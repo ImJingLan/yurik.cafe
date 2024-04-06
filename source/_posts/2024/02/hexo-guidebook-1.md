@@ -50,10 +50,10 @@ yarn global add hexo-cli
 接下来，你需要创建一个新的 Hexo 博客项目。在终端或命令提示符中，导航到你想要创建博客的目录，然后运行以下命令：
 
 ```bash
-hexo init <folder>
+hexo init folder
 ```
 
-其中 <folder> 改为目标文件夹名称（下同），如果在当前文件夹初始化的话就执行以下命令:
+其中 folder 改为目标文件夹名称（下同），如果在当前文件夹初始化的话就执行以下命令:
 
 ```bash
 hexo init .
@@ -88,7 +88,7 @@ hexo init .
 ### 进入站点文件夹
 
 ```bash
-cd <folder>
+cd folder
 ```
 
 ### 使用包管理器安装 Node.js 依赖包
