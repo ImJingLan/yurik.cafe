@@ -31,7 +31,7 @@ jobs:
         run: |
           version=${{ env.VERSION }}
           while IFS= read -r file; do
-            sed -i "s/{{GITVERSION}}/$version/g" "$file"
+            sed -i "s/{{GIT_VERSION}}/$version/g" "$file"
             echo "Updated version in $file"
           done < html_files.txt
 
