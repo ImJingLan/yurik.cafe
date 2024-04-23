@@ -15,6 +15,30 @@ jobs:
       - name: 迁出代码
         uses: actions/checkout@master
 
+      - name: 获取提交版本号
+        id: get_version
+        run: |
+          version=$(git rev-parse --short HEAD)
+          echo "VERSION=$version" >> $GITHUB_ENV
+          echo "Latest commit version: $version"
+
+      - name: 查询所有 HTML 文件
+        run: |
+          find . -type f -name "_config.fluidee.yml" > html_files.txt
+          cat html_files.txt # 输出查找到的 HTML 文件列表
+
+      - name: 更新 HTML 中的版本号
+        run: |
+          version=${{ env.VERSION }}
+          while IFS= read -r file; do
+            sed -i "s/{{GITVERSION}}/$version/g" "$file"
+            echo "Updated version in $file"
+          done < html_files.txt
+
+      - name: 输出修改后的 HTML 文件列表
+        run: |
+          cat html_files.txt # 输出修改后的 HTML 文件列表
+
       - name: 设置Node环境
         uses: actions/setup-node@master
 
@@ -26,30 +50,6 @@ jobs:
       - name: 渲染博客界面
         run: |
           npm run g
-
-      - name: 获取提交版本号
-        id: get_version
-        run: |
-          version=$(git rev-parse --short HEAD)
-          echo "VERSION=$version" >> $GITHUB_ENV
-          echo "Latest commit version: $version"
-
-      - name: 查询所有 HTML 文件
-        run: |
-          find . -type f -name "*.html" > html_files.txt
-          cat html_files.txt # 输出查找到的 HTML 文件列表
-
-      - name: 更新 HTML 中的版本号
-        run: |
-          version=${{ env.VERSION }}
-          while IFS= read -r file; do
-            sed -i "s/!!!GITVERSION!!!/$version/g" "$file"
-            echo "Updated version in $file"
-          done < html_files.txt
-
-      - name: 输出修改后的 HTML 文件列表
-        run: |
-          cat html_files.txt # 输出修改后的 HTML 文件列表
 
       - name: 部署到 Deploy 分支 # 部署
         uses: JamesIves/github-pages-deploy-action@v4
