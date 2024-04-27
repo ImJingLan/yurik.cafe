@@ -22,22 +22,22 @@ jobs:
           echo "VERSION=$version" >> $GITHUB_ENV
           echo "Latest commit version: $version"
 
-      - name: 查询所有 HTML 文件
+      - name: 查询footer_Config文件
         run: |
-          find . -type f -name "_config.fluidee.yml" > html_files.txt
-          cat html_files.txt # 输出查找到的 HTML 文件列表
+          find . -type f -name "_config.fluidee.yml" > git_version_files.txt
+          cat git_version_files.txt # 输出查找到的 HTML 文件列表
 
-      - name: 更新 HTML 中的版本号
+      - name: 更新版本号
         run: |
           version=${{ env.VERSION }}
           while IFS= read -r file; do
             sed -i "s/{{GIT_VERSION}}/$version/g" "$file"
             echo "Updated version in $file"
-          done < html_files.txt
+          done < git_version_files.txt
 
-      - name: 输出修改后的 HTML 文件列表
+      - name: 输出修改后的文件列表
         run: |
-          cat html_files.txt # 输出修改后的 HTML 文件列表
+          cat git_version_files.txt # 输出修改后的文件列表
 
       - name: 设置Node环境
         uses: actions/setup-node@master

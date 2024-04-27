@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "preview": "hexo cl && hexo g --draft && hexo s --draft",
     "g": "hexo cl && hexo generate",
     "cl": "hexo clean",
     "d": "hexo deploy",
