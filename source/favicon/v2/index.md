@@ -37,3 +37,4 @@ layout:
 | [favicon-16x16.png](./favicon-16x16.png)                   | https://yurik.cafe/favicon/v2/favicon-16x16.png          |
 | [favicon-32x32.png](./favicon-32x32.png)                   | https://yurik.cafe/favicon/v2/favicon-32x32.png          |
 | [favicon.ico](./favicon.ico)                               | https://yurik.cafe/favicon/v2/favicon.ico                |
+| [icon_raw.tar.gz](./icon_raw.tar.gz)                       | https://yurik.cafe/favicon/v2/icon_raw.tar.gz            |
