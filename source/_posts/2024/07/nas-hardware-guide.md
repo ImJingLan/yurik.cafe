@@ -11,7 +11,7 @@ tags:
 cover:
 ---
 
-> 原文来自 『硬件篇 | NAS 硬件选购 DIY 指南：不同价位的硬件搭配建议及心得』
+> 原文来自 [『硬件篇 | NAS 硬件选购 DIY 指南：不同价位的硬件搭配建议及心得』](https://blog.scio.icu/index.php/archives/7/)
 
 # 一、以装机的角度学习硬件的搭配
 
