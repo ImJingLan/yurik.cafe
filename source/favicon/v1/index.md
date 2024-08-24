@@ -1,11 +1,19 @@
 ---
-title: 站点Favicon目录
-date: 2024-2-29 00:00:03
+title: 站点 Favicon 目录
+date: 2024-7-29 00:00:03
 banner_img_height: 100%
 layout:
 ---
 
-更新日期:`2024-2-29`
+更新日期:`2024-7-26`
+
+## 更新日志
+
+### 24-7-26
+
+更换了图片，原 URL 地址不变，若友站本地有缓存请及时更新
+
+#### 列表
 
 | 文件名                                                     | URL                                                      |
 | ---------------------------------------------------------- | -------------------------------------------------------- |
@@ -29,3 +37,4 @@ layout:
 | [favicon-16x16.png](./favicon-16x16.png)                   | https://yurik.cafe/favicon/v2/favicon-16x16.png          |
 | [favicon-32x32.png](./favicon-32x32.png)                   | https://yurik.cafe/favicon/v2/favicon-32x32.png          |
 | [favicon.ico](./favicon.ico)                               | https://yurik.cafe/favicon/v2/favicon.ico                |
+| [icon_raw.tar.gz](./icon_raw.tar.gz)                       | https://yurik.cafe/favicon/v2/icon_raw.tar.gz            |
