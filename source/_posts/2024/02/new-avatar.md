@@ -4,7 +4,6 @@ copyright: BY-NC-SA
 date: 2024-02-29 01:05:47
 tags:
 categories: 站点公告
-cover: /favicon/v2/icon@4k.jpg
 ---
 
 **站点公告** 本站于 2024 年 2 月 29 日零时启用新的 icon 并将其 URL 地址迁回至站点源地址。

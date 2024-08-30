@@ -4,6 +4,9 @@ date: 2023-08-29 22:01:14
 layout: about
 ---
 
+> 鲸落于海,星沉于洼,风隐于密林,蝉鸣漏进夏至
+> 而我,想让这世间所有温柔都住进你眼里
+
 > 我的邮箱 [i#yurik.cafe](mailto:i@yurik.cafe)
 
 ## 欢迎
@@ -37,39 +40,13 @@ layout: about
 
   手机：小米 11 白色 256G
 
-  电脑：神船 G8-CT7NK
+  电脑：ROG STRIX SCAR 17
 
   手表：OPPO Watch 2 46mm
 
-  耳机：水月雨「竹」带麦版...
+  耳机：水月雨「竹 II」+ MC-1 ...
 
   鼠标：迈从 A5 Ultra
-
-## 喜欢看的虚拟主播们的主页地址（没有 D!!.jpg）
-
-[巴琦 Baki](https://space.bilibili.com/1588646945) （爹！~~我真的好想你啊~~）
-
----
-
-[MEUMY](https://meumy.club/#/) (~~我站狼攻~~):
-
-呜米:[主页](https://space.bilibili.com/617459493) [直播间](https://live.bilibili.com/22384516)
-
-咩栗:[主页](https://space.bilibili.com/745493/) [直播间](https://live.bilibili.com/8792912)
-
----
-
-无前 Namae (二叔) : [主页](https://space.bilibili.com/29080) [直播间](https://live.bilibili.com/12576972)
-
-Bison 仓鼠: [主页](https://space.bilibili.com/136107) [直播间](http://live.bilibili.com/77386)
-
-> **甜我姥姥！！！**
-
----
-
-阿萨 Aza : [主页](https://space.bilibili.com/480680646) [直播间](https://live.bilibili.com/21696950)
-
-> 咋子哥的歌**好好好好好听！！！！！**
 
 ## 博客历史
 
