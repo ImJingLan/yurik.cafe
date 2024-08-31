@@ -1,11 +1,11 @@
 ---
 title: 站点Favicon目录
-date: 2024-2-29 00:00:03
+date: 2024-8-31 00:00:03
 banner_img_height: 100%
 layout:
 ---
 
-更新日期:`2024-2-29`
+更新日期:`2024-8-31`
 
 | 文件名                                                     | URL                                                      |
 | ---------------------------------------------------------- | -------------------------------------------------------- |
@@ -29,3 +29,5 @@ layout:
 | [favicon-16x16.png](./favicon-16x16.png)                   | https://yurik.cafe/favicon/v2/favicon-16x16.png          |
 | [favicon-32x32.png](./favicon-32x32.png)                   | https://yurik.cafe/favicon/v2/favicon-32x32.png          |
 | [favicon.ico](./favicon.ico)                               | https://yurik.cafe/favicon/v2/favicon.ico                |
+
+> 头像来自游戏[《StackLands》](https://sokpop.itch.io/stacklands)
