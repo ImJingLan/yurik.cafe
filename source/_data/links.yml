@@ -17,6 +17,12 @@ items:
       link: "https://nero978.top",
       avatar: "https://nero978.top/wp-content/uploads/2023/07/logo.jpg",
     }
+  - {
+      title: Kyomu's Blog",
+      intro: "What is mind? No matter. What is matter? Never mind.",
+      link: "https://kyomu.me/",
+      avatar: "https://kyomu.me/wp-content/uploads/2024/09/1725636741-pfp.png",
+    }
 
 onerror_avatar: /img/avatar.png # 头像错误时加载默认头像
 

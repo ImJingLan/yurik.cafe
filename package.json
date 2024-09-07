@@ -9,7 +9,7 @@
     "s": "hexo cl && hexo g && hexo s"
   },
   "hexo": {
-    "version": "7.0.0"
+    "version": "7.3.0"
   },
   "dependencies": {
     "hexo": "^7.3.0",
