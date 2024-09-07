@@ -1,9 +1,15 @@
 items:
   - {
+      title: "Wiki@LitLUG",
+      intro: "柳州铁树 Linux 用户协会官方 Wiki 站点",
+      link: "https://litlug.wiki/",
+      avatar: "https://litlug.wiki/assets/img/irontree.svg",
+    }
+  - {
       title: "Norphin`s Yard",
       intro: "Norph1n的后花园",
       link: "https://norph1n.top/",
-      avatar: "https://norph1n.top/usr/themes/Kratos/images/author.jpg",
+      avatar: "https://norph1n.top/favicon/v1/avatar.jpg",
     }
   - {
       title: "Azure Zeng's Blog",
@@ -18,7 +24,7 @@ items:
       avatar: "https://nero978.top/wp-content/uploads/2023/07/logo.jpg",
     }
   - {
-      title: Kyomu's Blog",
+      title: "Kyomu's Blog",
       intro: "What is mind? No matter. What is matter? Never mind.",
       link: "https://kyomu.me/",
       avatar: "https://kyomu.me/wp-content/uploads/2024/09/1725636741-pfp.png",
