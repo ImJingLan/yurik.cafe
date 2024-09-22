@@ -7,7 +7,7 @@ layout: about
 > 鲸落于海,星沉于洼,风隐于密林,蝉鸣漏进夏至
 > 而我,想让这世间所有温柔都住进你眼里
 
-> 我的邮箱 [i#yurik.cafe](mailto:i@yurik.cafe)
+> 我的邮箱 [i#yurik.cafe](mailto:i@yurik.cafe) & [xihu#outlook.it](mailto:xihu@outlook.it)
 
 ## 欢迎
 
