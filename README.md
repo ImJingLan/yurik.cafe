@@ -1,5 +1,7 @@
-# yurik.cafe 的 博客源码
+请勿直接照搬本仓库内容
 
-# 请勿直接照搬本仓库内容！博客所有原创内容版权归景蓝 Yurik 所有！！！
+博客原创内容使用 [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 协议授权，原始版权归本博客所有
 
-# 主题 Fabric 基于 [hexo-theme-fluid](https://github.com/fluid-dev/hexo-theme-fluid) 制作，遵循 **GPL 开源协议** 开源
+Please do not directly copy the content of this repository
+
+The original content of the blog is licensed under [CC-BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/), and the original copyright belongs to this blog.
