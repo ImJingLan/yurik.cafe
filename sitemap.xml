@@ -29,6 +29,33 @@
   </url>
   
   <url>
+    <loc>https://yurik.cafe/2024/nanshan-south-beiqiu-sad/</loc>
+    
+    <lastmod>2024-10-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yurik.cafe/2024/white-state/</loc>
+    
+    <lastmod>2024-10-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yurik.cafe/about/index.html</loc>
+    
+    <lastmod>2024-10-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://yurik.cafe/2024/thought-memories/</loc>
     
     <lastmod>2024-10-03</lastmod>
@@ -39,24 +66,6 @@
   
   <url>
     <loc>https://yurik.cafe/2024/nas-hardware-guide/</loc>
-    
-    <lastmod>2024-10-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yurik.cafe/2024/nanshan-south-beiqiu-sad/</loc>
-    
-    <lastmod>2024-10-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yurik.cafe/about/index.html</loc>
     
     <lastmod>2024-10-03</lastmod>
     
@@ -137,15 +146,6 @@
   </url>
   
   <url>
-    <loc>https://yurik.cafe/2023/hello-counter-strike-2/</loc>
-    
-    <lastmod>2024-10-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://yurik.cafe/2023/fluid-random-index-img/</loc>
     
     <lastmod>2024-10-03</lastmod>
@@ -155,7 +155,7 @@
   </url>
   
   <url>
-    <loc>https://yurik.cafe/2023/YGR-Raft/</loc>
+    <loc>https://yurik.cafe/2023/hello-counter-strike-2/</loc>
     
     <lastmod>2024-10-03</lastmod>
     
@@ -165,6 +165,15 @@
   
   <url>
     <loc>https://yurik.cafe/2023/YGM-Introduce/</loc>
+    
+    <lastmod>2024-10-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yurik.cafe/2023/YGR-Raft/</loc>
     
     <lastmod>2024-10-03</lastmod>
     
@@ -400,14 +409,14 @@
   </url>
   
   <url>
-    <loc>https://yurik.cafe/categories/projects/</loc>
+    <loc>https://yurik.cafe/categories/announces/</loc>
     <lastmod>2024-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://yurik.cafe/categories/announces/</loc>
+    <loc>https://yurik.cafe/categories/projects/</loc>
     <lastmod>2024-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
