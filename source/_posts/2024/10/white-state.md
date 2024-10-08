@@ -17,4 +17,4 @@ index_img: "/2024/white-state/banner.png"
 >一张白纸，黑底白字。
 >在「纯白之境」中留下回忆。
 
-连接梦境: [WhiTE.yurik.CAFE](//white.yurik.cafe)
+连接梦境: [white.yurik.cafe](//white.yurik.cafe)
