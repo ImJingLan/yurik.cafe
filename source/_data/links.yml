@@ -29,7 +29,12 @@ items:
       link: "https://kyomu.me/",
       avatar: "https://kyomu.me/wp-content/uploads/2024/09/1725636741-pfp.png",
     }
-
+  - {
+        title: "極客死亡計劃",
+        intro: "这里没有零散的学习笔记和生活琐事，而是专注编写有价值的文章。",
+        link: "https://www.geedea.pro/",
+        avatar: "https://www.geedea.pro/favicon.png",
+    }
 onerror_avatar: /img/avatar.png # 头像错误时加载默认头像
 
 custom:
