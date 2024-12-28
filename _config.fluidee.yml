@@ -351,8 +351,7 @@ navbar:
       key: '子站',
       icon: 'iconfont icon-books',
       submenu: [
-        { key: 'Note@Yurik', link: '//note.yurik.cafe' },
-        { key: '纯白之境', link: '//white.yurik.cafe' }
+        { key: 'Note@Yurik', link: '//note.yurik.cafe' }
         ]
      }
 

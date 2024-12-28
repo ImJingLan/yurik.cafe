@@ -6,7 +6,8 @@
     "g": "hexo cl && hexo generate",
     "cl": "hexo clean",
     "d": "hexo deploy",
-    "s": "hexo cl && hexo g && hexo s"
+    "s": "hexo cl && hexo g && hexo s",
+    "push": "git add * && git add * && gitcm && git push -u origin"
   },
   "hexo": {
     "version": "7.3.0"

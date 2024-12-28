@@ -6,6 +6,12 @@ items:
       avatar: "https://litlug.wiki/assets/img/irontree.svg",
     }
   - {
+        title: "普朗忒斯之墨",
+        intro: "一个充满文字的站点，无序、随意、充满想象。",
+        link: "https://prts.ink/",
+        avatar: "https://prts.ink/favicon/v1/apple-touch-icon.png",
+    }
+  - {
       title: "Norphin`s Yard",
       intro: "Norph1n的后花园",
       link: "https://norph1n.top/",
