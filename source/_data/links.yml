@@ -41,6 +41,12 @@ items:
         link: "https://www.geedea.pro/",
         avatar: "https://www.geedea.pro/favicon.png",
     }
+  - {
+        title: "初之音",
+        intro: "聆听心中最初的声音",
+        link: "https://www.himiku.com/",
+        avatar: "https://cravatar.cn/avatar/2fc4cf3560ff5a1cc64ea029896ab235?s=400",
+    }
 onerror_avatar: /img/avatar.png # 头像错误时加载默认头像
 
 custom:
