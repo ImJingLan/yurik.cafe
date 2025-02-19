@@ -9,8 +9,33 @@
     <atom:link href="https://yurik.cafe/feed.xml" rel="self" type="application/rss+xml"/>
     
     <description>Yurik&#39;s Lab</description>
-    <pubDate>Sun, 09 Feb 2025 10:09:21 GMT</pubDate>
+    <pubDate>Wed, 19 Feb 2025 13:26:26 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>我家族没精神病史 - MacBook Pro 2023 上手体验</title>
+      <link>https://yurik.cafe/2025/macbook-pro-review/</link>
+      <guid>https://yurik.cafe/2025/macbook-pro-review/</guid>
+      <pubDate>Tue, 18 Feb 2025 13:58:04 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h1 id=&quot;我家族没精神病史&quot;&gt;&lt;a href=&quot;#我家族没精神病史&quot; class=&quot;headerlink&quot; title=&quot;我家族没精神病史&quot;&gt;&lt;/a&gt;我家族没精神病史&lt;/h1&gt;&lt;p&gt;买一台 Mac，很奇怪，是吗？&lt;/p&gt;
+&lt;p&gt;母胎到现在都是 Windows 的忠实用户，现</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h1 id="我家族没精神病史"><a href="#我家族没精神病史" class="headerlink" title="我家族没精神病史"></a>我家族没精神病史</h1><p>买一台 Mac，很奇怪，是吗？</p><p>母胎到现在都是 Windows 的忠实用户，现在居然买了一台 MacBook Pro。</p><h1 id="放下游戏，立地成佛"><a href="#放下游戏，立地成佛" class="headerlink" title="放下游戏，立地成佛"></a>放下游戏，立地成佛</h1><p>步入高中的最后一个学期，是时候认真学习啦！（是不是有点太晚了？）</p><p>我毅然决然地把魔霸给收起来了（放在另一个房间串流），下决心不再碰他。</p><p>可还是有一些照片编辑，文字处理（正如这篇博客）以及代码处理的需求，使用 iPad Pro 还是有些捉襟见肘，正巧我想体验下 macOS，就用压岁钱购买了这样一台电脑。</p><h2 id="为什么是他"><a href="#为什么是他" class="headerlink" title="为什么是他"></a>为什么是他</h2><p>在国补后的 Mac Mini M4 和二手 MacBook Pro 之间我还是选择了 MacBook Pro，原因有很多。</p><p>查询资料可以发现，M3 Pro (11 Cores，下文若无特指不再标注) 的性能相较 M4 不相上下，这时候便可以关注其他的方面。</p><p>首先便是价格，M3 Pro 的 MacBook Pro 在红色二手平台 99 新 18+512 的售价为 8800 元出头，伴随着平台验机；而 M4 Mac Mini 的价格国补完最便宜的型号是 3600 元。看似 Mac Mini 更有性价比，但考虑到我的魔霸由于散热采用液金以及他的尺寸、续航的因素，使得他即使是笔记本我也不方便携带。而且相较与 Mac Mini 16+256 的配置，MacBook Pro 更是来到了 18+512 的起步，算上屏幕，我认为选择 MBP 是一个更好的选择。</p><p><img src="/2025/macbook-pro-review/DSC2141.webp"><br><img src="/2025/macbook-pro-review/DSC2142.webp"></p>]]></content:encoded>
+      
+      
+      <category domain="https://yurik.cafe/categories/reviews/">开箱</category>
+      
+      
+      
+      <comments>https://yurik.cafe/2025/macbook-pro-review/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>「纯白之境」现已上线</title>
@@ -28,7 +53,7 @@
       
       
       
-      <content:encoded><![CDATA[<p>「纯白之境」站点已正式上线，这是一个记录汐琥的梦和文字的站点</p><p>摘自「纯白之境」开站词</p><blockquote><p>将心中所想现于形，再展示出来。<br>在再次记录中修正，感悟<br>不需要多么华丽的文字，不需要多么炫彩的特效。<br>一张白纸，黑底白字。<br>在「纯白之境」中留下回忆。</p></blockquote><p>连接梦境: <a href="//white.yurik.cafe">white.yurik.cafe</a></p>]]></content:encoded>
+      <content:encoded><![CDATA[<p>「纯白之境」站点已正式上线，这是一个记录汐琥的梦和文字的站点</p><p>摘自「纯白之境」开站词</p><blockquote><p>将心中所想现于形，再展示出来。<br>在再次记录中修正，感悟<br>不需要多么华丽的文字，不需要多么炫彩的特效。<br>一张白纸，黑底白字。<br>在「纯白之境」中留下回忆。</p></blockquote><p>连接梦境: <a href="//prts.ink">prts.ink</a></p>]]></content:encoded>
       
       
       <category domain="https://yurik.cafe/categories/announces/">站点公告</category>
@@ -532,34 +557,6 @@
       
       
       <comments>https://yurik.cafe/2023/raspberry-pi-install-centos/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>「技术」在Linux上搭建MC服务器（一）</title>
-      <link>https://yurik.cafe/2022/minecraft-server-on-linux-1/</link>
-      <guid>https://yurik.cafe/2022/minecraft-server-on-linux-1/</guid>
-      <pubDate>Tue, 13 Dec 2022 16:00:00 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;接上文&lt;/p&gt;
-&lt;p&gt;自从有了一台独立服务器后，可以玩的东西就多了&lt;/p&gt;
-&lt;p&gt;于是决定开一个我的世界 Java 服务器&lt;/p&gt;
-&lt;p&gt;写一篇文章记录一下&lt;/p&gt;
-&lt;h1 id=&quot;安装运行环境&quot;&gt;&lt;a href=&quot;#安装运行环境&quot; class=&quot;headerlink&quot; t</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p>接上文</p><p>自从有了一台独立服务器后，可以玩的东西就多了</p><p>于是决定开一个我的世界 Java 服务器</p><p>写一篇文章记录一下</p><h1 id="安装运行环境"><a href="#安装运行环境" class="headerlink" title="安装运行环境"></a>安装运行环境</h1><p>Minecraft Java 版的服务器运行环境非常单纯，只需要一个 Java 就行</p><p>由于我想开一个 1.16.5 的服务器，所以 Java 版本选择了 Java 17</p><p>安装过程参考的这篇文章《<a href="https://www.cnblogs.com/chaosmoor/p/15897693.html">Linux 安装 Java 17 - ChaosMoor</a>》</p><h1 id="下载服务端"><a href="#下载服务端" class="headerlink" title="下载服务端"></a>下载服务端</h1><p>Minecraft 服务端有很多种，例如原版香草端(Vanilla)、Paper、Bukkit 等</p><p>由于我希望保留原版的红石特性，所以选择了原版服务端</p><p>对于最新版本的 Minecraft 服务器，可以前往<a href="https://www.minecraft.net/download/server">Minecraft.net</a>下载 jar 文件</p><p>如果你想获取特定版本的服务端文件，可以访问<a href="https://minecraft.fandom.com/wiki/Minecraft_Wiki">Minecraft Wiki</a>搜索对应版本页面</p><p><img src="/2022/minecraft-server-on-linux-1/wiki.png" alt="1.16.5 - WIKI"></p><p>▲ Wiki 界面</p><p>Download(下载) -&gt; Server(服务端)下载服务端</p><blockquote><p><span style="color:red !important"><b>注意，不开玩笑！</b></span>：千万不要误点括号后的(.json)文件，或错选 Obfuscation maps(混淆映射表)中的 Server(服务器)选项</p></blockquote><h1 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h1><p>进入终端</p><p>在服务器上新建一个文件夹存放服务端文件</p><p><code>mkdir &lt;文件夹名称&gt;</code></p><p>进入文件夹</p><p><code>cd &lt;刚才的文件夹名称&gt;</code></p><p>将下载好的服务端文件上传至该文件夹</p><p><img src="/2022/minecraft-server-on-linux-1/winscp-upload.png" alt="WinSCP"></p><p>▲ 使用 WinSCP 上传</p><blockquote><p>我在这里将服务端命名为 server.jar</p></blockquote><p>修改文件权限</p><p><code>chmod 744 &lt;服务端文件名&gt;.jar</code></p><p>然后运行服务器！</p><p><code>java -Xmx1024M -Xms1024M -jar &lt;服务端文件名&gt;.jar nogui</code></p><p><img src="/2022/minecraft-server-on-linux-1/waring-1.png" alt="Waring-1"></p><p>▲ 终端报错了</p><p>怎么回事，闪退啦?</p><p>查了下翻译软件，发现是要你同意 Eula 文件</p><p>做法很简单</p><p>用文本编辑器将 eula.txt 中最后一行<code>eula=false</code>修改为<code>eula=true</code>再次运行即可</p><p><img src="/2022/minecraft-server-on-linux-1/eula-true.png" alt="Accept EULA"></p><p>▲ EULA.TXT 修改后</p><blockquote><p><span style="color:green !important"><b>记住这点更好</b></span>：当你将 eula 改为<strong>true</strong>后，即代表你同意了《<a href="https://account.mojang.com/documents/minecraft_eula">MINECRAFT 最终用户许可协议</a>》, 因此你最好详细阅读一下</p></blockquote><h1 id="服务器配置"><a href="#服务器配置" class="headerlink" title="服务器配置"></a>服务器配置</h1><p>无论是什么客户端，<strong>server.properties</strong>是必须的配置文件，当然，在第一次运行服务端时会自动生成，文件内容 + 必要注释 请查看<a href="https://wiki.yurik.cafe/Game/Minecraft/Server/server.properties/">这个网址</a></p><p>可以对应自己实际情况修改，也可以下载<a href="server.properties">我的配置文件</a>（基本默认）</p><h1 id="成功"><a href="#成功" class="headerlink" title="成功"></a>成功</h1><p><img src="/2022/minecraft-server-on-linux-1/done.png" alt="Done"></p><p>▲ 游戏内的显示效果</p><h1 id="管理服务器"><a href="#管理服务器" class="headerlink" title="管理服务器"></a>管理服务器</h1><p>你可以使用命令行来管理服务器，常用的命令有：</p><ul><li><code>stop</code>：停止服务器</li><li><code>list</code>：列出当前在线的玩家</li><li><code>kick [player]</code>：将玩家踢出服务器</li><li><code>ban [player]</code>：封禁玩家</li><li><code>op [player]</code>：将玩家提升为服务器管理员</li><li><code>whitelist add [player]</code>：将玩家添加到白名单</li></ul>]]></content:encoded>
-      
-      
-      <category domain="https://yurik.cafe/categories/%E6%8A%80%E6%9C%AF/">技术</category>
-      
-      
-      
-      <comments>https://yurik.cafe/2022/minecraft-server-on-linux-1/#disqus_thread</comments>
       
     </item>
     
