@@ -10,11 +10,6 @@ intro: "鲸落于海，星沉于洼"
 icons:
   - { class: "iconfont icon-mail", link: "mailto:i@lite.cafe", tip: "Mail 1" }
   - {
-      class: "iconfont icon-mail",
-      link: "mailto:xihu@outlook.it",
-      tip: "Mail 2",
-    }
-  - {
       class: "iconfont icon-github-fill",
       link: "https://github.com/imjinglan",
       tip: "GitHub",

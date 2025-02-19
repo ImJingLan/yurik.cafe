@@ -914,7 +914,7 @@ fs.realpath@^1.0.0:
 
 fsevents@~2.3.2:
   version "2.3.3"
-  resolved "http://mirrors.tencent.com/npm/fsevents/-/fsevents-2.3.3.tgz#cac6407785d03675a2a5e1a5305c697b347d90d6"
+  resolved "https://registry.npmmirror.com/fsevents/-/fsevents-2.3.3.tgz"
   integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
 
 function-bind@^1.1.2:
@@ -1007,7 +1007,7 @@ hasown@^2.0.0, hasown@^2.0.2:
 
 hexo-blog-encrypt@^3.1.9:
   version "3.1.9"
-  resolved "https://registry.npmjs.org/hexo-blog-encrypt/-/hexo-blog-encrypt-3.1.9.tgz#4579bbdb35aa040181942088e539a44b17be6e59"
+  resolved "https://registry.npmjs.org/hexo-blog-encrypt/-/hexo-blog-encrypt-3.1.9.tgz"
   integrity sha512-dzuZiW5mD8t1FOhJXqc+IgV1Tc45YtatJb/w8k4PyT9McQxsROQXsBw+zbDembzuqMnbnkCeT2SapZ/r9AgAcw==
 
 hexo-browsersync@^0.3.0:
@@ -1124,7 +1124,7 @@ hexo-pagination@3.0.0:
 
 hexo-quote-card@^1.0.1:
   version "1.0.1"
-  resolved "https://registry.npmjs.org/hexo-quote-card/-/hexo-quote-card-1.0.1.tgz#9634e0a81c72714ec5141a376372cef154f07470"
+  resolved "https://registry.npmjs.org/hexo-quote-card/-/hexo-quote-card-1.0.1.tgz"
   integrity sha512-BKGFcwmp7yRfqnqw5cabkU2A77rZYKZQZeVYVnbZOjSBCQD6YyhlhRBvWPbIW46fb0cowGVp0Hnwd7+ip/M0lg==
 
 hexo-renderer-ejs@^2.0.0:

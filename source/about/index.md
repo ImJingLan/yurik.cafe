@@ -20,7 +20,7 @@ layout: about
 > 鲸落于海,星沉于洼,风隐于密林,蝉鸣漏进夏至
 > 而我,想让这世间所有温柔都住进你眼里
 
-> 我的邮箱 [i#yurik.cafe](mailto:i@yurik.cafe) & [xihu#outlook.it](mailto:xihu@outlook.it)
+> 我的邮箱 [i#yurik.cafe](mailto:i@yurik.cafe)
 
 ## 欢迎
 
@@ -33,7 +33,7 @@ layout: about
 
 - 英文名 `Yurik`（又是 `i` 也写作 `1` ）
 
-- 当然了，如果这些都被注册了的话就会写作 `Yuri` 和 `Howie` ...
+- 当然了，如果这些都被注册了的话就会写作 `Yuri` 、 `Howie` 或 `XiHu` ...
 
 - 比较迷**血灵**，有时会把姓氏写作`拉萨姆博`(`Lasambo`) ...
 
@@ -53,11 +53,11 @@ layout: about
 
   手机：小米 11 白色 256G
 
-  电脑：ROG STRIX SCAR 17
+  电脑： MacBook Pro 深空黑 (14-inch, M3 Pro)、ROG STRIX SCAR 17
 
-  手表：OPPO Watch 2 46mm
+  手表：小米手环 9 NFC 版
 
-  耳机：水月雨「竹 II」+ MC-1 ...
+  耳机：水月雨「竹 II」...
 
   鼠标：迈从 A5 Ultra
 
