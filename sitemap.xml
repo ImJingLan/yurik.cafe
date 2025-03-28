@@ -101,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://yurik.cafe/2024/hexo-theme-news/</loc>
+    <loc>https://yurik.cafe/2024/hexo-guidebook-1/</loc>
     
     <lastmod>2025-03-28</lastmod>
     
@@ -110,7 +110,7 @@
   </url>
   
   <url>
-    <loc>https://yurik.cafe/2024/hexo-guidebook-1/</loc>
+    <loc>https://yurik.cafe/2024/hexo-theme-news/</loc>
     
     <lastmod>2025-03-28</lastmod>
     
@@ -173,7 +173,7 @@
   </url>
   
   <url>
-    <loc>https://yurik.cafe/2023/YGM-Introduce/</loc>
+    <loc>https://yurik.cafe/2023/YGR-Raft/</loc>
     
     <lastmod>2025-03-28</lastmod>
     
@@ -182,7 +182,7 @@
   </url>
   
   <url>
-    <loc>https://yurik.cafe/2023/YGR-Raft/</loc>
+    <loc>https://yurik.cafe/2023/YGM-Introduce/</loc>
     
     <lastmod>2025-03-28</lastmod>
     
@@ -339,13 +339,6 @@
   </url>
   
   <url>
-    <loc>https://yurik.cafe/tags/Hexo-%E4%B8%BB%E9%A2%98/</loc>
-    <lastmod>2025-03-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://yurik.cafe/tags/Unity/</loc>
     <lastmod>2025-03-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -354,6 +347,13 @@
   
   <url>
     <loc>https://yurik.cafe/tags/game-dev/</loc>
+    <lastmod>2025-03-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://yurik.cafe/tags/Hexo-%E4%B8%BB%E9%A2%98/</loc>
     <lastmod>2025-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -376,14 +376,14 @@
 
   
   <url>
-    <loc>https://yurik.cafe/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://yurik.cafe/categories/thoughts/</loc>
     <lastmod>2025-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://yurik.cafe/categories/thoughts/</loc>
+    <loc>https://yurik.cafe/categories/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2025-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -418,14 +418,14 @@
   </url>
   
   <url>
-    <loc>https://yurik.cafe/categories/projects/</loc>
+    <loc>https://yurik.cafe/categories/announces/</loc>
     <lastmod>2025-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://yurik.cafe/categories/announces/</loc>
+    <loc>https://yurik.cafe/categories/projects/</loc>
     <lastmod>2025-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
