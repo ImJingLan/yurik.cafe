@@ -83,24 +83,6 @@
   </url>
   
   <url>
-    <loc>https://yurik.cafe/2024/hexo-guidebook-1/</loc>
-    
-    <lastmod>2025-03-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yurik.cafe/2024/hexo-theme-news/</loc>
-    
-    <lastmod>2025-03-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://yurik.cafe/2024/new-avatar/</loc>
     
     <lastmod>2025-03-28</lastmod>
@@ -119,6 +101,33 @@
   </url>
   
   <url>
+    <loc>https://yurik.cafe/2024/hexo-guidebook-1/</loc>
+    
+    <lastmod>2025-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yurik.cafe/2024/hexo-theme-news/</loc>
+    
+    <lastmod>2025-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yurik.cafe/2024/github-action-depoly-hexo/</loc>
+    
+    <lastmod>2025-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://yurik.cafe/2024/my-way-to-php/</loc>
     
     <lastmod>2025-03-28</lastmod>
@@ -129,15 +138,6 @@
   
   <url>
     <loc>https://yurik.cafe/2023/miscellanies-2/</loc>
-    
-    <lastmod>2025-03-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yurik.cafe/2024/github-action-depoly-hexo/</loc>
     
     <lastmod>2025-03-28</lastmod>
     
