@@ -228,7 +228,7 @@ custom_css:
   - https://at.alicdn.com/t/c/font_4230030_eflllpvnb2t.css
   - https://at.alicdn.com/t/c/font_1829688_v9ay97s4s0g.css
 
-custom_head: "<script>hljs.initHighlightingOnLoad();</script>"
+custom_head: ""
 
 # 网页访问统计
 # Analysis of website visitors
