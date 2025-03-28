@@ -352,7 +352,7 @@ navbar:
       key: '子站',
       icon: 'iconfont icon-books',
       submenu: [
-        { key: 'Note@Yurik', link: '//note.yurik.cafe' }
+        { key: 'Wiki@Yurik', link: '//wiki.yurik.cafe' }
         ]
      }
 
