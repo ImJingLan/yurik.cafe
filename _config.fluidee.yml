@@ -429,13 +429,13 @@ footer:
   content: |-
     Copyright © 2022 - 2024 Yurik all rights reserved.
     <br \>
-    <a target="_blank" href="https://beian.miit.gov.cn">桂ICP备2025057334号-1</a> | <a href="https://icp.gov.moe/?keyword=20244220" target="_blank">萌ICP备20244220号</a>
-    <br \>
 
     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
     <i class="iconfont icon-love"></i>
     <a href="https://github.com/imjinglan/hexo-theme-fluidee" target="_blank" rel="nofollow noopener"><span>FluidEE</span></a><br \>
-    <i class="iconfont icon-git"></i> Version: {{GITVERSION}}<br \>
+    <i class="iconfont icon-git"></i> Version: {{GITVERSION}}
+    <br \>
+    <a href="https://icp.gov.moe/?keyword=20244220" target="_blank">萌ICP备20244220号</a>
 
   running_time: "2022/2/10 00:00:00"
 
@@ -452,15 +452,15 @@ footer:
   # 国内大陆服务器的备案信息
   # For Chinese mainland website policy, other areas keep disable
   beian:
-    enable: false
+    enable: true
     # ICP证号
-    icp_text: 京ICP证123456号
+    icp_text: 桂ICP备2025057334号-1
     # 公安备案号，不填则只显示ICP
-    police_text: 京公网安备12345678号
+    police_text: 桂公网安备45020202000519号
     # 公安备案的编号，用于URL跳转查询
-    police_code: 12345678
+    police_code: 45020202000519
     # 公安备案的图片. 为空时不显示备案图片
-    police_icon: /img/police_beian.png
+    police_icon: /img/beian.png
 
 #---------------------------
 # 首页
