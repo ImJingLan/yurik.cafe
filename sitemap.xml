@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://yurik.cafe/2024/nanshan-south-beiqiu-sad/</loc>
+    <loc>https://yurik.cafe/2024/thought-memories/</loc>
     
     <lastmod>2025-04-12</lastmod>
     
@@ -65,34 +65,16 @@
   </url>
   
   <url>
+    <loc>https://yurik.cafe/2024/nanshan-south-beiqiu-sad/</loc>
+    
+    <lastmod>2025-04-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://yurik.cafe/2025/macbook-pro-review/</loc>
-    
-    <lastmod>2025-04-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yurik.cafe/2024/thought-memories/</loc>
-    
-    <lastmod>2025-04-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yurik.cafe/2024/hexo-guidebook-1/</loc>
-    
-    <lastmod>2025-04-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yurik.cafe/2024/hexo-theme-news/</loc>
     
     <lastmod>2025-04-12</lastmod>
     
@@ -119,7 +101,16 @@
   </url>
   
   <url>
-    <loc>https://yurik.cafe/2024/my-way-to-php/</loc>
+    <loc>https://yurik.cafe/2024/hexo-guidebook-1/</loc>
+    
+    <lastmod>2025-04-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yurik.cafe/2024/hexo-theme-news/</loc>
     
     <lastmod>2025-04-12</lastmod>
     
@@ -138,6 +129,15 @@
   
   <url>
     <loc>https://yurik.cafe/2024/github-action-depoly-hexo/</loc>
+    
+    <lastmod>2025-04-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yurik.cafe/2024/my-way-to-php/</loc>
     
     <lastmod>2025-04-12</lastmod>
     
