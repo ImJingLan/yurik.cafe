@@ -29,15 +29,6 @@
   </url>
   
   <url>
-    <loc>https://yurik.cafe/2025/macbook-pro-review/</loc>
-    
-    <lastmod>2025-05-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://yurik.cafe/about/index.html</loc>
     
     <lastmod>2025-05-24</lastmod>
@@ -74,6 +65,15 @@
   </url>
   
   <url>
+    <loc>https://yurik.cafe/2025/macbook-pro-review/</loc>
+    
+    <lastmod>2025-05-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://yurik.cafe/2024/white-state/</loc>
     
     <lastmod>2025-05-24</lastmod>
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://yurik.cafe/2024/new-avatar/</loc>
+    <loc>https://yurik.cafe/2024/warma-shark-unity/</loc>
     
     <lastmod>2025-05-24</lastmod>
     
@@ -92,7 +92,7 @@
   </url>
   
   <url>
-    <loc>https://yurik.cafe/2024/warma-shark-unity/</loc>
+    <loc>https://yurik.cafe/2024/new-avatar/</loc>
     
     <lastmod>2025-05-24</lastmod>
     
@@ -155,15 +155,6 @@
   </url>
   
   <url>
-    <loc>https://yurik.cafe/2023/fluid-random-index-img/</loc>
-    
-    <lastmod>2025-05-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://yurik.cafe/2023/hello-counter-strike-2/</loc>
     
     <lastmod>2025-05-24</lastmod>
@@ -173,7 +164,7 @@
   </url>
   
   <url>
-    <loc>https://yurik.cafe/2023/YGR-Raft/</loc>
+    <loc>https://yurik.cafe/2023/fluid-random-index-img/</loc>
     
     <lastmod>2025-05-24</lastmod>
     
@@ -183,6 +174,15 @@
   
   <url>
     <loc>https://yurik.cafe/2023/YGM-Introduce/</loc>
+    
+    <lastmod>2025-05-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yurik.cafe/2023/YGR-Raft/</loc>
     
     <lastmod>2025-05-24</lastmod>
     
