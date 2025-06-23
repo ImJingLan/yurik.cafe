@@ -44,7 +44,7 @@ jobs:
         with:
           branch: deploy
           folder: public
-          
+
       - name: 发布到服务器
         uses: easingthemes/ssh-deploy@main
         env:
@@ -55,4 +55,4 @@ jobs:
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: root
           REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
-          TARGET: /opt/1panel/apps/openresty/openresty/www/sites/yurik.cafe/index
+          TARGET: /opt/1panel/www/sites/yurik.cafe/index
