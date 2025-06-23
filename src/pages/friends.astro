@@ -15,44 +15,43 @@ if (!friendsPage) {
 const { Content } = await render(friendsPage);
 
 const items = [
-    {
-    title: "Norphin`s Yard",
-    desc: "Norph1n的后花园",
-    link: "https://norph1n.top/",
-    avatar: "https://norph1n.top/favicon/v1/avatar.jpg"
-    },
-    {
-    title: "Azure Zeng's Blog",
-    intro: "Azure Zeng 的小窝",
-    link: "https://blog.azurezeng.com/",
-    avatar: "https://azurezeng.com/friendly-link-image.png"
-    },
-  {
-    title: "Nero978 的日记",
-    intro: "Brave yourself, brave the world.",
-    link: "https://nero978.top",
-    avatar: "https://nero978.top/wp-content/uploads/2023/07/logo.jpg"
-  },
-  {
-    title: "Kyomu's Blog",
-    intro: "What is mind? No matter. What is matter? Never mind.",
-    link: "https://kyomu.me/",
-    avatar: "https://kyomu.me/wp-content/uploads/2024/09/1725636741-pfp.png"
-  },
-  {
-    title: "極客死亡計劃",
-    intro: "这里没有零散的学习笔记和生活琐事，而是专注编写有价值的文章。",
-    link: "https://www.geedea.pro/",
-    avatar: "https://www.geedea.pro/favicon.ico"
-  },
-  {
-    title: "初之音",
-    intro: "聆听心中最初的声音",
-    link: "https://www.himiku.com/",
-    avatar: "https://cravatar.cn/avatar/2fc4cf3560ff5a1cc64ea029896ab235?s=400"
-  }
-]
-
+	{
+		title: "Norphin`s Yard",
+		desc: "Norph1n的后花园",
+		link: "https://norph1n.top/",
+		avatar: "https://norph1n.top/favicon/v1/avatar.jpg",
+	},
+	{
+		title: "Azure Zeng's Blog",
+		intro: "Azure Zeng 的小窝",
+		link: "https://blog.azurezeng.com/",
+		avatar: "https://azurezeng.com/friendly-link-image.png",
+	},
+	{
+		title: "Nero978 的日记",
+		intro: "Brave yourself, brave the world.",
+		link: "https://nero978.top",
+		avatar: "https://nero978.top/wp-content/uploads/2023/07/logo.jpg",
+	},
+	{
+		title: "Kyomu's Blog",
+		intro: "What is mind? No matter. What is matter? Never mind.",
+		link: "https://kyomu.me/",
+		avatar: "https://kyomu.me/wp-content/uploads/2024/09/1725636741-pfp.png",
+	},
+	{
+		title: "極客死亡計劃",
+		intro: "这里没有零散的学习笔记和生活琐事，而是专注编写有价值的文章。",
+		link: "https://www.geedea.pro/",
+		avatar: "https://www.geedea.pro/favicon.ico",
+	},
+	{
+		title: "初之音",
+		intro: "聆听心中最初的声音",
+		link: "https://www.himiku.com/",
+		avatar: "https://cravatar.cn/avatar/2fc4cf3560ff5a1cc64ea029896ab235?s=400",
+	},
+];
 ---
 <MainGridLayout title={i18n(I18nKey.friends)} description={i18n(I18nKey.friends)}>
     <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32 mb-4">
