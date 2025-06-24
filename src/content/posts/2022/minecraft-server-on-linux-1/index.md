@@ -91,7 +91,7 @@ Download(下载) -> Server(服务端)下载服务端
 
 无论是什么客户端，**server.properties**是必须的配置文件，当然，在第一次运行服务端时会自动生成，文件内容 + 必要注释 请查看[这个网址](https://wiki.yurik.cafe/Game/Minecraft/Server/server.properties/)
 
-可以对应自己实际情况修改，也可以下载[我的配置文件](server.properties)（基本默认）
+可以对应自己实际情况修改
 
 # 成功
 
