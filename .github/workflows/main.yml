@@ -2,7 +2,7 @@ name: 同步至 Deploy 分支
 on:
   push:
     branches:
-      - yurari
+      - main
   workflow_dispatch: null
 jobs:
   build:
@@ -51,6 +51,12 @@ jobs:
           branch: yurari-deploy
           folder: dist
 
+      - name: 部署到 Deploy 分支
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: deploy
+          folder: dist
+
       - name: 发布到服务器
         uses: easingthemes/ssh-deploy@main
         env:
@@ -61,4 +67,4 @@ jobs:
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: root
           REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
-          TARGET: /opt/1panel/www/sites/fuwari.yurik.cafe/index
+          TARGET: /opt/1panel/www/sites/yurik.cafe/index
