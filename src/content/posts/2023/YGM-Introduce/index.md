@@ -9,8 +9,6 @@ draft: false
 lang: ''
 ---
 
-![](cover.webp)
-
 # 什么是 YGR
 
 **Yurik's Game Rating** 是由 景蓝 Yurik 发起的游戏评分测评栏目

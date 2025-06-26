@@ -9,8 +9,6 @@ draft: false
 lang: ''
 ---
 
-![](banner.webp)
-
 如你所见，我给博客换上了一个新主题。
 
 与别的主题不同的是，这个主题是我从 1 开始制作的。为什么是从 1 开始？因为这个主题我参考了 [Apple 公司的 Newsroom 页面](https://www.apple.com.cn/newsroom/)，也使用了部分 Apple 的 CSS 样式表（主要是文字相关部分），因此这个主题也被我命名为**News「新闻中心」**。这篇博文是制作 **News「新闻中心」** 主题的记录。
