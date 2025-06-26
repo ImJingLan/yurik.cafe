@@ -19,11 +19,13 @@
 
 > 我的邮箱 [i#yurik.cafe](mailto:i@yurik.cafe)
 
+> [This is a Typo Site.](https://github.com/The-Typo)
+
 ## 欢迎
 
-你好,我是景蓝，这是我的个人博客
+你好，我是景蓝，这是我的个人博客。
 
-我会在这里不时地分享我的一些想法和写的一些~~没用的~~小程序
+我会在这里不时地分享我的一些想法和写的一些~~没用的~~小程序。
 
 ## 关于我
 
@@ -63,11 +65,11 @@
 
 - 2025 年
 
-拥有独立服务器且完成网络空间备案。站点程序切换为 Astro。
+拥有独立服务器且完成网络空间备案，站点程序切换为 Astro。
 
 - 2024 年
 
-使用 Github Actions 渲染页面
+使用 Github Actions 渲染页面。
 
 - 2023 年
 
@@ -75,16 +77,16 @@
 
 - 2022 年
 
-由于~~穷~~，换用 Hugo 静态页面系统，托管在~~Github~~ Vercel 上
+由于~~穷~~，换用 Hugo 静态页面系统，托管在~~Github~~ Vercel 上。
 
 - 2021 年
 
-有了一台服务器，采用 Typecho 系统
+有了一台服务器，采用 Typecho 系统。
 
 ## 关于博客
 
-`Powered By Astro`，`Theme Fuwari`。
+`Powered By Astro & Fuwari`
 
-本博客所有文章在 **未特殊声明** 的前提下均采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+本博客所有文章在 **未特殊声明** 的前提下均采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-sa/4.0/)。
 
 本站部分内容参考自互联网。
