@@ -19,7 +19,6 @@
 
 > 我的邮箱 [i#yurik.cafe](mailto:i@yurik.cafe)
 
-
 ## 欢迎
 
 你好,我是景蓝，这是我的个人博客
@@ -84,10 +83,8 @@
 
 ## 关于博客
 
-`Powered By Hexo`，`Theme FluidEE Modded By Yurik`。
+`Powered By Astro`，`Theme Fuwari`。
 
-本博客所有文章在 **未特殊声明** 的前提下均采用
+本博客所有文章在 **未特殊声明** 的前提下均采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-sa/4.0/)
-
-本站部分内容参考自互联网
+本站部分内容参考自互联网。
