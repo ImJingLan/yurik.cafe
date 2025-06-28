@@ -363,7 +363,7 @@
 &lt;p&gt;仅需将原先地址中的 &lt;code&gt;https://unpkg.com/yurik-static@1.0.6/&lt;/code&gt; 修改为本站地址 &lt;code&gt;https://yurik.cafe&lt;/code&gt; 即可&lt;/p&gt;
 &lt;p&gt;如 &lt;code&gt;https://unpkg.com/yurik-static@1.0.6/favicon/v2/favicon.ico&lt;/code&gt; -&amp;gt; &lt;code&gt;https://yurik.cafe/favicon/v2/favicon.ico&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;icon 列表及对应地址可查看 &lt;a href=&quot;/favicon/v2/&quot;&gt;/favicon/v2/&lt;/a&gt;&lt;/p&gt;
-</content:encoded></item><item><title>我的小鲨鱼 By Unity</title><link>https://yurik.cafe/2024/warma-shark-unity/warma-shark-unity/</link><guid isPermaLink="true">https://yurik.cafe/2024/warma-shark-unity/warma-shark-unity/</guid><description>创意、美术: WARMA | 《我的小鲨鱼》的 UNITY 实现</description><pubDate>Sat, 24 Feb 2024 21:25:15 GMT</pubDate><content:encoded>&lt;h1&gt;版权信息&lt;/h1&gt;
+</content:encoded></item><item><title>我的小鲨鱼 By Unity</title><link>https://yurik.cafe/2024/warma-shark-unity/</link><guid isPermaLink="true">https://yurik.cafe/2024/warma-shark-unity/</guid><description>创意、美术: WARMA | 《我的小鲨鱼》的 UNITY 实现</description><pubDate>Sat, 24 Feb 2024 21:25:15 GMT</pubDate><content:encoded>&lt;h1&gt;版权信息&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;本游戏创意、美术来源于 B 站知名 UP 主 Warma。本作仅为原游戏的 Unity 实现，未经原作者与本人许可不得用于商业用途&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -387,7 +387,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;当前游戏还未开发好&lt;/p&gt;
 &lt;/blockquote&gt;
-</content:encoded></item><item><title>使用 Hexo 搭建静态博客</title><link>https://yurik.cafe/2024/hexo-guidebook-1/hexo-guidebook-1/</link><guid isPermaLink="true">https://yurik.cafe/2024/hexo-guidebook-1/hexo-guidebook-1/</guid><pubDate>Sun, 18 Feb 2024 02:33:21 GMT</pubDate><content:encoded>&lt;h1&gt;前言&lt;/h1&gt;
+</content:encoded></item><item><title>使用 Hexo 搭建静态博客</title><link>https://yurik.cafe/2024/hexo-guidebook-1/</link><guid isPermaLink="true">https://yurik.cafe/2024/hexo-guidebook-1/</guid><pubDate>Sun, 18 Feb 2024 02:33:21 GMT</pubDate><content:encoded>&lt;h1&gt;前言&lt;/h1&gt;
 &lt;p&gt;想到年，我曾经写过「&lt;a href=&quot;/2022/hugo-blog/&quot;&gt;使用 Hugo 搭建个人博客&lt;/a&gt;」一文，现在又来转投 Hexo 的怀抱了。&lt;/p&gt;
 &lt;h1&gt;Hexo 是什么&lt;/h1&gt;
 &lt;p&gt;Hexo 是一款基于 Node.js 的静态博客框架，它具有轻量、快速、简洁且高效的特点。它可以将 Markdown 语法转换为 HTML，方便用户编写博客文档。Hexo 支持使用 node 命令进行一键部署到 GitHub Pages、Heroku 或其他平台，非常适合个人博客的搭建。此外，Hexo 还具有丰富的插件和主题，可以满足用户的不同需求。&lt;/p&gt;
@@ -515,7 +515,7 @@ hexo generate    # hexo g
 &lt;p&gt;&lt;a href=&quot;//hexo.io/themes/&quot;&gt;Hexo 主题列表&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;Enjoy Your Writing&lt;/h1&gt;
 &lt;p&gt;:D&lt;/p&gt;
-</content:encoded></item><item><title>Hexo 主题 News 现已上线</title><link>https://yurik.cafe/2024/hexo-theme-news/hexo-theme-news/</link><guid isPermaLink="true">https://yurik.cafe/2024/hexo-theme-news/hexo-theme-news/</guid><pubDate>Thu, 01 Feb 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;如你所见，我给博客换上了一个新主题。&lt;/p&gt;
+</content:encoded></item><item><title>Hexo 主题 News 现已上线</title><link>https://yurik.cafe/2024/hexo-theme-news/</link><guid isPermaLink="true">https://yurik.cafe/2024/hexo-theme-news/</guid><pubDate>Thu, 01 Feb 2024 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;如你所见，我给博客换上了一个新主题。&lt;/p&gt;
 &lt;p&gt;与别的主题不同的是，这个主题是我从 1 开始制作的。为什么是从 1 开始？因为这个主题我参考了 &lt;a href=&quot;https://www.apple.com.cn/newsroom/&quot;&gt;Apple 公司的 Newsroom 页面&lt;/a&gt;，也使用了部分 Apple 的 CSS 样式表（主要是文字相关部分），因此这个主题也被我命名为&lt;strong&gt;News「新闻中心」&lt;/strong&gt;。这篇博文是制作 &lt;strong&gt;News「新闻中心」&lt;/strong&gt; 主题的记录。&lt;/p&gt;
 &lt;h1&gt;灵感&lt;/h1&gt;
 &lt;p&gt;最开始的想法是在给班级网站写新闻中心页面。当时给网站主页使用的 Bootstrap 5 的 Jumbotron 模板，想着设计一个和他向契合的新闻页面，突然我想到了之前看到的 Apple Newsroom 我十分喜欢，于是便用 Bootstrap 的 Card 放置了一个差不多的页面出来，这可以称为是 &lt;strong&gt;News「新闻中心」&lt;/strong&gt; 的 &lt;strong&gt;α1&lt;/strong&gt; 测试版本。&lt;/p&gt;
