@@ -18,7 +18,7 @@ jobs:
           echo "Latest commit version: $version"
       - name: 查询所有主题配置文件
         run: |
-          find . -type f -name "_config.fluidee.yml" > footer_files.txt
+          find . -type f -name "Footer.astro" > footer_files.txt
           cat footer_files.txt # 输出查找到的 HTML 文件列表
       - name: 更新 footer 的版本号
         run: |
