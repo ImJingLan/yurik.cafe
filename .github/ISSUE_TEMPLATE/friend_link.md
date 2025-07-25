@@ -19,7 +19,7 @@ Your Site Description Here.
 
 https://example.com
 
-### 站点图标地址
+### 站点图标地址 | Site Icon
 
 https://example.com/icon.png
 
