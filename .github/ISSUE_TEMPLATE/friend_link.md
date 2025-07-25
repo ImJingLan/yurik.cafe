@@ -4,31 +4,25 @@ about: 为站点添加一个友情链接
 title: "[站点名称 | Title] 友链申请"
 labels: 友情链接
 assignees: ImJingLan
-
 ---
+## 我的信息 | Site Info
 
-## 您的站点应满足以下要求
+### 站点名称 | Site Title
 
-- 愿为开放的网络做出贡献（如乐于分享知识经验等）；
+Your Site Title Here.
 
-- 没有违法以及影响体验的内容（如侵入式广告等）；
+### 站点描述 | Description
 
-- 正常更新维护中（国内无法正常访问会被移除）；
+Your Site Description Here.
 
-- 启用 Https。
+### 站点链接 | Site Url
 
-- 请不要使用免费域名；
+https://example.com
 
-- 已添加本站为友链
+### 站点图标地址
 
-### 我的信息
+https://example.com/icon.png
 
-- 博客名：景蓝的小屋
+### 是否已添加本站为友链 | I have already add your site as my friends link
 
-- 简介：鲸落于海，星沉于洼
-
-- 链接：[yurik.cafe](//yurik.cafe)
-
-- 图片：[https://yurik.cafe/favicon/v2/icon@1024px.jpg](https://yurik.cafe/favicon/v2/icon@1024px.jpg)  |  [https://yurik.cafe/favicon/v2/icon-circle@1024px.png](https://yurik.cafe/favicon/v2/icon-circle@1024px.png)
-
-- 更多图标可以访问 [`站点 Favicon 目录`](https://yurik.cafe/favicon/v2/)
+**Yes**
