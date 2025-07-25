@@ -11,9 +11,9 @@
 
 - 请不要使用免费域名；
 
----
+- 已添加本站为友链
 
-在 Github 提交 [Issues](https://github.com/ImJingLan/FriendLink/issues/new/choose) 申请友链
+在 Github 提交 [Issues](https://github.com/The-Typo/yurik.cafe/issues/new/choose) 申请友链
 
 ### 我的信息
 
